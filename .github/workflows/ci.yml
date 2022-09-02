@@ -33,8 +33,8 @@ jobs:
           user_name=`git log -1 --pretty=format:'%an'`
           user_email=`git log -1 --pretty=format:'%ae'`
           deploy_branch=gh-pages
-          yarn
-          yarn build
+          npm install
+          npm run build
           cd docs/.vuepress/dist
           git config --global init.defaultBranch $deploy_branch
           git init
@@ -43,7 +43,7 @@ jobs:
           git add -A
           git commit -m "auto deploy, $commit_info"
           remote_addr=`echo $remote_addr | awk -F'://' '{print $2}'`
-          remote_addr=https://${user_name}:${{secrets.GITHUB_TOKEN}}@${remote_addr}
+          remote_addr=https://${user_name}:${{secrets.BLOG_TOKEN}}@${remote_addr}
           git remote add origin ${remote_addr}
           git push origin HEAD:$deploy_branch --force # 推送到github $deploy_branch分支
 
