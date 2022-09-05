@@ -1,7 +1,7 @@
 ---
 home: true
 # heroImage: /img/web.png
-heroText: IMAGINE's blog
+heroText: IMAGINE'S BLOG
 tagline: WEB前端搬砖日志；积跬步以至千里，积小流以成江海。
 # actionText: 立刻进入 →
 # actionLink: /web/
