@@ -310,7 +310,12 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         options: {
           el: '#valine-vuepress-comment',
           appId: 'bUg4GxNzlH4VxHlJkUOrVFgi-gzGzoHsz',
-          appKey: 'S5wWNdrjV48MMX5IUz1vcEJv'
+          appKey: 'S5wWNdrjV48MMX5IUz1vcEJv',
+          placeholder: '既然来了就留下点脚印吧✍！',
+          avatar: 'retro',
+          enableQQ: true,
+          visitor: true,
+          recordIP: true
         }
       }
     ],
