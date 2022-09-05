@@ -1,7 +1,7 @@
 <template>
   <aside class="blogger-wrapper card-box">
     <div class="avatar">
-      <img :src="blogger.avatar" alt="头像" title="我好看吗" />
+      <img :src="blogger.avatar" alt="头像" title="" />
     </div>
     <div class="icons" v-if="social && social.icons && social.icons.length">
       <a
@@ -25,7 +25,7 @@
 export default {
   computed: {
     blogger () {
-      return this.$themeConfig.blogger
+      return this.$themeConfig.themeConfig
     },
     social () {
       return this.$themeConfig.social
