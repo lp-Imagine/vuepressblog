@@ -307,8 +307,8 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
       {
         choosen: 'gitalk',
         options: {
-          clientID: '35a18b46313288699430',
-          clientSecret: 'ba60704e44f742ecc1b8dcece399dca01fd3c01b',
+          clientID: 'eb605a36b40216f71095',
+          clientSecret: '12909d6fb59e54849c2c452105021a0f2789f67a',
           repo: 'gitalks_imagine', // GitHub 仓库
           owner: 'lp-Imagine', // GitHub仓库所有者
           admin: ['lp-Imagine'], // 对仓库有写权限的人
