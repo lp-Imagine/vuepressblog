@@ -315,7 +315,8 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
           avatar: 'retro',
           enableQQ: true,
           visitor: true,
-          recordIP: true
+          recordIP: true,
+          path: 'window.location.pathname'
         }
       }
     ],
