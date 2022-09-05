@@ -9,11 +9,11 @@ tagline: WEB前端搬砖日志；积跬步以至千里，积小流以成江海�
 
 features: # 可选的
   - title: WEB前端
-    details: html(5)/css(3)、JavaScript、ES6、Vue框架等前端技术
+    details: JavaScript、ES6、Vue框架等前端技术
     link: /web/ # 可选
     imgUrl: /img/web.png # 可选
-  - title: 阅读
-    details: 书籍罗列
+  - title: UI页面
+    details: html(5)/css(3)页面相关
     link: /ui/
     imgUrl: /img/ui.png
   - title: 技术
@@ -27,7 +27,7 @@ features: # 可选的
 ---
 
 <!-- 小熊猫 -->
-<img src="/img/panda-waving.png" class="panda no-zoom" style="width: 130px;height: 115px;opacity: 0.8;margin-bottom: -4px;padding-bottom:0;position: fixed;bottom: 0;left: 0.5rem;z-index: 1;">
+<!-- <img src="/img/panda-waving.png" class="panda no-zoom" style="width: 130px;height: 115px;opacity: 0.8;margin-bottom: -4px;padding-bottom:0;position: fixed;bottom: 0;left: 0.5rem;z-index: 1;"> -->
 
 <!--
 ## 关于

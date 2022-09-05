@@ -84,18 +84,12 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         link: '/pages/beb6c0bd8a66cea6/',
         items: [
           { text: '网站', link: '/pages/beb6c0bd8a66cea6/' },
-          { text: '资源', link: '/pages/eee83a9211a70f9d/' },
-          { text: 'Vue资源', link: '/pages/12df8ace52d493f6/' },
         ],
       },
       {
         text: '更多',
         link: '/more/',
         items: [
-          { text: '学习', link: '/pages/f2a556/' },
-          { text: '面试', link: '/pages/aea6571b7a8bae86/' },
-          { text: '心情杂货', link: '/pages/2d615df9a36a98ed/' },
-          { text: '实用技巧', link: '/pages/baaa02/' },
           { text: '友情链接', link: '/friends/' },
         ],
       },
@@ -108,7 +102,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
     lastUpdated: '上次更新', // 开启更新时间，并配置前缀文字   string | boolean (取值为git提交时间)
     docsDir: 'docs', // 编辑的文件夹
     // docsBranch: 'master', // 编辑的文件所在分支，默认master。 注意：如果你的分支是main则修改为main
-    editLinks: true, // 启用编辑
+    editLinks: false, // 启用编辑
     editLinkText: '编辑',
 
     //*** 以下是Vdoing主题相关配置，文档：https://doc.xugaoyi.com/pages/a20ce8/ ***//
@@ -168,18 +162,18 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         {
           iconClass: 'icon-youjian',
           title: '发邮件',
-          link: 'mailto:894072666@qq.com',
+          link: 'mailto:luopeng971012@163.com',
         },
         {
           iconClass: 'icon-github',
           title: 'GitHub',
           link: 'https://github.com/lp-Imagine',
         },
-        {
-          iconClass: 'icon-erji',
-          title: '听音乐',
-          link: 'https://music.163.com/#/playlist?id=755597173',
-        },
+        // {
+        //   iconClass: 'icon-erji',
+        //   title: '听音乐',
+        //   link: 'https://music.163.com/#/playlist?id=755597173',
+        // },
       ],
     },
 
@@ -313,11 +307,11 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
       {
         choosen: 'gitalk',
         options: {
-          clientID: 'a6e1355287947096b88b',
-          clientSecret: 'f0e77d070fabfcd5af95bebb82b2d574d7248d71',
-          repo: 'blog-gitalk-comment', // GitHub 仓库
-          owner: 'xugaoyi', // GitHub仓库所有者
-          admin: ['xugaoyi'], // 对仓库有写权限的人
+          clientID: '35a18b46313288699430',
+          clientSecret: 'ba60704e44f742ecc1b8dcece399dca01fd3c01b',
+          repo: 'gitalks_imagine', // GitHub 仓库
+          owner: 'lp-Imagine', // GitHub仓库所有者
+          admin: ['lp-Imagine'], // 对仓库有写权限的人
           // distractionFreeMode: true,
           pagerDirection: 'last', // 'first'正序 | 'last'倒序
           id: '<%- (frontmatter.permalink || frontmatter.to.path).slice(-16) %>', //  页面的唯一标识,长度不能超过50
