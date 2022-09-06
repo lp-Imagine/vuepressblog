@@ -43,9 +43,9 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
           {
             text: '前端框架扩展',
             items: [
-              { text: '《Vue》', link: '/note/vue/' },
-              { text: '《React》', link: '/note/react/' },
-
+              { text: 'Vue', link: '/note/vue/' },
+              { text: 'React', link: '/note/react/' },
+              { text: 'UI组件库', link: '/note/ui/' },
             ],
 
           },
@@ -60,7 +60,14 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         ],
       },
       {
-        text: '目录',
+        text: '计算机基础',
+        link: '/computer/',
+        items: [
+          { text: '浏览器', link: '/pages/browser/' },
+        ],
+      },
+      {
+        text: '索引',
         link: '/archives/',
         items: [
           { text: '分类', link: '/categories/' },
