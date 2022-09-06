@@ -112,7 +112,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
     // archive: false, // 是否打开归档功能，默认true
     // categoryText: '随笔', // 碎片化文章（_posts文件夹的文章）预设生成的分类值，默认'随笔'
 
-    // pageStyle: 'line', // 页面风格，可选值：'card'卡片 | 'line' 线（未设置bodyBgImg时才生效）， 默认'card'。 说明：card时背景显示灰色衬托出卡片样式，line时背景显示纯色，并且部分模块带线条边框
+    pageStyle: 'card', // 页面风格，可选值：'card'卡片 | 'line' 线（未设置bodyBgImg时才生效）， 默认'card'。 说明：card时背景显示灰色衬托出卡片样式，line时背景显示纯色，并且部分模块带线条边框
 
     // bodyBgImg: [
     //   'https://fastly.jsdelivr.net/gh/xugaoyi/image_store/blog/20200507175828.jpeg',
@@ -150,7 +150,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
 
     // 博主信息 (显示在首页侧边栏)
     blogger: {
-      avatar: '/img/avatar.png',
+      avatar: 'https://s1.328888.xyz/2022/09/06/1vqlP.jpg',
       name: 'peng',
       slogan: '平平无奇的web前端开发一枚',
     },
@@ -162,7 +162,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         {
           iconClass: 'icon-youjian',
           title: '发邮件',
-          link: 'mailto:luopeng971012@163.com',
+          link: 'mailto:luopeng101297@163.com',
         },
         {
           iconClass: 'icon-github',
@@ -312,11 +312,11 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
           appId: 'bUg4GxNzlH4VxHlJkUOrVFgi-gzGzoHsz',
           appKey: 'S5wWNdrjV48MMX5IUz1vcEJv',
           placeholder: '既然来了就留下点脚印吧✍！',
-          avatar: 'retro',
+          avatar: 'peng',
           enableQQ: true,
           visitor: true,
           recordIP: true,
-          path: 'window.location.pathname'
+          path: '<%- frontmatter.commentid || frontmatter.permalink %>'
         }
       }
     ],

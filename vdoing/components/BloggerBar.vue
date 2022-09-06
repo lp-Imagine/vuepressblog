@@ -25,6 +25,7 @@
 export default {
   computed: {
     blogger () {
+      console.log(this.$themeConfig.themeConfig,'themeConfig')
       return this.$themeConfig.themeConfig
     },
     social () {
