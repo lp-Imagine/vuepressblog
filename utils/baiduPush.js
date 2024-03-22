@@ -1,5 +1,5 @@
 /**
- * 生成百度链接推送文件
+ * 生成百度链接的推送文件
  */
 const fs = require('fs');
 const path = require('path');
