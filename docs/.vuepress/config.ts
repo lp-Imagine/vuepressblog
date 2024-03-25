@@ -8,7 +8,7 @@ import dayjs from 'dayjs'
 import baiduCode from './config/baiduCode' // 百度统计hm码
 import htmlModules from './config/htmlModules' // 自定义插入的html块
 
-const DOMAIN_NAME = 'xugaoyi.com' // 域名 (不带https)
+const DOMAIN_NAME = 'github.com/lp-Imagine' // 域名 (不带https)
 const WEB_SITE = `https://${DOMAIN_NAME}` // 网址
 
 export default defineConfig4CustomTheme<VdoingThemeConfig>({
@@ -157,7 +157,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
 
     // 博主信息 (显示在首页侧边栏)
     blogger: {
-      avatar: 'https://s1.328888.xyz/2022/09/06/1vqlP.jpg',
+      avatar: 'https://i0.imgs.ovh/2024/03/24/guGRv.jpeg',
       name: 'peng',
       slogan: '平平无奇的web前端开发一枚',
     },
@@ -271,10 +271,10 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
             title: '在Bing中搜索',
             frontUrl: 'https://cn.bing.com/search?q=',
           },
-          {
-            title: '通过百度搜索本站的',
-            frontUrl: `https://www.baidu.com/s?wd=site%3A${DOMAIN_NAME}%20`,
-          },
+          // {
+          //   title: '通过百度搜索本站的',
+          //   frontUrl: `https://www.baidu.com/s?wd=site%3A${DOMAIN_NAME}%20`,
+          // },
         ],
       }
     ],
