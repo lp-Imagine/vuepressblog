@@ -77,9 +77,9 @@ function walk(dir, acc = []) {
 }
 
 function parseFm(raw) {
-  if (!raw.startsWith("---")) return { title: "", date: "", draft: false };
+  if (!raw.startsWith("---")) return { title: "", date: "", draft: false, group: "" };
   const end = raw.indexOf("\n---", 3);
-  if (end < 0) return { title: "", date: "", draft: false };
+  if (end < 0) return { title: "", date: "", draft: false, group: "" };
   const yaml = raw.slice(4, end);
   const get = (key) => {
     const m = yaml.match(new RegExp(`^${key}:\\s*(.+)$`, "m"));
@@ -91,6 +91,7 @@ function parseFm(raw) {
     date: get("date").slice(0, 10),
     draft: get("draft") === "true",
     sourceId: get("sourceId"),
+    group: get("group"),
   };
 }
 
@@ -110,6 +111,7 @@ function collectSection(sectionId) {
       date: fm.date || "1970-01-01",
       link: urlPath,
       rel,
+      group: fm.group || "",
     });
   }
   items.sort((a, b) => (a.date < b.date ? 1 : a.date > b.date ? -1 : 0));
@@ -150,7 +152,10 @@ function groupSidebar(items, sectionId) {
     const parts = item.rel.split("/");
     let groupKey = "misc";
     if (parts[0] === "sync") {
-      groupKey = "sync";
+      // sync/<section>/<group>/<file>.md 或 sync/<section>/<file>.md
+      if (parts.length >= 4) groupKey = parts[2];
+      else if (item.group) groupKey = item.group;
+      else groupKey = "misc";
     } else if (parts.length >= 3) {
       groupKey = parts[1];
     } else if (parts.length === 2) {
@@ -158,7 +163,7 @@ function groupSidebar(items, sectionId) {
     }
 
     const meta = GROUP_META[groupKey] || {
-      label: groupKey === "sync" ? "Draftly 同步" : groupKey,
+      label: GROUP_LABELS[groupKey] || groupKey,
       order: 80,
     };
     const label = meta.label;
@@ -172,7 +177,7 @@ function groupSidebar(items, sectionId) {
     .sort((a, b) => a[1].order - b[1].order || a[0].localeCompare(b[0], "zh"))
     .map(([text, group]) => ({
       text,
-      collapsed: false,
+      collapsed: true,
       items: group.items,
     }));
 }
@@ -209,6 +214,7 @@ ${cards}
 title: ${section.title}
 outline: false
 sidebar: false
+aside: false
 ---
 
 <div class="section-page">
