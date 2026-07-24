@@ -1,53 +1,54 @@
 name: CI
 
-#on: [push]
-
-# 在master分支发生push事件时触发。
 on:
   push:
     branches:
       - master
-      
+      - main
+  repository_dispatch:
+    types: [blog-sync]
+  workflow_dispatch:
+
 permissions:
   contents: write
 
-env: # 设置环境变量
-  TZ: Asia/Shanghai # 时区（设置时区可使页面中的`最近更新时间`使用该时区时间）
+env:
+  TZ: Asia/Shanghai
 
 jobs:
-  build: # 自定义名称
-    runs-on: ubuntu-latest # 运行在虚拟机环境ubuntu-latest
-
-    strategy:
-      matrix:
-        node-version: [14.x]
-
+  build:
+    runs-on: ubuntu-latest
     steps:
-      - name: Checkout # 步骤1
-        uses: actions/checkout@v1 # 使用的动作。格式：userName/repoName。作用：检出仓库，获取源码。 官方actions库：https://github.com/actions
-      - name: Use Node.js ${{ matrix.node-version }} # 步骤2
-        uses: actions/setup-node@v1 # 作用：安装nodejs
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
         with:
-          node-version: ${{ matrix.node-version }} # 版本
-      - name: Build-and-deploy # 步骤3
+          node-version: 20
+          cache: npm
+
+      - name: Install
+        run: npm ci
+
+      - name: Build
+        run: npm run build
+
+      - name: Deploy to gh-pages
         run: |
-          remote_addr=`git remote get-url --push origin`
-          commit_info=`git describe --all --always --long`
-          user_name=`git log -1 --pretty=format:'%an'`
-          user_email=`git log -1 --pretty=format:'%ae'`
+          remote_addr=$(git remote get-url --push origin)
+          commit_info=$(git describe --all --always --long)
+          user_name=$(git log -1 --pretty=format:'%an')
+          user_email=$(git log -1 --pretty=format:'%ae')
           deploy_branch=gh-pages
-          npm install
-          npm run build
-          cd docs/.vuepress/dist
-          git config --global init.defaultBranch $deploy_branch
+          cd website/.vitepress/dist
+          git config --global init.defaultBranch "$deploy_branch"
           git init
-          git config user.name ${user_name}
-          git config user.email ${user_email}
+          git config user.name "$user_name"
+          git config user.email "$user_email"
           git add -A
           git commit -m "auto deploy, $commit_info"
-          remote_addr=`echo $remote_addr | awk -F'://' '{print $2}'`
-          remote_addr=https://${user_name}:${{secrets.BLOG_TOKEN}}@${remote_addr}
-          git remote add origin ${remote_addr}
-          git push origin HEAD:$deploy_branch --force # 推送到 github $deploy_branch 分支
-
-      # 只提交到github pages也可以使用github-pages-deploy-action，详见: https://github.com/JamesIves/github-pages-deploy-action
+          remote_addr=$(echo "$remote_addr" | awk -F'://' '{print $2}')
+          remote_addr="https://${user_name}:${{ secrets.BLOG_TOKEN }}@${remote_addr}"
+          git remote add origin "$remote_addr"
+          git push origin "HEAD:$deploy_branch" --force

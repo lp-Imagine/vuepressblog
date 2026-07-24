@@ -1,0 +1,746 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;600;700&display=swap");
+
+:root {
+  color-scheme: light;
+  --bg: #f5f5f7;
+  --surface: #ffffff;
+  --surface-2: #ebebef;
+  --text: #1d1d1f;
+  --text-2: #6e6e73;
+  --text-3: #8e8e93;
+  --border: #e5e5ea;
+  --border-strong: #d2d2d7;
+  --link: #3451b2;
+  --link-hover: #2a4499;
+  --accent: #3b5bdb;
+  --accent-soft: rgba(59, 91, 219, 0.1);
+  --radius: 8px;
+  --radius-lg: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+  --space-8: 64px;
+  --shadow-sm: 0 1px 2px rgba(15, 23, 42, 0.04);
+  --vp-font-family-base: "Inter", "Noto Sans SC", system-ui, sans-serif;
+  --vp-c-brand-1: var(--link);
+  --vp-c-brand-2: var(--accent);
+  --vp-c-brand-3: #5672cd;
+  --vp-c-brand-soft: var(--accent-soft);
+  --vp-c-bg: var(--bg);
+  --vp-c-bg-soft: var(--surface);
+  --vp-c-bg-mute: var(--surface-2);
+  --vp-c-bg-alt: #eef0f4;
+  --vp-c-divider: var(--border);
+  --vp-c-gutter: var(--border);
+  --vp-c-text-1: var(--text);
+  --vp-c-text-2: var(--text-2);
+  --vp-c-text-3: var(--text-3);
+  --vp-c-code-bg: #eef0f4;
+  --vp-nav-bg-color: rgba(245, 245, 247, 0.82);
+  --vp-sidebar-bg-color: var(--bg);
+  --vp-code-block-bg: #ffffff;
+}
+
+.dark {
+  color-scheme: dark;
+  --bg: #000000;
+  --surface: #1d1d1f;
+  --surface-2: #2d2d2f;
+  --text: #f5f5f7;
+  --text-2: #a1a1a6;
+  --text-3: #86868b;
+  --border: #424245;
+  --border-strong: #525255;
+  --link: #a8b1ff;
+  --link-hover: #c0c6ff;
+  --accent: #5c73e7;
+  --accent-soft: rgba(168, 177, 255, 0.12);
+  --shadow-sm: none;
+  --vp-c-bg-alt: #0a0a0a;
+  --vp-c-code-bg: #2d2d2f;
+  --vp-nav-bg-color: rgba(0, 0, 0, 0.88);
+  --vp-sidebar-bg-color: var(--bg);
+  --vp-code-block-bg: #1d1d1f;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+}
+
+.VPNavBar {
+  backdrop-filter: blur(12px);
+  border-bottom: none !important;
+  background-color: var(--vp-nav-bg-color) !important;
+}
+
+/* 顶栏分割线只出现在内容区，不画进左侧菜单 */
+@media (min-width: 960px) {
+  .VPNavBar.has-sidebar .divider-line {
+    background-color: var(--border);
+  }
+}
+
+.VPNavBarTitle .logo {
+  height: 28px;
+  width: 28px;
+  border-radius: 7px;
+  object-fit: contain;
+}
+
+/* Home: hide default hero/features */
+.VPHome .VPHero,
+.VPHome .VPFeatures {
+  display: none !important;
+}
+
+.VPHome .VPContent {
+  padding-top: 0 !important;
+}
+
+.VPHome .VPContent .content,
+.VPHome .content-container {
+  max-width: 100% !important;
+}
+
+.VPHome .vp-doc.container {
+  max-width: 920px !important;
+}
+
+.VPHome .vp-doc > div {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.home-wrap {
+  max-width: 920px;
+  margin: 0 auto;
+  padding: 56px 24px 80px;
+}
+
+.home-hero {
+  margin-bottom: 40px;
+}
+
+.VPHome .vp-doc .home-headline {
+  margin: 0 0 12px;
+  font-size: clamp(2.4rem, 5vw, 3.25rem);
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+  color: var(--link);
+  border: none;
+}
+
+.VPHome .vp-doc .home-tagline {
+  margin: 0 0 8px;
+  font-size: 1.05rem;
+  font-weight: 500;
+  line-height: 1.5;
+  color: var(--text);
+}
+
+.VPHome .vp-doc .home-sub {
+  margin: 0 0 28px;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--text-3);
+}
+
+.home-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 16px;
+}
+
+.home-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none !important;
+  transition: background 0.15s, color 0.15s, opacity 0.15s;
+}
+
+.home-btn--primary {
+  padding: 10px 18px;
+  border-radius: 999px;
+  background: var(--accent);
+  color: #fff !important;
+}
+
+.home-btn--primary:hover {
+  filter: brightness(1.1);
+}
+
+.home-btn--text {
+  padding: 0;
+  color: var(--text) !important;
+  background: transparent;
+}
+
+.home-btn--text:hover {
+  color: var(--link) !important;
+}
+
+.home-pillars {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  margin-bottom: 48px;
+}
+
+@media (max-width: 640px) {
+  .home-pillars {
+    grid-template-columns: 1fr;
+  }
+}
+
+.home-pillar {
+  display: block;
+  padding: 20px 22px;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  background: var(--surface);
+  box-shadow: var(--shadow-sm);
+  text-decoration: none !important;
+  transition: background 0.15s, border-color 0.15s, box-shadow 0.15s;
+}
+
+.home-pillar:hover {
+  background: var(--surface);
+  border-color: color-mix(in srgb, var(--accent) 35%, var(--border));
+  box-shadow: 0 4px 14px rgba(15, 23, 42, 0.06);
+}
+
+.VPHome .vp-doc .home-pillar-title {
+  margin: 0 0 8px;
+  font-size: 1.05rem;
+  font-weight: 650;
+  color: var(--text);
+  border: none;
+}
+
+.VPHome .vp-doc .home-pillar-desc {
+  margin: 0 0 12px;
+  font-size: 0.9rem;
+  line-height: 1.55;
+  color: var(--text-2);
+}
+
+.VPHome .vp-doc .home-pillar-meta {
+  margin: 0;
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--text-3);
+}
+
+.home-block {
+  margin-bottom: 40px;
+  padding: 24px;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  background: var(--surface);
+  box-shadow: var(--shadow-sm);
+}
+
+.home-block-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+.VPHome .vp-doc .home-block-head h2 {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: 650;
+  border: none;
+  color: var(--text);
+}
+
+.VPHome .vp-doc .home-block-desc {
+  margin: 0 0 18px;
+  font-size: 0.9rem;
+  color: var(--text-2);
+}
+
+.home-more {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--link) !important;
+  text-decoration: none !important;
+}
+
+.home-more:hover {
+  color: var(--link-hover) !important;
+}
+
+.news-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+  margin-top: 16px;
+}
+
+@media (max-width: 640px) {
+  .news-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.news-card {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 16px 18px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--bg);
+  text-decoration: none !important;
+  transition: background 0.15s, border-color 0.15s;
+}
+
+.news-card:hover {
+  background: var(--surface-2);
+  border-color: color-mix(in srgb, var(--accent) 30%, var(--border));
+}
+
+.news-card time {
+  font-size: 12px;
+  color: var(--text-3);
+  font-variant-numeric: tabular-nums;
+}
+
+.VPHome .vp-doc .news-card-title {
+  display: block;
+  margin: 0;
+  font-size: 0.95rem;
+  font-weight: 600;
+  line-height: 1.45;
+  color: var(--text);
+  border: none;
+}
+
+.news-card-action {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--link);
+}
+
+.home-empty {
+  margin: 12px 0 0;
+  color: var(--text-3);
+}
+
+.course-mod {
+  margin-top: 14px;
+  padding: 14px;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  background: var(--bg);
+}
+
+.course-card {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 16px 18px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--surface);
+  text-decoration: none !important;
+  transition: background 0.15s, border-color 0.15s;
+}
+
+.course-card:hover {
+  background: var(--surface);
+  border-color: color-mix(in srgb, var(--accent) 30%, var(--border));
+}
+
+.VPHome .vp-doc .course-mod-label {
+  margin: 0 0 10px;
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--text-3);
+  border: none;
+}
+
+.VPHome .vp-doc .course-card-title {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 650;
+  color: var(--text);
+  border: none;
+}
+
+.VPHome .vp-doc .course-card-desc {
+  margin: 0;
+  font-size: 0.85rem;
+  line-height: 1.5;
+  color: var(--text-2);
+}
+
+.home-layout .VPSidebar,
+.home-layout .VPDocAside {
+  display: none !important;
+}
+
+.home-layout .VPDoc .container {
+  padding-top: 0 !important;
+}
+
+/* Section index pages (栏目目录) */
+.vp-doc .section-page {
+  max-width: 920px;
+}
+
+.vp-doc .section-hero {
+  margin: 0 0 32px;
+  padding: 0 0 8px;
+}
+
+.vp-doc .section-kicker {
+  margin: 0 0 8px;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-3);
+}
+
+.vp-doc .section-title {
+  margin: 0 0 10px !important;
+  font-size: clamp(1.8rem, 4vw, 2.4rem) !important;
+  font-weight: 700 !important;
+  letter-spacing: -0.03em;
+  line-height: 1.15;
+  color: var(--text) !important;
+  border: none !important;
+}
+
+.vp-doc .section-lead {
+  margin: 0 0 8px;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--text-2);
+}
+
+.vp-doc .section-count {
+  margin: 0;
+  font-size: 13px;
+  color: var(--text-3);
+}
+
+.section-index {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.section-group {
+  padding: 16px;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  background: var(--surface);
+  box-shadow: var(--shadow-sm);
+}
+
+.vp-doc .section-group-label {
+  margin: 0 0 12px;
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--text-3);
+  border: none;
+}
+
+.section-card-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+
+@media (max-width: 640px) {
+  .section-card-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.section-card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 16px 18px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--bg);
+  text-decoration: none !important;
+  transition: background 0.15s, border-color 0.15s;
+}
+
+.section-card:hover {
+  background: var(--surface-2);
+  border-color: color-mix(in srgb, var(--accent) 30%, var(--border));
+}
+
+.vp-doc .section-card-title {
+  margin: 0;
+  font-size: 0.95rem;
+  font-weight: 600;
+  line-height: 1.45;
+  color: var(--text);
+  border: none;
+}
+
+.section-card-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  font-size: 12px;
+  color: var(--text-3);
+}
+
+.section-card-meta time {
+  font-variant-numeric: tabular-nums;
+}
+
+.section-card-meta span:last-child {
+  color: var(--link);
+  font-weight: 500;
+}
+
+/* ── Doc pages ── */
+.VPDoc .container {
+  padding: var(--space-6) var(--space-5) var(--space-8);
+}
+
+.VPDoc .content-container {
+  max-width: 42rem;
+}
+
+.vp-doc {
+  font-size: 16px;
+  line-height: 1.75;
+  color: var(--text);
+}
+
+.vp-doc h1 {
+  font-size: clamp(26px, 3.5vw, 32px);
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 1.25;
+  margin: 0 0 12px;
+  padding: 0;
+  border: none;
+  color: var(--text);
+}
+
+.vp-doc .article-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  margin: 0 0 var(--space-6) !important;
+  font-size: 13px;
+  line-height: 1.4;
+  color: var(--text-3);
+}
+
+.vp-doc .article-meta time {
+  color: var(--text-2);
+  font-variant-numeric: tabular-nums;
+}
+
+.vp-doc .article-tag {
+  display: inline-flex;
+  padding: 2px 8px;
+  border-radius: 999px;
+  background: var(--accent-soft);
+  color: var(--link);
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.vp-doc h2 {
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  line-height: 1.35;
+  margin: var(--space-7) 0 var(--space-4);
+  padding-top: var(--space-5);
+  border-top: 1px solid var(--border);
+  color: var(--text);
+}
+
+.vp-doc h2:first-of-type {
+  margin-top: var(--space-5);
+  padding-top: 0;
+  border-top: none;
+}
+
+.vp-doc .article-meta + h2 {
+  margin-top: var(--space-5);
+  padding-top: 0;
+  border-top: none;
+}
+
+/*
+ * Markdown `---` 会渲染成 <hr>，VitePress 默认又给 h2 加 border-top，
+ * 两者叠在一起会出现双分割线。保留一条即可。
+ */
+.vp-doc hr {
+  margin: var(--space-7) 0 0;
+  border: none;
+  border-top: 1px solid var(--border);
+}
+
+.vp-doc hr + h2 {
+  margin-top: var(--space-4) !important;
+  padding-top: 0 !important;
+  border-top: none !important;
+}
+
+.vp-doc h3 {
+  font-size: 17px;
+  font-weight: 600;
+  margin: var(--space-6) 0 var(--space-3);
+  color: var(--text);
+  border: none;
+}
+
+.vp-doc p {
+  margin: 0 0 var(--space-4);
+}
+
+.vp-doc :not(pre) > code {
+  padding: 0.15em 0.4em;
+  border-radius: 5px;
+  background: var(--surface-2);
+  color: var(--text);
+  font-size: 0.9em;
+}
+
+.vp-doc div[class*="language-"] {
+  margin: 0 0 var(--space-5);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  background: var(--surface) !important;
+}
+
+.vp-doc blockquote {
+  margin: 0 0 var(--space-5);
+  padding: 12px 16px;
+  border-left: 3px solid var(--accent);
+  border-radius: 0 var(--radius) var(--radius) 0;
+  background: var(--accent-soft);
+  color: var(--text-2);
+}
+
+.vp-doc blockquote p {
+  margin: 0;
+}
+
+.VPDocAside .outline-title {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-2);
+}
+
+.VPDocAside .outline-link {
+  font-size: 14px !important;
+  line-height: 1.45 !important;
+  padding: 5px 0 !important;
+}
+
+.VPDocAside .outline-link.active {
+  color: var(--link) !important;
+  font-weight: 600;
+}
+
+/* Sidebar: remove all group dividers */
+.VPSidebar .group,
+.VPSidebar .group + .group,
+.VPSidebarNav .group,
+.VPSidebarNav .group + .group {
+  border-top: none !important;
+  border-bottom: none !important;
+  box-shadow: none !important;
+}
+
+.VPSidebar .group {
+  padding-top: 4px !important;
+  margin-top: 0 !important;
+}
+
+.VPSidebar .group + .group {
+  padding-top: 2px !important;
+}
+
+.VPSidebarItem.level-0 {
+  padding-bottom: 4px;
+}
+
+.VPSidebarItem.level-0 .item .text {
+  font-size: 12px !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.02em;
+  color: var(--text-3) !important;
+}
+
+.VPSidebarItem.level-1 .item .text {
+  font-size: 14px !important;
+  font-weight: 500 !important;
+  line-height: 1.45 !important;
+  color: var(--text-2) !important;
+}
+
+.VPSidebarItem.level-1.is-active > .item .text,
+.VPSidebarItem.level-1.is-active > .item .link > .text {
+  color: var(--link) !important;
+  font-weight: 600 !important;
+}
+
+.VPSidebarItem.level-0 .items {
+  padding-left: 0 !important;
+}
+
+/* Dark keeps flatter cards; light relies on border + soft shadow */
+.dark .home-pillar,
+.dark .home-block,
+.dark .section-group {
+  box-shadow: none;
+}
+
+.dark .home-pillar:hover {
+  background: var(--surface-2);
+  box-shadow: none;
+}
+
+.dark .news-card:hover,
+.dark .course-card:hover,
+.dark .section-card:hover {
+  background: var(--surface-2);
+}
+
+.VPLocalNav,
+.VPDocFooter {
+  background-color: transparent !important;
+}
+
+html:not(.dark) .VPSidebar {
+  border-right-color: var(--border) !important;
+}
+
+html:not(.dark) .vp-doc :not(pre) > code {
+  background: var(--surface-2);
+  color: #3b3b45;
+}
+
+html:not(.dark) .home-btn--primary:hover {
+  filter: none;
+  background: var(--link-hover);
+}
