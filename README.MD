@@ -29,4 +29,4 @@ npm run build:home    # 仅重建首页与侧栏
 
 ## 部署
 
-Push `master`/`main`，或发送 `repository_dispatch`（`blog-sync`）触发 GitHub Actions，发布到 `gh-pages`。需配置仓库 Secret `BLOG_TOKEN`。
+Push `master`/`main`，或发送 `repository_dispatch`（`blog-sync`）触发 GitHub Actions，发布到 `gh-pages`（使用内置 `GITHUB_TOKEN`，无需额外 Secret）。

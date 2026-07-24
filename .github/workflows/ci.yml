@@ -35,12 +35,14 @@ jobs:
         run: npm run build
 
       - name: Deploy to gh-pages
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          remote_addr=$(git remote get-url --push origin)
           commit_info=$(git describe --all --always --long)
           user_name=$(git log -1 --pretty=format:'%an')
           user_email=$(git log -1 --pretty=format:'%ae')
           deploy_branch=gh-pages
+          repo_url="https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
           cd website/.vitepress/dist
           git config --global init.defaultBranch "$deploy_branch"
           git init
@@ -48,7 +50,5 @@ jobs:
           git config user.email "$user_email"
           git add -A
           git commit -m "auto deploy, $commit_info"
-          remote_addr=$(echo "$remote_addr" | awk -F'://' '{print $2}')
-          remote_addr="https://${user_name}:${{ secrets.BLOG_TOKEN }}@${remote_addr}"
-          git remote add origin "$remote_addr"
+          git remote add origin "$repo_url"
           git push origin "HEAD:$deploy_branch" --force
