@@ -6,12 +6,19 @@
 
 | 类型 | 路径 |
 |------|------|
-| 正文 | `website/sync/<section>/<slug>.md` |
+| 正文 | `website/sync/<section>/<group>/<slug>.md` |
 | 图片 | `website/public/sync/<sourceId>/...` |
 
 `section` 枚举：`web` | `ui` | `tech` | `computer` | `misc`
 
-建议 `slug` 使用 `sourceId` 或 `sourceId-短标题`，保证同一篇文章 upsert 覆盖同一文件。
+`group` 与侧栏分组对齐，例如：
+
+- `web`：`javascript` / `vue` / `react` / `ui-lib` / `misc`
+- `ui`：`html` / `css` / `misc`
+- `tech`：`docs` / `github` / `nodejs` / `bookmarks` / `misc`
+- `computer`：`browser` / `misc`
+
+建议 `slug` 使用 `sourceId`，保证同一篇文章 upsert 覆盖同一文件。
 
 ## Frontmatter
 
@@ -23,16 +30,18 @@ summary: 一句话摘要
 tags:
   - JavaScript
 section: web
+group: javascript
 source: ai-article
 sourceId: clxxxxxxxx          # Article.id，幂等主键
 cover: /sync/clxxxxxxxx/cover.jpg
 draft: false
 ---
 
-正文使用 **Markdown**。
+正文使用 **Markdown**（代码块用 fenced ```）。
 ```
 
-必填：`title`、`date`、`section`、`source`（必须为 `ai-article`）、`sourceId`。
+必填：`title`、`date`、`section`、`source`（必须为 `ai-article`）、`sourceId`。  
+推荐：`group`（写入路径与侧栏分类）。
 
 ## 触发重建
 
