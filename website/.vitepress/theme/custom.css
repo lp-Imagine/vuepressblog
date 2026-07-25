@@ -21,6 +21,7 @@
   --space-6: 32px;
   --space-7: 48px;
   --space-8: 64px;
+  --page-max-width: 1440px;
   --shadow-sm: 0 1px 2px rgba(15, 23, 42, 0.04);
   --vp-font-family-base: "Inter", "Noto Sans SC", system-ui, sans-serif;
   --vp-c-brand-1: var(--link);
@@ -72,12 +73,32 @@ body {
   backdrop-filter: blur(12px);
   border-bottom: none !important;
   background-color: var(--vp-nav-bg-color) !important;
+  /* 一条贯通细线，避免侧栏/内容区接缝隔断 */
+  box-shadow: 0 1px 0 color-mix(in srgb, var(--border) 42%, transparent);
 }
 
-/* 顶栏分割线只出现在内容区，不画进左侧菜单 */
+/* 关掉 VitePress 默认分段分割线（侧栏下 + 内容区各画一段会断） */
+.VPNavBar .divider,
+.VPNavBar .divider-line,
+.VPNavBar:not(.home) .divider-line,
+.VPNavBar:not(.home.top) .divider-line {
+  display: none !important;
+  background: transparent !important;
+}
+
 @media (min-width: 960px) {
-  .VPNavBar.has-sidebar .divider-line {
-    background-color: var(--border);
+  .VPNavBar.has-sidebar .divider {
+    padding-left: 0 !important;
+  }
+
+  .VPNavBarTitle.has-sidebar .title {
+    border-bottom-color: transparent !important;
+  }
+}
+
+@media (min-width: 1440px) {
+  .VPNavBar.has-sidebar .divider {
+    padding-left: 0 !important;
   }
 }
 
@@ -103,8 +124,14 @@ body {
   max-width: 100% !important;
 }
 
+/* 与栏目页共用同一内容宽度：max --page-max-width，左右 24px */
 .VPHome .vp-doc.container {
-  max-width: 920px !important;
+  max-width: var(--page-max-width) !important;
+  width: 100% !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  padding-left: 24px !important;
+  padding-right: 24px !important;
 }
 
 .VPHome .vp-doc > div {
@@ -113,9 +140,9 @@ body {
 }
 
 .home-wrap {
-  max-width: 920px;
-  margin: 0 auto;
-  padding: 56px 24px 80px;
+  max-width: 100%;
+  margin: 0;
+  padding: 56px 0 80px;
 }
 
 .home-hero {
@@ -190,6 +217,12 @@ body {
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 12px;
   margin-bottom: 48px;
+}
+
+@media (min-width: 960px) {
+  .home-pillars {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
 }
 
 @media (max-width: 640px) {
@@ -284,6 +317,12 @@ body {
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 10px;
   margin-top: 16px;
+}
+
+@media (min-width: 960px) {
+  .news-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
 }
 
 @media (max-width: 640px) {
@@ -393,9 +432,50 @@ body {
   padding-top: 0 !important;
 }
 
-/* Section index pages (栏目目录) */
+/* Section index pages (栏目目录)
+ * 与首页同一内容宽度：max --page-max-width，左右 24px，水平居中 */
+.VPDoc:has(.section-page) .aside {
+  display: none !important;
+}
+
+.VPDoc:has(.section-page) .content-container {
+  max-width: 100% !important;
+}
+
 .vp-doc .section-page {
-  max-width: 920px;
+  max-width: 100%;
+}
+
+@media (min-width: 768px) {
+  .VPDoc:has(.section-page) {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+}
+
+@media (min-width: 960px) {
+  .VPDoc:has(.section-page) {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  .VPDoc:has(.section-page) .container {
+    display: block !important;
+    max-width: var(--page-max-width) !important;
+    width: 100% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding-left: 24px !important;
+    padding-right: 24px !important;
+  }
+
+  .VPDoc:has(.section-page) .content {
+    max-width: 100% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
 }
 
 .vp-doc .section-hero {
@@ -461,6 +541,18 @@ body {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 10px;
+}
+
+@media (min-width: 960px) {
+  .section-card-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1280px) {
+  .section-card-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
 }
 
 @media (max-width: 640px) {
@@ -661,6 +753,24 @@ body {
   font-weight: 600;
 }
 
+/* 章节索引：去掉满高竖轨，只保留当前章节指示条 */
+.VPDocAsideOutline .content {
+  border-left: none !important;
+  padding-left: 12px !important;
+}
+
+.VPDocAsideOutline .outline-marker {
+  left: 0 !important;
+  width: 2px !important;
+  border-radius: 999px !important;
+  background-color: var(--link) !important;
+}
+
+/* 左侧边栏：去掉竖分割线，靠留白区分，避免和顶栏形成 T 字接缝 */
+.VPSidebar {
+  border-right: none !important;
+}
+
 /* Sidebar: remove all group dividers */
 .VPSidebar .group,
 .VPSidebar .group + .group,
@@ -732,7 +842,7 @@ body {
 }
 
 html:not(.dark) .VPSidebar {
-  border-right-color: var(--border) !important;
+  border-right: none !important;
 }
 
 html:not(.dark) .vp-doc :not(pre) > code {

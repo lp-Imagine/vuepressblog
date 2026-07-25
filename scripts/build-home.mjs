@@ -339,16 +339,22 @@ function main() {
     const items = collectSection(section.id);
     allBySection[section.id] = items;
     writeSectionIndex(section, items);
-    sidebar[`/${section.id}/`] = groupSidebar(items, section.id);
+    const groups = groupSidebar(items, section.id);
+    sidebar[`/${section.id}/`] = groups;
+    // 旧 sync 路径文章也能挂上同栏目侧栏
+    sidebar[`/sync/${section.id}/`] = groups;
   }
 
-  // also include sync/misc
+  // also include sync/misc into web stats
   const misc = collectSection("misc");
   if (misc.length) {
     allBySection.web = [...(allBySection.web || []), ...misc].sort((a, b) =>
       a.date < b.date ? 1 : -1,
     );
   }
+
+  // Draftly 稿：扫描 website/*/ 下带 source: ai-article 的已由 collectSection 覆盖；
+  // 另扫 sync/ 兼容旧路径（collectSection 已含 sync/<section>）
 
   fs.writeFileSync(
     path.join(siteRoot, ".vitepress", "sidebar.generated.mjs"),

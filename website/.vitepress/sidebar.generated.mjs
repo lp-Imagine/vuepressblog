@@ -3,8 +3,12 @@ export default {
   "/web/": [
     {
       "text": "JavaScript",
-      "collapsed": false,
+      "collapsed": true,
       "items": [
+        {
+          "text": "js if/else语句优化策略",
+          "link": "/sync/web/javascript/cmrxngdq9000zpzulezqj56nc"
+        },
         {
           "text": "Axios 封装",
           "link": "/web/javascript/Axios封装"
@@ -89,7 +93,7 @@ export default {
     },
     {
       "text": "Vue",
-      "collapsed": false,
+      "collapsed": true,
       "items": [
         {
           "text": "NProgress为页面/接口添加加载进度条",
@@ -103,7 +107,7 @@ export default {
     },
     {
       "text": "React",
-      "collapsed": false,
+      "collapsed": true,
       "items": [
         {
           "text": "React(一)：核心概念",
@@ -113,7 +117,141 @@ export default {
     },
     {
       "text": "UI 组件",
-      "collapsed": false,
+      "collapsed": true,
+      "items": [
+        {
+          "text": "Element-UI问题清单",
+          "link": "/web/ui-lib/Element-UI问题清单"
+        },
+        {
+          "text": "el-form表单封装",
+          "link": "/web/ui-lib/el-form表单封装"
+        },
+        {
+          "text": "解决element表格数据量过大导致页面渲染缓慢、卡顿问题",
+          "link": "/web/ui-lib/解决element表格数据量过大导致页面渲染缓慢、卡顿问题"
+        }
+      ]
+    }
+  ],
+  "/sync/web/": [
+    {
+      "text": "JavaScript",
+      "collapsed": true,
+      "items": [
+        {
+          "text": "js if/else语句优化策略",
+          "link": "/sync/web/javascript/cmrxngdq9000zpzulezqj56nc"
+        },
+        {
+          "text": "Axios 封装",
+          "link": "/web/javascript/Axios封装"
+        },
+        {
+          "text": "ES6-ES12 特性",
+          "link": "/web/javascript/ES6-ES12特性"
+        },
+        {
+          "text": "Promise(三)：拓展方法实现",
+          "link": "/web/javascript/Promise拓展方法实现"
+        },
+        {
+          "text": "Promise(一)：Promise 认识",
+          "link": "/web/javascript/Promise认识"
+        },
+        {
+          "text": "async/await",
+          "link": "/web/javascript/async&await"
+        },
+        {
+          "text": "JS forEach踩坑",
+          "link": "/web/javascript/forEach踩坑"
+        },
+        {
+          "text": "js if/else 语句优化策略",
+          "link": "/web/javascript/if-else语句优化策略"
+        },
+        {
+          "text": "js笛卡尔积",
+          "link": "/web/javascript/js笛卡尔积"
+        },
+        {
+          "text": "前端路由实现",
+          "link": "/web/javascript/前端路由实现"
+        },
+        {
+          "text": "js对象排序",
+          "link": "/web/javascript/对象排序"
+        },
+        {
+          "text": "Promise(二)：手动实现一个 Promise",
+          "link": "/web/javascript/手动实现一个Promise"
+        },
+        {
+          "text": "JavaScript 数组去重",
+          "link": "/web/javascript/数组去重"
+        },
+        {
+          "text": "正则表达式校验",
+          "link": "/web/javascript/正则表达式校验"
+        },
+        {
+          "text": "js深拷贝",
+          "link": "/web/javascript/深拷贝"
+        },
+        {
+          "text": "JS合并数组对象中key值相同的数据",
+          "link": "/web/javascript/JS合并数组对象中key值相同的数据"
+        },
+        {
+          "text": "JS声明提升",
+          "link": "/web/javascript/JS声明提升"
+        },
+        {
+          "text": "JS循环遍历方法",
+          "link": "/web/javascript/JS循环遍历方法"
+        },
+        {
+          "text": "javascript 之 this 指向问题",
+          "link": "/web/javascript/this指向问题"
+        },
+        {
+          "text": "前端常用公共方法工具类",
+          "link": "/web/javascript/前端常用公共方法工具类"
+        },
+        {
+          "text": "数组对象求和",
+          "link": "/web/javascript/数组对象求和"
+        }
+      ]
+    },
+    {
+      "text": "Vue",
+      "collapsed": true,
+      "items": [
+        {
+          "text": "NProgress为页面/接口添加加载进度条",
+          "link": "/web/vue/使用-NProgress为页面或接口添加加载进度条"
+        },
+        {
+          "text": "Vue组件常用选项",
+          "link": "/web/vue/Vue组件常用选项"
+        }
+      ]
+    },
+    {
+      "text": "React",
+      "collapsed": true,
+      "items": [
+        {
+          "text": "React(一)：核心概念",
+          "link": "/web/react/核心概念"
+        }
+      ]
+    },
+    {
+      "text": "UI 组件",
+      "collapsed": true,
       "items": [
         {
           "text": "Element-UI问题清单",
@@ -133,7 +271,7 @@ export default {
   "/ui/": [
     {
       "text": "HTML",
-      "collapsed": false,
+      "collapsed": true,
       "items": [
         {
           "text": "常用meta整理",
@@ -143,7 +281,93 @@ export default {
     },
     {
       "text": "CSS",
-      "collapsed": false,
+      "collapsed": true,
+      "items": [
+        {
+          "text": "常用的一些CSS样式",
+          "link": "/ui/css/常用的一些CSS样式"
+        },
+        {
+          "text": "CSS给table的tbody添加滚动条",
+          "link": "/ui/css/CSS给table的tbody添加滚动条"
+        },
+        {
+          "text": "CSS教程和技巧收藏",
+          "link": "/ui/css/CSS教程和技巧收藏"
+        },
+        {
+          "text": "「css技巧」使用hover和attr()定制悬浮提示",
+          "link": "/ui/css/css技巧使用hover和attr()定制悬浮提示"
+        },
+        {
+          "text": "如何根据系统主题自动响应CSS深色模式",
+          "link": "/ui/css/如何根据系统主题自动响应CSS深色模式"
+        },
+        {
+          "text": "css水平垂直居中",
+          "link": "/ui/css/水平垂直居中的几种方式"
+        },
+        {
+          "text": "从box-sizing属性入手，了解盒子模型",
+          "link": "/ui/css/从box-sizing属性入手，了解盒子模型"
+        },
+        {
+          "text": "文字在一行或多行时超出显示省略号",
+          "link": "/ui/css/文字在一行或多行时超出显示省略号"
+        },
+        {
+          "text": "「布局技巧」图片未加载前自动撑开元素高度",
+          "link": "/ui/css/布局技巧图片未加载前自动撑开元素高度"
+        },
+        {
+          "text": "CSS3之animation动画",
+          "link": "/ui/css/CSS3之animation动画"
+        },
+        {
+          "text": "CSS3之transition过渡",
+          "link": "/ui/css/CSS3之transition过渡"
+        },
+        {
+          "text": "flex布局案例-圣杯布局",
+          "link": "/ui/css/flex布局案例-圣杯布局"
+        },
+        {
+          "text": "flex布局案例-基础",
+          "link": "/ui/css/flex布局案例-基础"
+        },
+        {
+          "text": "flex布局案例-网格布局",
+          "link": "/ui/css/flex布局案例-网格布局"
+        },
+        {
+          "text": "flex布局案例-输入框布局",
+          "link": "/ui/css/flex布局案例-输入框布局"
+        },
+        {
+          "text": "flex布局案例-骰子",
+          "link": "/ui/css/flex布局案例-骰子"
+        },
+        {
+          "text": "flex布局语法",
+          "link": "/ui/css/flex布局语法"
+        }
+      ]
+    }
+  ],
+  "/sync/ui/": [
+    {
+      "text": "HTML",
+      "collapsed": true,
+      "items": [
+        {
+          "text": "常用meta整理",
+          "link": "/ui/html/常用meta整理"
+        }
+      ]
+    },
+    {
+      "text": "CSS",
+      "collapsed": true,
       "items": [
         {
           "text": "常用的一些CSS样式",
@@ -219,7 +443,7 @@ export default {
   "/tech/": [
     {
       "text": "常用文档",
-      "collapsed": false,
+      "collapsed": true,
       "items": [
         {
           "text": "Git命令",
@@ -257,7 +481,7 @@ export default {
     },
     {
       "text": "GitHub",
-      "collapsed": false,
+      "collapsed": true,
       "items": [
         {
           "text": "GitHub精选资源",
@@ -275,7 +499,75 @@ export default {
     },
     {
       "text": "Node.js",
-      "collapsed": false,
+      "collapsed": true,
+      "items": [
+        {
+          "text": "nodejs递归读取所有文件",
+          "link": "/tech/nodejs/nodejs递归读取所有文件"
+        }
+      ]
+    }
+  ],
+  "/sync/tech/": [
+    {
+      "text": "常用文档",
+      "collapsed": true,
+      "items": [
+        {
+          "text": "Git命令",
+          "link": "/tech/docs/Git命令"
+        },
+        {
+          "text": "MySQL数据库常用操作",
+          "link": "/tech/docs/MySQL数据库常用操作"
+        },
+        {
+          "text": "Git修改分支名",
+          "link": "/tech/docs/Git修改分支名"
+        },
+        {
+          "text": "npm常用命令",
+          "link": "/tech/docs/npm常用命令"
+        },
+        {
+          "text": "yaml语言教程",
+          "link": "/tech/docs/yaml语言教程"
+        },
+        {
+          "text": "Git使用手册",
+          "link": "/tech/docs/Git使用手册"
+        },
+        {
+          "text": "Markdown使用教程",
+          "link": "/tech/docs/Markdown使用教程"
+        },
+        {
+          "text": "npm packageJson属性详解",
+          "link": "/tech/docs/npm-packageJson属性详解"
+        }
+      ]
+    },
+    {
+      "text": "GitHub",
+      "collapsed": true,
+      "items": [
+        {
+          "text": "GitHub精选资源",
+          "link": "/tech/github/github精选资源"
+        },
+        {
+          "text": "GitHub高级搜索技巧",
+          "link": "/tech/github/GitHub高级搜索技巧"
+        },
+        {
+          "text": "GitHub加速下载项目的方法",
+          "link": "/tech/github/GitHub加速下载项目的方法"
+        }
+      ]
+    },
+    {
+      "text": "Node.js",
+      "collapsed": true,
       "items": [
         {
           "text": "nodejs递归读取所有文件",
@@ -287,7 +579,23 @@ export default {
   "/computer/": [
     {
       "text": "浏览器",
-      "collapsed": false,
+      "collapsed": true,
+      "items": [
+        {
+          "text": "Chrome Extension（扩展程序）开发",
+          "link": "/computer/browser/Chrome-Extension（扩展程序）开发"
+        },
+        {
+          "text": "浏览器渲染过程简介",
+          "link": "/computer/browser/浏览器渲染过程简介"
+        }
+      ]
+    }
+  ],
+  "/sync/computer/": [
+    {
+      "text": "浏览器",
+      "collapsed": true,
       "items": [
         {
           "text": "Chrome Extension（扩展程序）开发",

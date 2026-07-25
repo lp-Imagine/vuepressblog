@@ -2,6 +2,7 @@
 title: JS & 框架
 outline: false
 sidebar: false
+aside: false
 ---
 
 <div class="section-page">
@@ -9,13 +10,17 @@ sidebar: false
     <p class="section-kicker">栏目</p>
     <h1 class="section-title">JS & 框架</h1>
     <p class="section-lead">JavaScript 基础、Vue / React、UI 组件实践</p>
-    <p class="section-count">共 26 篇笔记</p>
+    <p class="section-count">共 27 篇笔记</p>
   </header>
 
   <div class="section-index">
   <div class="section-group">
-    <p class="section-group-label">JavaScript · 20 篇</p>
+    <p class="section-group-label">JavaScript · 21 篇</p>
     <div class="section-card-grid">
+    <a class="section-card" href="/vuepressblog/sync/web/javascript/cmrxngdq9000zpzulezqj56nc">
+      <span class="section-card-title">js if/else语句优化策略</span>
+      <span class="section-card-meta"><time datetime="2026-07-23">2026-07-23</time><span>阅读全文</span></span>
+    </a>
     <a class="section-card" href="/vuepressblog/web/javascript/Axios封装">
       <span class="section-card-title">Axios 封装</span>
       <span class="section-card-meta"><time datetime="2022-09-06">2022-09-06</time><span>阅读全文</span></span>

@@ -2,6 +2,7 @@
 title: 浏览器
 outline: false
 sidebar: false
+aside: false
 ---
 
 <div class="section-page">

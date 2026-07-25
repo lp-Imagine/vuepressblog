@@ -6,7 +6,7 @@
 
 | 类型 | 路径 |
 |------|------|
-| 正文 | `website/sync/<section>/<group>/<slug>.md` |
+| 正文 | `website/<section>/<group>/<slug>.md`（与手写笔记同目录，才能挂上对应侧栏） |
 | 图片 | `website/public/sync/<sourceId>/...` |
 
 `section` 枚举：`web` | `ui` | `tech` | `computer` | `misc`
@@ -19,6 +19,8 @@
 - `computer`：`browser` / `misc`
 
 建议 `slug` 使用 `sourceId`，保证同一篇文章 upsert 覆盖同一文件。
+
+> 兼容：历史稿若仍在 `website/sync/<section>/...`，构建时也会并入对应栏目侧栏。
 
 ## Frontmatter
 
@@ -37,11 +39,15 @@ cover: /sync/clxxxxxxxx/cover.jpg
 draft: false
 ---
 
+# 文章标题
+
+<p class="article-meta">...</p>
+
 正文使用 **Markdown**（代码块用 fenced ```）。
 ```
 
 必填：`title`、`date`、`section`、`source`（必须为 `ai-article`）、`sourceId`。  
-推荐：`group`（写入路径与侧栏分类）。
+推荐：`group`（决定子目录与侧栏分类）。
 
 ## 触发重建
 

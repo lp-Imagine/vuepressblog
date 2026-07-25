@@ -2,6 +2,7 @@
 title: 工具备忘
 outline: false
 sidebar: false
+aside: false
 ---
 
 <div class="section-page">
