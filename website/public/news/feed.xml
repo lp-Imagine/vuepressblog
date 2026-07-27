@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="feed.xsl"?>
 <rss version="2.0">
   <channel>
     <title>Penn Notes · AI 动态</title>
     <link>https://lp-imagine.github.io/vuepressblog/news/</link>
     <description>每日 AI 与前端精选动态 —— Penn Notes</description>
     <language>zh-CN</language>
-    <lastBuildDate>Mon, 27 Jul 2026 09:07:43 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 27 Jul 2026 09:13:49 GMT</lastBuildDate>
     <generator>Penn Notes news feed</generator>
 
   </channel>
