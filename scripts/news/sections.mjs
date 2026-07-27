@@ -114,6 +114,57 @@ export function renderDailyMarkdown(reportDate, bySection) {
   return `${parts.join("\n").trimEnd()}\n`;
 }
 
+/**
+ * @param {string} weekStart YYYY-MM-DD
+ * @param {string} weekEnd YYYY-MM-DD
+ */
+export function renderWeeklyMarkdown(weekStart, weekEnd, bySection) {
+  const parts = [
+    "---",
+    `title: AI 动态周报 · ${weekStart} ~ ${weekEnd}`,
+    `date: ${weekEnd}`,
+    "outline: [2, 3]",
+    "---",
+    "",
+    `# AI 动态周报 · ${weekStart} ~ ${weekEnd}`,
+    "",
+    `> 本周精选。业界 · 产品 · 模型 · 开源 · 开发者工具 · 前端。`,
+    "",
+  ];
+
+  for (const name of NEWS_SECTIONS) {
+    const items = bySection[name] || [];
+    parts.push(`<div class="news-section" data-section="${name}">`, "");
+    parts.push(`## ${name}`, "");
+    if (!items.length) {
+      parts.push("（本周无新条目）", "");
+      parts.push("</div>", "");
+      continue;
+    }
+    for (const item of items) {
+      const date = item.date || weekEnd;
+      const title = escapeMdHeading(item.title);
+      const source = escapeMd(item.sourceName);
+      parts.push(`### ${title}`, "");
+      parts.push(
+        `<p class="news-entry-meta"><span class="news-source-tag">${source}</span><time datetime="${date}">${date}</time></p>`,
+        "",
+      );
+      if (item.image) {
+        parts.push(`![配图](${item.image})`, "");
+      }
+      parts.push(String(item.summary || "").trim(), "");
+      parts.push(
+        `<p class="news-entry-source"><a href="${item.url}" target="_blank" rel="noopener noreferrer">阅读原文</a></p>`,
+        "",
+      );
+    }
+    parts.push("</div>", "");
+  }
+
+  return `${parts.join("\n").trimEnd()}\n`;
+}
+
 function escapeMdHeading(s) {
   return String(s || "")
     .replace(/\r?\n/g, " ")
@@ -154,4 +205,20 @@ export function dateWindow(targetDate, lookbackDays = 3) {
     set.add(cur.toISOString().slice(0, 10));
   }
   return set;
+}
+
+/** @param {string} endDate YYYY-MM-DD @param {number} days inclusive span */
+export function dateRangeEnd(endDate, days = 7) {
+  const [y, m, d] = endDate.split("-").map(Number);
+  const end = new Date(Date.UTC(y, m - 1, d));
+  const dates = [];
+  for (let i = days - 1; i >= 0; i--) {
+    dates.push(new Date(end.getTime() - i * 864e5).toISOString().slice(0, 10));
+  }
+  return dates;
+}
+
+export function isSunday(dateStr) {
+  const [y, m, d] = dateStr.split("-").map(Number);
+  return new Date(Date.UTC(y, m - 1, d)).getUTCDay() === 0;
 }

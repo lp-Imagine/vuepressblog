@@ -30,6 +30,22 @@ export function parseDigestMarkdown(content, digestMeta = {}) {
       );
       const imageMatch = entry.match(/!\[[^\]]*\]\(([^)]+)\)/);
       const dateMatch = entry.match(/datetime="(\d{4}-\d{2}-\d{2})"/);
+      const summaryMatch =
+        entry.match(
+          /!\[[^\]]*\]\([^)]+\)\n\n([\s\S]*?)\n\n<p class="news-entry-source">/,
+        ) ||
+        entry.match(
+          /<\/p>\n\n([\s\S]*?)\n\n<p class="news-entry-source">/,
+        ) ||
+        entry.match(/\*\*来源：\*\*[\s\S]*$/m);
+
+      let summary = "";
+      if (summaryMatch?.[1]) {
+        summary = summaryMatch[1]
+          .replace(/\*\*来源：\*\*.+$/m, "")
+          .trim()
+          .slice(0, 280);
+      }
 
       items.push({
         title,
@@ -37,6 +53,7 @@ export function parseDigestMarkdown(content, digestMeta = {}) {
         sourceName: sourceMatch?.[1]?.trim() || "",
         sourceUrl: sourceUrlMatch?.[1]?.trim() || sourceMatch?.[2]?.trim() || "",
         image: imageMatch?.[1] || "",
+        summary,
         itemDate: dateMatch?.[1] || date,
         digestDate: date,
         digestSlug: slug,

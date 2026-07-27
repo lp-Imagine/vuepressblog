@@ -53,11 +53,27 @@ jobs:
           fi
           node scripts/generate-daily-news.mjs "${ARGS[@]}"
 
+      - name: Generate weekly digest (Sunday)
+        run: |
+          DOW=$(TZ=Asia/Shanghai date +%u)
+          if [ "$DOW" = "7" ]; then
+            node scripts/generate-weekly-news.mjs --force || true
+          else
+            echo "Not Sunday, skip weekly"
+          fi
+
+      - name: Sync to website
+        run: npm run sync:news && npm run build:home
+
       - name: Commit and push
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add news website/public/news || true
+          git add news website/public/news website/news \
+            website/.vitepress/news-recent.generated.json \
+            website/.vitepress/news-items.generated.json \
+            website/.vitepress/sidebar.news.generated.mjs \
+            website/index.md || true
           if git diff --cached --quiet; then
             echo "No news changes to commit"
             exit 0

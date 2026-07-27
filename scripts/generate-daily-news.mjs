@@ -103,6 +103,33 @@ async function main() {
   }
 
   if (items.length) saveSeen();
+
+  const sectionCounts = Object.fromEntries(
+    Object.entries(bySection).map(([k, v]) => [k, v.length]),
+  );
+  const report = {
+    at: new Date().toISOString(),
+    type: "daily",
+    date: reportDate,
+    candidates: items.length,
+    editorial: total,
+    sections: sectionCounts,
+    rss: {
+      ok: successes?.length ?? 0,
+      failed: failures?.length ?? 0,
+      failures: (failures || []).map((f) => ({ name: f.name, error: f.error })),
+    },
+    output: path.relative(root, outFile),
+  };
+  const stateDir = path.join(root, "news/.state");
+  fs.mkdirSync(stateDir, { recursive: true });
+  fs.writeFileSync(
+    path.join(stateDir, "last-run.json"),
+    JSON.stringify(report, null, 2) + "\n",
+    "utf8",
+  );
+  console.log("Quality report:", JSON.stringify({ editorial: total, sections: sectionCounts }));
+
   console.log("Done.");
 }
 

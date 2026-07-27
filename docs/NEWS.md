@@ -78,9 +78,33 @@ node scripts/generate-daily-news.mjs --date=2026-07-26 --force
 # 仅补配图
 npm run news:images
 
+# 生成本周周报（汇总近 7 天日报，不调 LLM）
+npm run news:weekly
+
 # 同步到 website 并预览
 npm run sync:news && npm run build:home && npm run dev
 ```
+
+## RSS 订阅
+
+AI 动态提供 RSS，地址：
+
+`https://lp-imagine.github.io/vuepressblog/news/feed.xml`
+
+本地构建后由 `npm run sync:news` 自动生成 `website/public/news/feed.xml`。可用 Feedly、Follow 等阅读器订阅。
+
+## 周报
+
+每周日 workflow 会自动汇总近 7 天日报生成周报（`ai-news-week-YYYY-MM-DD.md`），每栏目最多 3 条，不额外调用 LLM。
+
+```bash
+npm run news:weekly
+node scripts/generate-weekly-news.mjs --date=2026-07-27 --force
+```
+
+## 质量监控
+
+每次日报生成后写入 `news/.state/last-run.json`（条目数、栏目分布、RSS 成功/失败）。源健康见 `news/.state/feed-health.json`。
 
 ## 栏目
 

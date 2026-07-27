@@ -55,6 +55,15 @@ export default defineConfig({
     ],
     ["meta", { name: "theme-color", content: "#000000" }],
     [
+      "link",
+      {
+        rel: "alternate",
+        type: "application/rss+xml",
+        title: "Penn Notes · AI 动态",
+        href: `${BASE}news/feed.xml`,
+      },
+    ],
+    [
       "script",
       {},
       `(function(){try{var k='vitepress-theme-appearance',v=localStorage.getItem(k);if(!v||v==='auto')localStorage.setItem(k,'dark')}catch(e){}})()`,

@@ -1004,6 +1004,21 @@ body {
   margin-top: 8px;
 }
 
+.news-rss-link {
+  margin: 8px 0 0;
+  font-size: 14px;
+}
+
+.news-rss-link a {
+  color: var(--link);
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.news-rss-link a:hover {
+  color: var(--link-hover);
+}
+
 .vp-doc p {
   margin: 0 0 var(--space-4);
 }

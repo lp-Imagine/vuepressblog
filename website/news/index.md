@@ -10,6 +10,7 @@ next: false
     <p class="section-kicker">栏目</p>
     <h1 class="section-title">AI 动态</h1>
     <p class="section-lead">业界 · 产品 · 模型 · 开源 · 开发者工具 · 前端</p>
+    <p class="news-rss-link"><a href="/vuepressblog/news/feed.xml" target="_blank" rel="noopener noreferrer">RSS 订阅</a></p>
   </header>
 
   <div class="news-pillars">
