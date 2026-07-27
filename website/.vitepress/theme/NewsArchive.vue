@@ -36,6 +36,8 @@ function link(path) {
       </button>
     </div>
 
+    <NewsRssSubscribe v-if="hasItems" compact />
+
     <div v-if="!hasItems" class="news-empty-state">
       <div class="news-empty-icon" aria-hidden="true">◇</div>
       <p class="news-empty-title">暂无动态</p>

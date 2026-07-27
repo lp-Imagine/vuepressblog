@@ -12,8 +12,6 @@ next: false
     <p class="section-lead">业界 · 产品 · 模型 · 开源 · 开发者工具 · 前端</p>
   </header>
 
-  <NewsRssSubscribe />
-
   <div class="news-pillars">
     <div class="news-pillar"><p class="news-pillar-title">业界</p><p class="news-pillar-desc">融资、并购、裁员、监管与市场 —— 主流资讯站的「行业」栏</p></div>
     <div class="news-pillar"><p class="news-pillar-title">产品</p><p class="news-pillar-desc">应用与产品发布、功能更新、定价策略</p></div>

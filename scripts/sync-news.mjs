@@ -119,8 +119,6 @@ function buildNewsIndex(months, monthFiles) {
     '    <p class="section-lead">业界 · 产品 · 模型 · 开源 · 开发者工具 · 前端</p>',
     "  </header>",
     "",
-    "  <NewsRssSubscribe />",
-    "",
     '  <div class="news-pillars">',
   ];
 

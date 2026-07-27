@@ -1,6 +1,10 @@
 <script setup>
 import { ref } from "vue";
 
+defineProps({
+  compact: { type: Boolean, default: false },
+});
+
 const FEED_URL = "https://lp-imagine.github.io/vuepressblog/news/feed.xml";
 const copied = ref(false);
 
@@ -20,7 +24,7 @@ const feedlyUrl = `https://feedly.com/i/subscription/feed/${encodeURIComponent(F
 </script>
 
 <template>
-  <div class="news-rss-subscribe">
+  <div class="news-rss-subscribe" :class="{ 'news-rss-subscribe--compact': compact }">
     <button type="button" class="news-rss-btn" @click="copyFeed">
       <svg
         class="news-rss-icon"
@@ -36,11 +40,13 @@ const feedlyUrl = `https://feedly.com/i/subscription/feed/${encodeURIComponent(F
       </svg>
       <span>{{ copied ? "已复制订阅地址" : "RSS 订阅" }}</span>
     </button>
-    <p class="news-rss-hint">
-      点击复制地址，粘贴到
-      <a :href="feedlyUrl" target="_blank" rel="noopener noreferrer">Feedly</a>
-      等阅读器
-    </p>
-    <code class="news-rss-url">{{ FEED_URL }}</code>
+    <template v-if="!compact">
+      <p class="news-rss-hint">
+        点击复制地址，粘贴到
+        <a :href="feedlyUrl" target="_blank" rel="noopener noreferrer">Feedly</a>
+        等阅读器
+      </p>
+      <code class="news-rss-url">{{ FEED_URL }}</code>
+    </template>
   </div>
 </template>
