@@ -41,7 +41,13 @@ layout: home
       <h2>最新动态</h2>
       <a class="home-more" href="/vuepressblog/news/">全部动态</a>
     </div>
-<p class="home-empty news-home-empty">AI 动态每天 7:00 左右更新 · <a href="/vuepressblog/news/">前往栏目</a></p>
+<div class="news-grid">
+  <a class="news-card news-card--media" href="/vuepressblog/news/2026-07/ai-news-2026-07-26">
+    <img class="news-card-thumb" src="https://img.36krcdn.com/hsossms/20260725/v2_44f27216a65b4e0e963e25dd7e66d7db@000000_oswg50341oswg893oswg380_img_000?x-oss-process=image/resize,m_mfit,w_600,h_400,limit_0/crop,w_600,h_400,g_center" alt="" loading="lazy" /><div class="news-card-body"><time datetime="2026-07-26">2026-07-26</time>
+    <span class="news-card-title">AI 动态 · 2026-07-26</span>
+    <span class="news-card-action">阅读全文</span></div>
+  </a>
+</div>
   </section>
 
   <section class="home-block">

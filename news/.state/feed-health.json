@@ -1,32 +1,14 @@
 {
-  "at": "2026-07-27T08:45:15.440Z",
+  "at": "2026-07-27T09:41:20.387Z",
   "targetDate": "2026-07-26",
   "ok": 18,
   "failed": 1,
   "successes": [
     {
-      "id": "quantumbit",
-      "name": "量子位",
-      "url": "https://www.qbitai.com/feed",
-      "items": 5
-    },
-    {
-      "id": "infoq-cn",
-      "name": "InfoQ 中文",
-      "url": "https://www.infoq.cn/feed",
-      "items": 8
-    },
-    {
-      "id": "devto-ai",
-      "name": "DEV AI",
-      "url": "https://dev.to/feed/tag/ai",
-      "items": 0
-    },
-    {
-      "id": "jiqizhixin",
-      "name": "36氪",
-      "url": "https://36kr.com/feed",
-      "items": 4
+      "id": "anthropic-news",
+      "name": "Anthropic News",
+      "url": "https://raw.githubusercontent.com/Olshansk/rss-feeds/main/feeds/feed_anthropic_news.xml",
+      "items": 1
     },
     {
       "id": "theverge-ai",
@@ -35,57 +17,15 @@
       "items": 9
     },
     {
-      "id": "openai-blog",
-      "name": "OpenAI Blog",
-      "url": "https://openai.com/blog/rss.xml",
-      "items": 0
-    },
-    {
-      "id": "ruanyifeng",
-      "name": "阮一峰的网络日志",
-      "url": "https://www.ruanyifeng.com/blog/atom.xml",
-      "items": 1
+      "id": "techcrunch-ai",
+      "name": "TechCrunch AI",
+      "url": "https://techcrunch.com/category/artificial-intelligence/feed/",
+      "items": 17
     },
     {
       "id": "mit-tr",
       "name": "MIT Tech Review",
       "url": "https://www.technologyreview.com/topic/artificial-intelligence/feed",
-      "items": 0
-    },
-    {
-      "id": "deepmind",
-      "name": "Google DeepMind",
-      "url": "https://deepmind.google/blog/rss.xml",
-      "items": 0
-    },
-    {
-      "id": "juejin-frontend",
-      "name": "少数派",
-      "url": "https://sspai.com/feed",
-      "items": 6
-    },
-    {
-      "id": "css-tricks",
-      "name": "CSS-Tricks",
-      "url": "https://css-tricks.com/feed/",
-      "items": 0
-    },
-    {
-      "id": "hn-ai",
-      "name": "Hacker News AI",
-      "url": "https://hnrss.org/newest?q=AI+OR+LLM+OR+GPT+OR+Claude+OR+OpenAI+OR+Anthropic",
-      "items": 0
-    },
-    {
-      "id": "google-ai",
-      "name": "Google AI Blog",
-      "url": "https://blog.google/technology/ai/rss/",
-      "items": 0
-    },
-    {
-      "id": "javascript-weekly",
-      "name": "JavaScript Weekly",
-      "url": "https://javascriptweekly.com/rss",
       "items": 0
     },
     {
@@ -95,15 +35,39 @@
       "items": 1
     },
     {
-      "id": "techcrunch-ai",
-      "name": "TechCrunch AI",
-      "url": "https://techcrunch.com/category/artificial-intelligence/feed/",
-      "items": 17
+      "id": "devto-ai",
+      "name": "DEV AI",
+      "url": "https://dev.to/feed/tag/ai",
+      "items": 0
     },
     {
-      "id": "anthropic-news",
-      "name": "Anthropic News",
-      "url": "https://raw.githubusercontent.com/Olshansk/rss-feeds/main/feeds/feed_anthropic_news.xml",
+      "id": "deepmind",
+      "name": "Google DeepMind",
+      "url": "https://deepmind.google/blog/rss.xml",
+      "items": 0
+    },
+    {
+      "id": "huggingface",
+      "name": "Hugging Face Blog",
+      "url": "https://huggingface.co/blog/feed.xml",
+      "items": 0
+    },
+    {
+      "id": "javascript-weekly",
+      "name": "JavaScript Weekly",
+      "url": "https://javascriptweekly.com/rss",
+      "items": 0
+    },
+    {
+      "id": "css-tricks",
+      "name": "CSS-Tricks",
+      "url": "https://css-tricks.com/feed/",
+      "items": 0
+    },
+    {
+      "id": "ruanyifeng",
+      "name": "阮一峰的网络日志",
+      "url": "https://www.ruanyifeng.com/blog/atom.xml",
       "items": 1
     },
     {
@@ -111,13 +75,49 @@
       "name": "VentureBeat AI",
       "url": "https://venturebeat.com/category/ai/feed/",
       "items": 0
+    },
+    {
+      "id": "openai-blog",
+      "name": "OpenAI Blog",
+      "url": "https://openai.com/blog/rss.xml",
+      "items": 0
+    },
+    {
+      "id": "google-ai",
+      "name": "Google AI Blog",
+      "url": "https://blog.google/technology/ai/rss/",
+      "items": 0
+    },
+    {
+      "id": "juejin-frontend",
+      "name": "少数派",
+      "url": "https://sspai.com/feed",
+      "items": 6
+    },
+    {
+      "id": "jiqizhixin",
+      "name": "36氪",
+      "url": "https://36kr.com/feed",
+      "items": 4
+    },
+    {
+      "id": "infoq-cn",
+      "name": "InfoQ 中文",
+      "url": "https://www.infoq.cn/feed",
+      "items": 4
+    },
+    {
+      "id": "quantumbit",
+      "name": "量子位",
+      "url": "https://www.qbitai.com/feed",
+      "items": 4
     }
   ],
   "failures": [
     {
-      "id": "huggingface",
-      "name": "Hugging Face Blog",
-      "error": "fetch failed"
+      "id": "hn-ai",
+      "name": "Hacker News AI",
+      "error": "Status code 502"
     }
   ]
 }
