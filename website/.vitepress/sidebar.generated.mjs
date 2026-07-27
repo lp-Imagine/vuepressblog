@@ -7,7 +7,7 @@ export default {
       "items": [
         {
           "text": "js if/else语句优化策略",
-          "link": "/sync/web/javascript/cmrxngdq9000zpzulezqj56nc"
+          "link": "/web/javascript/cmrxngdq9000zpzulezqj56nc"
         },
         {
           "text": "Axios 封装",
@@ -141,7 +141,7 @@ export default {
       "items": [
         {
           "text": "js if/else语句优化策略",
-          "link": "/sync/web/javascript/cmrxngdq9000zpzulezqj56nc"
+          "link": "/web/javascript/cmrxngdq9000zpzulezqj56nc"
         },
         {
           "text": "Axios 封装",

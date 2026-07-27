@@ -1,8 +1,14 @@
 import { defineConfig } from "vitepress";
 import sidebar from "./sidebar.generated.mjs";
+import newsSidebar from "./sidebar.news.generated.mjs";
 
 const BASE = "/vuepressblog/";
 const GITHUB_PROFILE = "https://github.com/lp-Imagine";
+
+const mergedSidebar = {
+  ...sidebar,
+  ...newsSidebar,
+};
 
 export default defineConfig({
   title: "Penn Notes",
@@ -69,13 +75,14 @@ export default defineConfig({
     },
     nav: [
       { text: "首页", link: "/" },
+      { text: "AI 动态", link: "/news/", activeMatch: "/news/" },
       { text: "JS & 框架", link: "/web/", activeMatch: "/web/" },
       { text: "样式", link: "/ui/", activeMatch: "/ui/" },
       { text: "工具", link: "/tech/", activeMatch: "/tech/" },
       { text: "浏览器", link: "/computer/", activeMatch: "/computer/" },
       { text: "关于", link: "/about/", activeMatch: "/about/" },
     ],
-    sidebar,
+    sidebar: mergedSidebar,
     socialLinks: [{ icon: "github", link: GITHUB_PROFILE }],
     search: { provider: "local" },
     outline: { level: [2, 3], label: "章节索引" },

@@ -17,7 +17,7 @@ aside: false
   <div class="section-group">
     <p class="section-group-label">JavaScript · 21 篇</p>
     <div class="section-card-grid">
-    <a class="section-card" href="/vuepressblog/sync/web/javascript/cmrxngdq9000zpzulezqj56nc">
+    <a class="section-card" href="/vuepressblog/web/javascript/cmrxngdq9000zpzulezqj56nc">
       <span class="section-card-title">js if/else语句优化策略</span>
       <span class="section-card-meta"><time datetime="2026-07-23">2026-07-23</time><span>阅读全文</span></span>
     </a>

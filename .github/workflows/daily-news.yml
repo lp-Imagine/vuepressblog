@@ -1,0 +1,64 @@
+name: Daily AI News
+
+on:
+  schedule:
+    # UTC 00:00 = Asia/Shanghai 08:00
+    - cron: "0 0 * * *"
+  workflow_dispatch:
+    inputs:
+      date:
+        description: "Override report date YYYY-MM-DD (default: yesterday CST)"
+        required: false
+      force:
+        description: "Overwrite existing digest (true/false)"
+        required: false
+        default: "false"
+
+permissions:
+  contents: write
+
+env:
+  TZ: Asia/Shanghai
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install
+        run: npm ci
+
+      - name: Generate daily news
+        env:
+          LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
+          LLM_BASE_URL: ${{ secrets.LLM_BASE_URL }}
+          LLM_MODEL: ${{ secrets.LLM_MODEL }}
+        run: |
+          ARGS=()
+          if [ -n "${{ inputs.date }}" ]; then
+            ARGS+=(--date="${{ inputs.date }}")
+          fi
+          if [ "${{ inputs.force }}" = "true" ]; then
+            ARGS+=(--force)
+          fi
+          node scripts/generate-daily-news.mjs "${ARGS[@]}"
+
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add news website/public/news || true
+          if git diff --cached --quiet; then
+            echo "No news changes to commit"
+            exit 0
+          fi
+          git commit -m "chore(news): daily digest $(TZ=Asia/Shanghai date +%F)"
+          git push

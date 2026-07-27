@@ -5,11 +5,11 @@ layout: home
 <div class="home-wrap">
   <section class="home-hero">
     <h1 class="home-headline">Penn Notes</h1>
-    <p class="home-tagline">JS &amp; 框架 · 样式 · 工具 · 浏览器</p>
+    <p class="home-tagline">AI 动态 · JS &amp; 框架 · 样式 · 工具 · 浏览器</p>
     <p class="home-sub">积跬步以至千里 · 前端学习与工程备忘 · 共 59 篇</p>
     <div class="home-actions">
-      <a class="home-btn home-btn--primary" href="/vuepressblog/sync/web/javascript/cmrxngdq9000zpzulezqj56nc">阅读最新笔记</a>
-      <a class="home-btn home-btn--text" href="/vuepressblog/web/">浏览分类</a>
+      <a class="home-btn home-btn--primary" href="/vuepressblog/web/javascript/cmrxngdq9000zpzulezqj56nc">阅读最新笔记</a>
+      <a class="home-btn home-btn--text" href="/vuepressblog/news/">AI 动态</a>
     </div>
   </section>
 
@@ -38,11 +38,25 @@ layout: home
 
   <section class="home-block">
     <div class="home-block-head">
+      <h2>最新动态</h2>
+      <a class="home-more" href="/vuepressblog/news/">全部动态</a>
+    </div>
+<div class="news-grid">
+  <a class="news-card news-card--media" href="/vuepressblog/news/2026-07/ai-news-2026-07-26">
+    <img class="news-card-thumb" src="https://techcrunch.com/wp-content/uploads/2026/07/Screenshot-2026-07-24-at-12.47.38-PM.jpg?w=1166" alt="" loading="lazy" /><div class="news-card-body"><time datetime="2026-07-26">2026-07-26</time>
+    <span class="news-card-title">AI 动态 · 2026-07-26</span>
+    <span class="news-card-action">阅读全文</span></div>
+  </a>
+</div>
+  </section>
+
+  <section class="home-block">
+    <div class="home-block-head">
       <h2>最新笔记</h2>
       <a class="home-more" href="/vuepressblog/web/">查看更多</a>
     </div>
 <div class="news-grid">
-  <a class="news-card" href="/vuepressblog/sync/web/javascript/cmrxngdq9000zpzulezqj56nc">
+  <a class="news-card" href="/vuepressblog/web/javascript/cmrxngdq9000zpzulezqj56nc">
     <time datetime="2026-07-23">2026-07-23</time>
     <span class="news-card-title">js if/else语句优化策略</span>
     <span class="news-card-action">阅读全文</span>

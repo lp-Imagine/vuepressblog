@@ -1,0 +1,119 @@
+{
+  "lookbackDays": 3,
+  "sources": [
+    {
+      "id": "openai-blog",
+      "name": "OpenAI Blog",
+      "url": "https://openai.com/blog/rss.xml",
+      "section": "产品"
+    },
+    {
+      "id": "anthropic-news",
+      "name": "Anthropic News",
+      "url": "https://raw.githubusercontent.com/Olshansk/rss-feeds/main/feeds/feed_anthropic_news.xml",
+      "section": "产品"
+    },
+    {
+      "id": "google-ai",
+      "name": "Google AI Blog",
+      "url": "https://blog.google/technology/ai/rss/",
+      "section": "模型"
+    },
+    {
+      "id": "deepmind",
+      "name": "Google DeepMind",
+      "url": "https://deepmind.google/blog/rss.xml",
+      "section": "模型"
+    },
+    {
+      "id": "hn-ai",
+      "name": "Hacker News AI",
+      "url": "https://hnrss.org/newest?q=AI+OR+LLM+OR+GPT+OR+Claude+OR+OpenAI+OR+Anthropic",
+      "section": "业界"
+    },
+    {
+      "id": "techcrunch-ai",
+      "name": "TechCrunch AI",
+      "url": "https://techcrunch.com/category/artificial-intelligence/feed/",
+      "section": "业界"
+    },
+    {
+      "id": "theverge-ai",
+      "name": "The Verge AI",
+      "url": "https://www.theverge.com/rss/ai-artificial-intelligence/index.xml",
+      "section": "产品"
+    },
+    {
+      "id": "venturebeat-ai",
+      "name": "VentureBeat AI",
+      "url": "https://venturebeat.com/category/ai/feed/",
+      "section": "业界"
+    },
+    {
+      "id": "mit-tr",
+      "name": "MIT Tech Review",
+      "url": "https://www.technologyreview.com/topic/artificial-intelligence/feed",
+      "section": "模型"
+    },
+    {
+      "id": "github-blog",
+      "name": "GitHub Blog",
+      "url": "https://github.blog/feed/",
+      "section": "开发者工具"
+    },
+    {
+      "id": "huggingface",
+      "name": "Hugging Face Blog",
+      "url": "https://huggingface.co/blog/feed.xml",
+      "section": "开源"
+    },
+    {
+      "id": "devto-ai",
+      "name": "DEV AI",
+      "url": "https://dev.to/feed/tag/ai",
+      "section": "开发者工具"
+    },
+    {
+      "id": "javascript-weekly",
+      "name": "JavaScript Weekly",
+      "url": "https://javascriptweekly.com/rss",
+      "section": "前端"
+    },
+    {
+      "id": "css-tricks",
+      "name": "CSS-Tricks",
+      "url": "https://css-tricks.com/feed/",
+      "section": "前端"
+    },
+    {
+      "id": "jiqizhixin",
+      "name": "机器之心",
+      "url": "https://www.jiqizhixin.com/rss",
+      "section": "业界"
+    },
+    {
+      "id": "infoq-cn",
+      "name": "InfoQ 中文",
+      "url": "https://www.infoq.cn/feed",
+      "section": "业界"
+    },
+    {
+      "id": "juejin-frontend",
+      "name": "掘金前端",
+      "url": "https://rsshub.app/juejin/trending/frontend/monthly",
+      "section": "前端"
+    },
+    {
+      "id": "ruanyifeng",
+      "name": "阮一峰的网络日志",
+      "url": "https://www.ruanyifeng.com/blog/atom.xml",
+      "section": "前端"
+    },
+    {
+      "id": "quantumbit",
+      "name": "量子位",
+      "url": "https://rsshub.app/zhihu/column/qbitai",
+      "section": "业界"
+    }
+  ]
+}

@@ -8,15 +8,23 @@
     "migrate": "node scripts/migrate-from-vuepress.mjs && node scripts/sanitize-md.mjs && node scripts/fix-titles.mjs",
     "fix:titles": "node scripts/fix-titles.mjs",
     "ingest": "node scripts/ingest-sync.mjs",
+    "sync:news": "node scripts/sync-news.mjs",
+    "news:daily": "node scripts/generate-daily-news.mjs",
+    "news:images": "node scripts/resolve-news-images.mjs",
     "build:home": "node scripts/build-home.mjs",
     "build:redirects": "node scripts/build-redirects.mjs",
-    "prebuild": "npm run ingest && npm run build:home",
-    "dev": "npm run ingest && npm run build:home && vitepress dev website",
+    "prebuild": "npm run ingest && npm run sync:news && npm run build:home",
+    "dev": "npm run ingest && npm run sync:news && npm run build:home && vitepress dev website",
     "build": "vitepress build website && npm run build:redirects",
     "preview": "vitepress preview website",
     "deploy": "bash deploy.sh"
   },
   "devDependencies": {
+    "rss-parser": "^3.13.0",
+    "undici": "^6.28.0",
     "vitepress": "^1.6.3"
+  },
+  "engines": {
+    "node": ">=18"
   }
 }

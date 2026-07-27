@@ -260,7 +260,7 @@ function buildHome(allBySection) {
   </a>`;
   }).join("\n");
 
-  const newsItems =
+  const noteItems =
     recent.length === 0
       ? `<p class="home-empty">暂无文章</p>`
       : `<div class="news-grid">
@@ -272,6 +272,25 @@ ${recent
     <span class="news-card-action">阅读全文</span>
   </a>`,
   )
+  .join("\n")}
+</div>`;
+
+  const aiNewsRecent = loadRecentAiNews();
+  const aiNewsItems =
+    aiNewsRecent.length === 0
+      ? `<p class="home-empty">暂无日报 · 配置后每天早上自动更新</p>`
+      : `<div class="news-grid">
+${aiNewsRecent
+  .map((r) => {
+    const thumb = r.image
+      ? `<img class="news-card-thumb" src="${escapeHtml(r.image)}" alt="" loading="lazy" />`
+      : "";
+    return `  <a class="news-card${r.image ? " news-card--media" : ""}" href="${link(r.link)}">
+    ${thumb}<div class="news-card-body"><time datetime="${r.date}">${r.date}</time>
+    <span class="news-card-title">${escapeHtml(r.title)}</span>
+    <span class="news-card-action">阅读全文</span></div>
+  </a>`;
+  })
   .join("\n")}
 </div>`;
 
@@ -300,11 +319,11 @@ layout: home
 <div class="home-wrap">
   <section class="home-hero">
     <h1 class="home-headline">Penn Notes</h1>
-    <p class="home-tagline">JS &amp; 框架 · 样式 · 工具 · 浏览器</p>
+    <p class="home-tagline">AI 动态 · JS &amp; 框架 · 样式 · 工具 · 浏览器</p>
     <p class="home-sub">积跬步以至千里 · 前端学习与工程备忘 · 共 ${total} 篇</p>
     <div class="home-actions">
       <a class="home-btn home-btn--primary" href="${latestHref}">阅读最新笔记</a>
-      <a class="home-btn home-btn--text" href="${link("/web/")}">浏览分类</a>
+      <a class="home-btn home-btn--text" href="${link("/news/")}">AI 动态</a>
     </div>
   </section>
 
@@ -314,10 +333,18 @@ ${pillars}
 
   <section class="home-block">
     <div class="home-block-head">
+      <h2>最新动态</h2>
+      <a class="home-more" href="${link("/news/")}">全部动态</a>
+    </div>
+${aiNewsItems}
+  </section>
+
+  <section class="home-block">
+    <div class="home-block-head">
       <h2>最新笔记</h2>
       <a class="home-more" href="${link("/web/")}">查看更多</a>
     </div>
-${newsItems}
+${noteItems}
   </section>
 
   <section class="home-block">
@@ -329,6 +356,15 @@ ${catalog}
   </section>
 </div>
 `;
+}
+
+function loadRecentAiNews() {
+  const p = path.join(siteRoot, ".vitepress", "news-recent.generated.json");
+  try {
+    return JSON.parse(fs.readFileSync(p, "utf8"));
+  } catch {
+    return [];
+  }
 }
 
 function main() {
