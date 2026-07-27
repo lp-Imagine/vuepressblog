@@ -242,6 +242,7 @@ export async function resolveFileImages(filePath, cache = new Map()) {
         continue;
       }
       const sourceLine =
+        block.match(/<p class="news-entry-source">[\s\S]*?<\/p>/m)?.[0] ||
         block.match(/^\*\*来源：\*\*.+$/m)?.[0] ||
         block.match(/^- \*\*来源：\*\*.+$/m)?.[0] ||
         "";

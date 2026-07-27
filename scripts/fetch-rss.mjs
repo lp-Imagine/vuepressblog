@@ -13,17 +13,57 @@ assertNodeVersion(18);
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const sourcesPath = path.join(root, "scripts/news/sources.json");
 const statePath = path.join(root, "news/.state/seen-urls.json");
+const healthPath = path.join(root, "news/.state/feed-health.json");
 
-const UA =
-  "Mozilla/5.0 (compatible; PennNotesBot/1.0; +https://github.com/lp-Imagine/vuepressblog)";
+const BROWSER_UA =
+  "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36";
 
 const parser = new Parser({
   timeout: 20000,
   headers: {
-    "User-Agent": UA,
-    Accept: "application/rss+xml, application/xml, text/xml, */*",
+    "User-Agent": BROWSER_UA,
+    Accept: "application/rss+xml, application/atom+xml, application/xml, text/xml, */*",
+    "Accept-Language": "zh-CN,zh;q=0.9,en;q=0.8",
   },
 });
+
+async function fetchFeedText(url) {
+  const res = await fetch(url, {
+    headers: {
+      "User-Agent": BROWSER_UA,
+      Accept: "application/rss+xml, application/atom+xml, application/xml, text/xml, */*",
+      "Accept-Language": "zh-CN,zh;q=0.9,en;q=0.8",
+    },
+    redirect: "follow",
+    signal: AbortSignal.timeout(20000),
+  });
+  if (!res.ok) throw new Error(`Status code ${res.status}`);
+  const text = await res.text();
+  if (!/<(rss|feed|rdf:RDF)\b/i.test(text)) {
+    throw new Error("Feed not recognized as RSS/Atom");
+  }
+  return text;
+}
+
+async function parseSourceFeed(src) {
+  const urls = [src.url, ...(src.fallbackUrls || [])].filter(Boolean);
+  let lastErr = null;
+  for (const url of urls) {
+    try {
+      const text = await fetchFeedText(url);
+      const feed = await parser.parseString(text);
+      return { feed, url };
+    } catch (err) {
+      lastErr = err;
+    }
+  }
+  throw lastErr || new Error("Feed fetch failed");
+}
+
+function saveFeedHealth(report) {
+  fs.mkdirSync(path.dirname(healthPath), { recursive: true });
+  fs.writeFileSync(healthPath, JSON.stringify(report, null, 2) + "\n", "utf8");
+}
 
 function loadSeen() {
   try {
@@ -69,7 +109,7 @@ function stripHtml(html) {
 async function fetchExcerpt(url) {
   try {
     const res = await fetch(url, {
-      headers: { "User-Agent": UA, Accept: "text/html" },
+      headers: { "User-Agent": BROWSER_UA, Accept: "text/html" },
       redirect: "follow",
       signal: AbortSignal.timeout(12000),
     });
@@ -104,7 +144,7 @@ async function fetchGithubTrending(targetDate) {
   try {
     const res = await fetch("https://github.com/trending?since=daily", {
       headers: {
-        "User-Agent": UA,
+        "User-Agent": BROWSER_UA,
         Accept: "text/html",
       },
       signal: AbortSignal.timeout(15000),
@@ -158,23 +198,26 @@ export async function fetchNewsItems(targetDate, opts = {}) {
   const seen = loadSeen();
   const seenSet = new Set(seen.urls);
   const failures = [];
+  const successes = [];
   const collected = [];
 
   await Promise.all(
     sources.map(async (src) => {
       try {
-        const feed = await parser.parseURL(src.url);
+        const { feed, url } = await parseSourceFeed(src);
+        let count = 0;
         for (const item of feed.items || []) {
-          const url = normalizeUrl(item.link || item.guid || "");
-          if (!url) continue;
+          const link = normalizeUrl(item.link || item.guid || "");
+          if (!link) continue;
           const date = itemDate(item);
           // Undated: keep if recent enough via feed order — skip undated
           if (date && !window.has(date)) continue;
           if (!date) continue;
-          if (!opts.includeSeen && seenSet.has(url)) continue;
+          if (!opts.includeSeen && seenSet.has(link)) continue;
+          count++;
           collected.push({
             title: (item.title || "Untitled").trim(),
-            url,
+            url: link,
             sourceName: src.name,
             sourceId: src.id,
             section: src.section,
@@ -185,6 +228,7 @@ export async function fetchNewsItems(targetDate, opts = {}) {
             excerpt: "",
           });
         }
+        successes.push({ id: src.id, name: src.name, url, items: count });
       } catch (err) {
         failures.push({
           id: src.id,
@@ -232,9 +276,19 @@ export async function fetchNewsItems(targetDate, opts = {}) {
     await Promise.all(Array.from({ length: concurrency }, () => worker()));
   }
 
+  saveFeedHealth({
+    at: new Date().toISOString(),
+    targetDate,
+    ok: successes.length,
+    failed: failures.length,
+    successes,
+    failures,
+  });
+
   return {
     items,
     failures,
+    successes,
     seen,
     saveSeen: () => {
       for (const it of items) seen.urls.push(it.url);

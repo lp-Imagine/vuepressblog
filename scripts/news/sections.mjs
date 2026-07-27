@@ -83,17 +83,20 @@ export function renderDailyMarkdown(reportDate, bySection) {
 
   for (const name of NEWS_SECTIONS) {
     const items = bySection[name] || [];
+    parts.push(`<div class="news-section" data-section="${name}">`, "");
     parts.push(`## ${name}`, "");
     if (!items.length) {
       parts.push("（本日无新条目）", "");
+      parts.push("</div>", "");
       continue;
     }
     for (const item of items) {
       const date = item.date || reportDate;
       const title = escapeMdHeading(item.title);
+      const source = escapeMd(item.sourceName);
       parts.push(`### ${title}`, "");
       parts.push(
-        `<p class="news-entry-meta"><time datetime="${date}">${date}</time></p>`,
+        `<p class="news-entry-meta"><span class="news-source-tag">${source}</span><time datetime="${date}">${date}</time></p>`,
         "",
       );
       if (item.image) {
@@ -101,10 +104,11 @@ export function renderDailyMarkdown(reportDate, bySection) {
       }
       parts.push(String(item.summary || "").trim(), "");
       parts.push(
-        `**来源：** [${escapeMd(item.sourceName)}](${item.url})`,
+        `<p class="news-entry-source"><a href="${item.url}" target="_blank" rel="noopener noreferrer">阅读原文</a></p>`,
         "",
       );
     }
+    parts.push("</div>", "");
   }
 
   return `${parts.join("\n").trimEnd()}\n`;

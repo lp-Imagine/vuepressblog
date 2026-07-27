@@ -16,6 +16,43 @@ Penn Notes 的「AI 动态」栏目：每天早上自动抓取公开 RSS，经�
 
 定时：GitHub Actions [`.github/workflows/daily-news.yml`](../.github/workflows/daily-news.yml)，每天 **北京时间 07:00**（UTC 23:00）汇总 **昨天**。
 
+> GitHub 内置 `schedule` 可能延迟几十分钟甚至更久。推荐用外部定时服务调 `workflow_dispatch`（见下）。
+
+## 外部定时触发（推荐）
+
+比 GitHub `schedule` 更准时。支持两种方式：
+
+### 方式 A：`workflow_dispatch`（cron-job.org 等）
+
+1. 创建 GitHub Personal Access Token（`repo` 或 `workflow` 权限）
+2. 在 [cron-job.org](https://cron-job.org) 新建任务，每天 **07:00 北京时间** 执行：
+
+```bash
+curl -sS -X POST \
+  -H "Accept: application/vnd.github+json" \
+  -H "Authorization: Bearer <你的PAT>" \
+  https://api.github.com/repos/lp-Imagine/vuepressblog/actions/workflows/daily-news.yml/dispatches \
+  -d '{"ref":"master"}'
+```
+
+也可直接运行仓库脚本（需先 `export GITHUB_TOKEN=ghp_xxx`）：
+
+```bash
+bash scripts/trigger-daily-news.sh
+```
+
+### 方式 B：`repository_dispatch`
+
+```bash
+curl -sS -X POST \
+  -H "Accept: application/vnd.github+json" \
+  -H "Authorization: Bearer <你的PAT>" \
+  https://api.github.com/repos/lp-Imagine/vuepressblog/dispatches \
+  -d '{"event_type":"daily-news"}'
+```
+
+内置 `schedule` 仍保留作备用。
+
 ## Secrets
 
 仓库 Settings → Secrets and variables → Actions：
@@ -66,7 +103,7 @@ npm run sync:news && npm run build:home && npm run dev
 
 ## 排查
 
-- **RSS 失败**：日志里会列出失败源，其它源继续
+- **RSS 失败**：日志里会列出失败源，详情见 `news/.state/feed-health.json`
 - **质量差 / 英文标题**：多半没配 `LLM_API_KEY`，或用了 `--allow-heuristic`
 - **LLM 限流**：workflow 失败不会空 commit，可用 Actions → Daily AI News → Run workflow 重跑
 - **已有日期跳过**：默认不覆盖；加 `--force`

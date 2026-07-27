@@ -278,7 +278,7 @@ ${recent
   const aiNewsRecent = loadRecentAiNews();
   const aiNewsItems =
     aiNewsRecent.length === 0
-      ? `<p class="home-empty">暂无日报 · 配置后每天早上自动更新</p>`
+      ? `<p class="home-empty">还没有内容，每天早上会自动更新最新动态。</p>`
       : `<div class="news-grid">
 ${aiNewsRecent
   .map((r) => {

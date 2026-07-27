@@ -1,6 +1,8 @@
 import { defineComponent, h } from "vue";
 import { useRoute } from "vitepress";
 import DefaultTheme from "vitepress/theme";
+import NewsArchive from "./NewsArchive.vue";
+import NewsDigestEnhance from "./NewsDigestEnhance.vue";
 import "./custom.css";
 
 const Layout = defineComponent({
@@ -14,7 +16,13 @@ const Layout = defineComponent({
       h(
         DefaultTheme.Layout,
         { class: layoutClass },
-        { ...slots },
+        {
+          ...slots,
+          "doc-top": () => [
+            slots["doc-top"]?.(),
+            h(NewsDigestEnhance),
+          ],
+        },
       );
   },
 });
@@ -22,4 +30,7 @@ const Layout = defineComponent({
 export default {
   extends: DefaultTheme,
   Layout,
+  enhanceApp({ app }) {
+    app.component("NewsArchive", NewsArchive);
+  },
 };

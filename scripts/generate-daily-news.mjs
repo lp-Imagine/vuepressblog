@@ -59,7 +59,7 @@ async function main() {
   }
 
   console.log(`Generating daily news for ${reportDate} ...`);
-  const { items, failures, saveSeen } = await fetchNewsItems(reportDate, {
+  const { items, failures, successes, saveSeen } = await fetchNewsItems(reportDate, {
     includeSeen: args.skipSeen || args.force,
     enrich: true,
   });
@@ -67,6 +67,12 @@ async function main() {
   if (failures.length) {
     console.warn("RSS failures:");
     for (const f of failures) console.warn(`  - ${f.name}: ${f.error}`);
+  }
+  if (successes?.length) {
+    console.log(`RSS ok: ${successes.length}/${successes.length + failures.length} sources`);
+    for (const s of successes.filter((x) => x.items > 0).slice(0, 8)) {
+      console.log(`  + ${s.name}: ${s.items} item(s)`);
+    }
   }
   console.log(`Candidates: ${items.length}`);
   if (!items.length) {

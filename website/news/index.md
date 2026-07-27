@@ -20,7 +20,10 @@ next: false
     <div class="news-pillar"><p class="news-pillar-title">开发者工具</p><p class="news-pillar-desc">编码助手、Agent IDE、MCP、CI/协作 —— 写代码的工具链</p></div>
     <div class="news-pillar"><p class="news-pillar-title">前端</p><p class="news-pillar-desc">框架、构建、样式、Web 平台与 DX —— 本站笔记强相关</p></div>
   </div>
-  <div class="section-index">
-    <p class="home-empty">暂无日报。配置 LLM_API_KEY 后运行 <code>npm run news:daily</code>。</p>
+
+  <NewsArchive />
+
+  <div class="section-index news-digest-list">
+    <p class="home-empty">还没有内容，每天早上会自动更新最新动态。</p>
   </div>
 </div>

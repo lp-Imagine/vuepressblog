@@ -6,10 +6,6 @@ export default {
       "collapsed": true,
       "items": [
         {
-          "text": "js if/else语句优化策略",
-          "link": "/web/javascript/cmrxngdq9000zpzulezqj56nc"
-        },
-        {
           "text": "Axios 封装",
           "link": "/web/javascript/Axios封装"
         },
@@ -139,10 +135,6 @@ export default {
       "text": "JavaScript",
       "collapsed": true,
       "items": [
-        {
-          "text": "js if/else语句优化策略",
-          "link": "/web/javascript/cmrxngdq9000zpzulezqj56nc"
-        },
         {
           "text": "Axios 封装",
           "link": "/web/javascript/Axios封装"

@@ -2,8 +2,10 @@ name: Daily AI News
 
 on:
   schedule:
-    # UTC 23:00 = Asia/Shanghai 07:00
+    # UTC 23:00 = Asia/Shanghai 07:00（备用；推荐用外部 cron 调 workflow_dispatch）
     - cron: "0 23 * * *"
+  repository_dispatch:
+    types: [daily-news]
   workflow_dispatch:
     inputs:
       date:

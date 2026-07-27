@@ -6,9 +6,9 @@ layout: home
   <section class="home-hero">
     <h1 class="home-headline">Penn Notes</h1>
     <p class="home-tagline">AI 动态 · JS &amp; 框架 · 样式 · 工具 · 浏览器</p>
-    <p class="home-sub">积跬步以至千里 · 前端学习与工程备忘 · 共 59 篇</p>
+    <p class="home-sub">积跬步以至千里 · 前端学习与工程备忘 · 共 58 篇</p>
     <div class="home-actions">
-      <a class="home-btn home-btn--primary" href="/vuepressblog/web/javascript/cmrxngdq9000zpzulezqj56nc">阅读最新笔记</a>
+      <a class="home-btn home-btn--primary" href="/vuepressblog/computer/browser/Chrome-Extension（扩展程序）开发">阅读最新笔记</a>
       <a class="home-btn home-btn--text" href="/vuepressblog/news/">AI 动态</a>
     </div>
   </section>
@@ -17,7 +17,7 @@ layout: home
   <a class="home-pillar" href="/vuepressblog/web/">
     <p class="home-pillar-title">JS & 框架</p>
     <p class="home-pillar-desc">JavaScript 基础、Vue / React、UI 组件实践</p>
-    <p class="home-pillar-meta">27 篇笔记</p>
+    <p class="home-pillar-meta">26 篇笔记</p>
   </a>
   <a class="home-pillar" href="/vuepressblog/ui/">
     <p class="home-pillar-title">样式</p>
@@ -41,7 +41,7 @@ layout: home
       <h2>最新动态</h2>
       <a class="home-more" href="/vuepressblog/news/">全部动态</a>
     </div>
-<p class="home-empty">暂无日报 · 配置后每天早上自动更新</p>
+<p class="home-empty">还没有内容，每天早上会自动更新最新动态。</p>
   </section>
 
   <section class="home-block">
@@ -50,11 +50,6 @@ layout: home
       <a class="home-more" href="/vuepressblog/web/">查看更多</a>
     </div>
 <div class="news-grid">
-  <a class="news-card" href="/vuepressblog/web/javascript/cmrxngdq9000zpzulezqj56nc">
-    <time datetime="2026-07-23">2026-07-23</time>
-    <span class="news-card-title">js if/else语句优化策略</span>
-    <span class="news-card-action">阅读全文</span>
-  </a>
   <a class="news-card" href="/vuepressblog/computer/browser/Chrome-Extension（扩展程序）开发">
     <time datetime="2022-09-06">2022-09-06</time>
     <span class="news-card-title">Chrome Extension（扩展程序）开发</span>
@@ -90,6 +85,11 @@ layout: home
     <span class="news-card-title">Element-UI问题清单</span>
     <span class="news-card-action">阅读全文</span>
   </a>
+  <a class="news-card" href="/vuepressblog/web/javascript/Axios封装">
+    <time datetime="2022-09-06">2022-09-06</time>
+    <span class="news-card-title">Axios 封装</span>
+    <span class="news-card-action">阅读全文</span>
+  </a>
 </div>
   </section>
 
@@ -99,10 +99,10 @@ layout: home
     </div>
     <p class="home-block-desc">按主题浏览笔记 · 从基础到实践</p>
   <div class="course-mod">
-    <p class="course-mod-label">JS & 框架 · 27 篇</p>
+    <p class="course-mod-label">JS & 框架 · 26 篇</p>
     <a class="course-card" href="/vuepressblog/web/">
       <span class="course-card-title">JS & 框架</span>
-      <span class="course-card-desc">27 篇 · JavaScript、Vue、React、UI 组件</span>
+      <span class="course-card-desc">26 篇 · JavaScript、Vue、React、UI 组件</span>
     </a>
   </div>
   <div class="course-mod">

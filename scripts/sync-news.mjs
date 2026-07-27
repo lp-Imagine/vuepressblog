@@ -6,6 +6,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { NEWS_PILLARS } from "./news/sections.mjs";
+import { parseDigestMarkdown } from "./news/parse-digest.mjs";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const srcNewsRoot = path.join(root, "news");
@@ -110,7 +111,10 @@ function buildNewsIndex(months, monthFiles) {
     );
   }
   lines.push("  </div>");
-  lines.push('  <div class="section-index">');
+  lines.push("");
+  lines.push("  <NewsArchive />");
+  lines.push("");
+  lines.push('  <div class="section-index news-digest-list">');
 
   let total = 0;
   for (const month of months) {
@@ -118,7 +122,7 @@ function buildNewsIndex(months, monthFiles) {
     if (!files.length) continue;
     lines.push('    <div class="section-group">');
     lines.push(
-      `      <p class="section-group-label">${month} · ${files.length} 篇</p>`,
+      `      <p class="section-group-label">${month} · ${files.length} 期日报</p>`,
     );
     lines.push('      <div class="section-card-grid">');
     for (const item of files) {
@@ -135,7 +139,7 @@ function buildNewsIndex(months, monthFiles) {
   }
 
   if (total === 0) {
-    lines.push('    <p class="home-empty">暂无日报。配置 LLM_API_KEY 后运行 <code>npm run news:daily</code>。</p>');
+    lines.push('    <p class="home-empty">还没有内容，每天早上会自动更新最新动态。</p>');
   }
 
   lines.push("  </div>");
@@ -144,7 +148,31 @@ function buildNewsIndex(months, monthFiles) {
   return lines.join("\n");
 }
 
-/** Collect recent digests for homepage (exported for build-home). */
+function collectAllNewsItems(months) {
+  const all = [];
+  for (const month of months) {
+    const dir = path.join(srcNewsRoot, month);
+    if (!fs.existsSync(dir)) continue;
+    for (const file of fs.readdirSync(dir).filter((f) => f.endsWith(".md"))) {
+      const slug = file.replace(/\.md$/, "");
+      const date = (file.match(/(\d{4}-\d{2}-\d{2})/) || [])[1] || "";
+      const content = fs.readFileSync(path.join(dir, file), "utf8");
+      const items = parseDigestMarkdown(content, {
+        date,
+        month,
+        slug,
+        link: `/news/${month}/${slug}`,
+      });
+      all.push(...items);
+    }
+  }
+  all.sort((a, b) => {
+    if (a.itemDate !== b.itemDate) return a.itemDate < b.itemDate ? 1 : -1;
+    return 0;
+  });
+  return all;
+}
+
 export function collectRecentNews(limit = 8) {
   const months = listMonthDirs();
   const recent = [];
@@ -207,8 +235,17 @@ function main() {
     "utf8",
   );
 
+  const allItems = collectAllNewsItems(months);
+  fs.writeFileSync(
+    path.join(vitepressDir, "news-items.generated.json"),
+    JSON.stringify(allItems, null, 2) + "\n",
+    "utf8",
+  );
+
   const total = months.reduce((n, m) => n + monthFiles[m].length, 0);
-  console.log(`sync-news: ${total} digest(s) from ${months.length} month folder(s)`);
+  console.log(
+    `sync-news: ${total} digest(s), ${allItems.length} item(s) from ${months.length} month folder(s)`,
+  );
 }
 
 const isMain =

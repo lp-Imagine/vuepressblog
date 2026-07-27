@@ -89,6 +89,7 @@ export default defineConfig({
     sidebarMenuLabel: "目录",
     lastUpdated: { text: "上次更新" },
     docFooter: { prev: "上一篇", next: "下一篇" },
+    returnToTopLabel: "返回顶部",
     footer: {
       message: "由 Penn 制作 · 前端学习笔记",
       copyright: "Copyright © 2020-present Penn",
