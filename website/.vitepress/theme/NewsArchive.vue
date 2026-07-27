@@ -39,7 +39,29 @@ function link(path) {
     <NewsRssSubscribe v-if="hasItems" compact />
 
     <div v-if="!hasItems" class="news-empty-state">
-      <div class="news-empty-icon" aria-hidden="true">◇</div>
+      <div class="news-empty-icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M6 4h9l3 3v13a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1Z"
+            stroke="currentColor"
+            stroke-width="1.5"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M15 4v3h3"
+            stroke="currentColor"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M8 10h8M8 13.5h8M8 17h5"
+            stroke="currentColor"
+            stroke-width="1.5"
+            stroke-linecap="round"
+          />
+        </svg>
+      </div>
       <p class="news-empty-title">暂无动态</p>
       <p class="news-empty-desc">每天早上 7:00 左右自动更新，稍后再来看看。</p>
       <NewsRssSubscribe />

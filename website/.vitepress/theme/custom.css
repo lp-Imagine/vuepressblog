@@ -1087,17 +1087,21 @@ body {
 }
 
 .news-empty-icon {
-  margin: 0 auto 12px;
-  width: 44px;
-  height: 44px;
+  margin: 0 auto 16px;
+  width: 52px;
+  height: 52px;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 12px;
-  background: var(--bg);
-  border: 1px solid var(--border);
-  color: var(--text-3);
-  font-size: 18px;
+  border-radius: 14px;
+  background: var(--accent-soft);
+  border: 1px solid color-mix(in srgb, var(--accent) 28%, var(--border));
+  color: var(--link);
+}
+
+.news-empty-icon svg {
+  width: 26px;
+  height: 26px;
 }
 
 .news-empty-title {
