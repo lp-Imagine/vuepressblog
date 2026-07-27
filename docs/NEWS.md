@@ -14,7 +14,7 @@ Penn Notes 的「AI 动态」栏目：每天早上自动抓取公开 RSS，经�
 4. `scripts/resolve-news-images.mjs` — 从原文抓 `og:image`（HTTPS 外链优先；失败则落盘 `website/public/news/`）
 5. push 触发现有 CI 构建部署
 
-定时：GitHub Actions [`.github/workflows/daily-news.yml`](../.github/workflows/daily-news.yml)，每天 **北京时间 08:00**（UTC 00:00）汇总 **昨天**。
+定时：GitHub Actions [`.github/workflows/daily-news.yml`](../.github/workflows/daily-news.yml)，每天 **北京时间 07:00**（UTC 23:00）汇总 **昨天**。
 
 ## Secrets
 
