@@ -453,6 +453,16 @@ body {
   color: var(--text-3);
 }
 
+.news-home-empty a {
+  color: var(--link);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.news-home-empty a:hover {
+  color: var(--link-hover);
+}
+
 .course-mod {
   margin-top: 14px;
   padding: 14px;
@@ -998,6 +1008,114 @@ body {
 .news-item-meta span:last-child {
   color: var(--link);
   font-weight: 500;
+}
+
+.news-rss-subscribe {
+  margin: 16px 0 24px;
+  padding: 16px 18px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--surface);
+}
+
+.news-rss-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 14px;
+  border: 1px solid color-mix(in srgb, var(--accent) 35%, var(--border));
+  border-radius: 999px;
+  background: var(--accent-soft);
+  color: var(--link);
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.15s, border-color 0.15s;
+}
+
+.news-rss-btn:hover {
+  border-color: color-mix(in srgb, var(--accent) 55%, var(--border));
+  background: color-mix(in srgb, var(--accent-soft) 80%, var(--surface));
+}
+
+.news-rss-icon {
+  width: 16px;
+  height: 16px;
+}
+
+.news-rss-hint {
+  margin: 10px 0 8px !important;
+  font-size: 13px;
+  color: var(--text-3);
+}
+
+.news-rss-hint a {
+  color: var(--link);
+  text-decoration: none;
+}
+
+.news-rss-hint a:hover {
+  text-decoration: underline;
+}
+
+.news-rss-url {
+  display: block;
+  padding: 8px 10px;
+  border-radius: 8px;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  font-size: 12px;
+  color: var(--text-2);
+  word-break: break-all;
+  user-select: all;
+}
+
+.news-empty-state {
+  margin: 8px 0 24px;
+  padding: 32px 24px;
+  border: 1px dashed var(--border);
+  border-radius: 16px;
+  background: var(--surface);
+  text-align: center;
+}
+
+.news-empty-icon {
+  margin: 0 auto 12px;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  color: var(--text-3);
+  font-size: 18px;
+}
+
+.news-empty-title {
+  margin: 0 0 6px !important;
+  font-size: 1.05rem;
+  font-weight: 650;
+  color: var(--text);
+}
+
+.news-empty-desc {
+  margin: 0 0 20px !important;
+  font-size: 14px;
+  color: var(--text-3);
+}
+
+.news-empty-state .news-rss-subscribe {
+  max-width: 420px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.news-empty-filter {
+  margin: 4px 0 16px;
+  font-size: 14px;
+  color: var(--text-3);
 }
 
 .news-digest-list {

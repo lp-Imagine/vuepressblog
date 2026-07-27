@@ -117,8 +117,9 @@ function buildNewsIndex(months, monthFiles) {
     '    <p class="section-kicker">栏目</p>',
     '    <h1 class="section-title">AI 动态</h1>',
     '    <p class="section-lead">业界 · 产品 · 模型 · 开源 · 开发者工具 · 前端</p>',
-    '    <p class="news-rss-link"><a href="' + link("news/feed.xml") + '" target="_blank" rel="noopener noreferrer">RSS 订阅</a></p>',
     "  </header>",
+    "",
+    "  <NewsRssSubscribe />",
     "",
     '  <div class="news-pillars">',
   ];
@@ -131,36 +132,37 @@ function buildNewsIndex(months, monthFiles) {
   lines.push("  </div>");
   lines.push("");
   lines.push("  <NewsArchive />");
-  lines.push("");
-  lines.push('  <div class="section-index news-digest-list">');
 
   let total = 0;
   for (const month of months) {
-    const files = monthFiles[month];
-    if (!files.length) continue;
-    lines.push('    <div class="section-group">');
-    lines.push(
-      `      <p class="section-group-label">${month} · ${files.length} 期日报</p>`,
-    );
-    lines.push('      <div class="section-card-grid">');
-    for (const item of files) {
-      total++;
-      const img = item.image
-        ? `<img class="section-card-thumb" src="${escapeHtml(item.image)}" alt="" loading="lazy" />`
-        : "";
+    total += monthFiles[month].length;
+  }
+
+  if (total > 0) {
+    lines.push("");
+    lines.push('  <div class="section-index news-digest-list">');
+    for (const month of months) {
+      const files = monthFiles[month];
+      if (!files.length) continue;
+      lines.push('    <div class="section-group">');
       lines.push(
-        `        <a class="section-card${item.image ? " section-card--media" : ""}" href="${link(`/news/${month}/${item.slug}`)}">${img}<span class="section-card-title">${escapeHtml(item.title)}</span><span class="section-card-meta"><time datetime="${item.date}">${item.date}</time><span>阅读全文</span></span></a>`,
+        `      <p class="section-group-label">${month} · ${files.length} 期日报</p>`,
       );
+      lines.push('      <div class="section-card-grid">');
+      for (const item of files) {
+        const img = item.image
+          ? `<img class="section-card-thumb" src="${escapeHtml(item.image)}" alt="" loading="lazy" />`
+          : "";
+        lines.push(
+          `        <a class="section-card${item.image ? " section-card--media" : ""}" href="${link(`/news/${month}/${item.slug}`)}">${img}<span class="section-card-title">${escapeHtml(item.title)}</span><span class="section-card-meta"><time datetime="${item.date}">${item.date}</time><span>阅读全文</span></span></a>`,
+        );
+      }
+      lines.push("      </div>");
+      lines.push("    </div>");
     }
-    lines.push("      </div>");
-    lines.push("    </div>");
+    lines.push("  </div>");
   }
 
-  if (total === 0) {
-    lines.push('    <p class="home-empty">还没有内容，每天早上会自动更新最新动态。</p>');
-  }
-
-  lines.push("  </div>");
   lines.push("</div>");
   lines.push("");
   return lines.join("\n");

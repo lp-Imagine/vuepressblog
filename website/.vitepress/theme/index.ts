@@ -3,6 +3,7 @@ import { useRoute } from "vitepress";
 import DefaultTheme from "vitepress/theme";
 import NewsArchive from "./NewsArchive.vue";
 import NewsDigestEnhance from "./NewsDigestEnhance.vue";
+import NewsRssSubscribe from "./NewsRssSubscribe.vue";
 import "./custom.css";
 
 const Layout = defineComponent({
@@ -32,5 +33,6 @@ export default {
   Layout,
   enhanceApp({ app }) {
     app.component("NewsArchive", NewsArchive);
+    app.component("NewsRssSubscribe", NewsRssSubscribe);
   },
 };

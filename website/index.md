@@ -41,7 +41,7 @@ layout: home
       <h2>最新动态</h2>
       <a class="home-more" href="/vuepressblog/news/">全部动态</a>
     </div>
-<p class="home-empty">还没有内容，每天早上会自动更新最新动态。</p>
+<p class="home-empty news-home-empty">AI 动态每天 7:00 左右更新 · <a href="/vuepressblog/news/">前往栏目</a></p>
   </section>
 
   <section class="home-block">

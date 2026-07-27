@@ -10,8 +10,9 @@ next: false
     <p class="section-kicker">栏目</p>
     <h1 class="section-title">AI 动态</h1>
     <p class="section-lead">业界 · 产品 · 模型 · 开源 · 开发者工具 · 前端</p>
-    <p class="news-rss-link"><a href="/vuepressblog/news/feed.xml" target="_blank" rel="noopener noreferrer">RSS 订阅</a></p>
   </header>
+
+  <NewsRssSubscribe />
 
   <div class="news-pillars">
     <div class="news-pillar"><p class="news-pillar-title">业界</p><p class="news-pillar-desc">融资、并购、裁员、监管与市场 —— 主流资讯站的「行业」栏</p></div>
@@ -23,8 +24,4 @@ next: false
   </div>
 
   <NewsArchive />
-
-  <div class="section-index news-digest-list">
-    <p class="home-empty">还没有内容，每天早上会自动更新最新动态。</p>
-  </div>
 </div>
