@@ -21,11 +21,6 @@ next: false
     <div class="news-pillar"><p class="news-pillar-title">前端</p><p class="news-pillar-desc">框架、构建、样式、Web 平台与 DX —— 本站笔记强相关</p></div>
   </div>
   <div class="section-index">
-    <div class="section-group">
-      <p class="section-group-label">2026-07 · 1 篇</p>
-      <div class="section-card-grid">
-        <a class="section-card section-card--media" href="/vuepressblog/news/2026-07/ai-news-2026-07-26"><img class="section-card-thumb" src="https://techcrunch.com/wp-content/uploads/2026/07/Screenshot-2026-07-24-at-12.47.38-PM.jpg?w=1166" alt="" loading="lazy" /><span class="section-card-title">AI 动态 · 2026-07-26</span><span class="section-card-meta"><time datetime="2026-07-26">2026-07-26</time><span>阅读全文</span></span></a>
-      </div>
-    </div>
+    <p class="home-empty">暂无日报。配置 LLM_API_KEY 后运行 <code>npm run news:daily</code>。</p>
   </div>
 </div>
