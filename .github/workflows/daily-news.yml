@@ -2,8 +2,8 @@ name: Daily AI News
 
 on:
   schedule:
-    # TEST: Asia/Shanghai 15:40 (UTC 07:40) — revert to "0 0 * * *" after验证
-    - cron: "40 7 * * *"
+    # UTC 23:00 = Asia/Shanghai 07:00
+    - cron: "0 23 * * *"
   workflow_dispatch:
     inputs:
       date:
