@@ -8,7 +8,11 @@ import { fileURLToPath } from "node:url";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const SITE = "https://lp-imagine.github.io/vuepressblog";
-const BASE = "/vuepressblog/";
+
+function siteUrl(path = "") {
+  const p = String(path).replace(/^\/+/, "");
+  return p ? `${SITE}/${p}` : `${SITE}/`;
+}
 const OUT = path.join(root, "website/public/news/feed.xml");
 const ITEMS_JSON = path.join(root, "website/.vitepress/news-items.generated.json");
 
@@ -30,14 +34,13 @@ function toRfc822(dateStr) {
  * @param {Array<{title:string, section:string, sourceName:string, itemDate:string, digestLink:string, digestDate:string, summary?:string}>} items
  */
 export function buildNewsFeedXml(items, opts = {}) {
-  const site = opts.site || SITE;
   const limit = opts.limit ?? 40;
   const slice = items.slice(0, limit);
   const lastBuild = new Date().toUTCString();
 
   const channelItems = slice
     .map((item) => {
-      const link = `${site}${BASE.replace(/\/$/, "")}${item.digestLink}`;
+      const link = siteUrl(item.digestLink.replace(/^\//, ""));
       const desc = [
         item.section ? `[${item.section}]` : "",
         item.sourceName ? `来源：${item.sourceName}` : "",
@@ -60,7 +63,7 @@ export function buildNewsFeedXml(items, opts = {}) {
 <rss version="2.0">
   <channel>
     <title>Penn Notes · AI 动态</title>
-    <link>${site}${BASE}news/</link>
+    <link>${siteUrl("news/")}</link>
     <description>每日 AI 与前端精选动态 —— Penn Notes</description>
     <language>zh-CN</language>
     <lastBuildDate>${lastBuild}</lastBuildDate>
