@@ -64,3 +64,5 @@ next: false
     </div>
   </section>
 </div>
+
+<AboutFriends />

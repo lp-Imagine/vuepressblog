@@ -4,11 +4,10 @@ Penn 的前端笔记站（VitePress）。线上：https://lp-imagine.github.io/p
 
 ## 本地开发
 
-需要 Node.js **18+**（推荐 20：`nvm use 20`）。
+需要 Node.js **20+**（`nvm use 20`）。
 
 ```bash
 npm install
-npm run migrate   # 仅首次：从旧 docs/ 迁到 website/
 npm run dev
 ```
 
@@ -29,7 +28,7 @@ npm run build:home    # 仅重建首页与侧栏
 
 每天早上自动抓取 RSS + 大模型摘要，按日归档。说明见 [docs/NEWS.md](docs/NEWS.md)。
 
-栏目：**业界 · 产品 · 模型 · 开源 · 开发者工具 · 前端**（主流资讯覆盖面 + 本站开发者/前端特色）。
+栏目：**业界 · 产品 · 模型 · 开源 · 开发者工具 · 前端**
 
 需配置仓库 Secret：`LLM_API_KEY`（可选 `LLM_BASE_URL` / `LLM_MODEL`）。
 
@@ -39,4 +38,4 @@ npm run build:home    # 仅重建首页与侧栏
 
 ## 部署
 
-Push `master`/`main`，或发送 `repository_dispatch`（`blog-sync`）触发 GitHub Actions，发布到 `gh-pages`（使用内置 `GITHUB_TOKEN`，无需额外 Secret）。
+Push `master`/`main`，或发送 `repository_dispatch`（`blog-sync`）触发 GitHub Actions，发布到 `gh-pages`。

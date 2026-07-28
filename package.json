@@ -5,8 +5,6 @@
   "type": "module",
   "description": "Penn Notes — VitePress static site",
   "scripts": {
-    "migrate": "node scripts/migrate-from-vuepress.mjs && node scripts/sanitize-md.mjs && node scripts/fix-titles.mjs",
-    "fix:titles": "node scripts/fix-titles.mjs",
     "ingest": "node scripts/ingest-sync.mjs",
     "sync:news": "node scripts/sync-news.mjs",
     "news:daily": "node scripts/generate-daily-news.mjs",
@@ -18,8 +16,7 @@
     "prebuild": "npm run ingest && npm run sync:news && npm run build:home",
     "dev": "npm run ingest && npm run sync:news && npm run build:home && vitepress dev website",
     "build": "vitepress build website && npm run build:redirects",
-    "preview": "vitepress preview website",
-    "deploy": "bash deploy.sh"
+    "preview": "vitepress preview website"
   },
   "devDependencies": {
     "rss-parser": "^3.13.0",
@@ -28,5 +25,8 @@
   },
   "engines": {
     "node": ">=20"
+  },
+  "dependencies": {
+    "medium-zoom": "^1.1.0"
   }
 }
