@@ -1,26 +1,21 @@
 {
-  "at": "2026-07-27T09:41:50.542Z",
+  "at": "2026-07-28T00:06:26.531Z",
   "type": "daily",
-  "date": "2026-07-26",
+  "date": "2026-07-27",
   "candidates": 36,
-  "editorial": 9,
+  "editorial": 10,
   "sections": {
-    "业界": 4,
-    "产品": 3,
-    "模型": 0,
-    "开源": 2,
-    "开发者工具": 0,
+    "业界": 3,
+    "产品": 0,
+    "模型": 1,
+    "开源": 3,
+    "开发者工具": 3,
     "前端": 0
   },
   "rss": {
-    "ok": 18,
-    "failed": 1,
-    "failures": [
-      {
-        "name": "Hacker News AI",
-        "error": "Status code 502"
-      }
-    ]
+    "ok": 19,
+    "failed": 0,
+    "failures": []
   },
-  "output": "news/2026-07/ai-news-2026-07-26.md"
+  "output": "news/2026-07/ai-news-2026-07-27.md"
 }
