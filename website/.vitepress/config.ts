@@ -1,18 +1,22 @@
-import { readFileSync } from "node:fs";
-import { dirname, join } from "node:path";
-import { fileURLToPath } from "node:url";
 import { defineConfig } from "vitepress";
 import sidebar from "./sidebar.generated.mjs";
 import newsSidebar from "./sidebar.news.generated.mjs";
 
 const BASE = "/penn-notes/";
 const GITHUB_PROFILE = "https://github.com/lp-Imagine";
-const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
 
-// Inline PNG so the tab icon does not depend on a separate network fetch / cache entry
-const FAVICON_DATA_URI = `data:image/png;base64,${readFileSync(
-  join(ROOT, "public/pn-favicon-32.png"),
-).toString("base64")}`;
+// Absolute URLs: Chrome on GitHub project Pages often ignores late/subpath icon links
+// and falls back to https://lp-imagine.github.io/favicon.ico
+const ICON_PNG = "https://lp-imagine.github.io/penn-notes/pn-favicon-32.png";
+const ICON_ICO = "https://lp-imagine.github.io/penn-notes/favicon.ico";
+const ICON_APPLE =
+  "https://lp-imagine.github.io/penn-notes/img/pn-apple-touch.png";
+
+const faviconHeadSnippet = [
+  `<link rel="icon" href="${ICON_ICO}" sizes="any">`,
+  `<link rel="icon" type="image/png" sizes="32x32" href="${ICON_PNG}">`,
+  `<link rel="apple-touch-icon" sizes="180x180" href="${ICON_APPLE}">`,
+].join("");
 
 const mergedSidebar = {
   ...sidebar,
@@ -29,40 +33,32 @@ export default defineConfig({
   lastUpdated: true,
   appearance: "dark",
   ignoreDeadLinks: true,
+  // Inject icons immediately after <head> — before VitePress module scripts
+  vite: {
+    plugins: [
+      {
+        name: "penn-early-favicon",
+        transformIndexHtml: {
+          order: "pre",
+          handler(html) {
+            return html.replace(/<head>/i, `<head>${faviconHeadSnippet}`);
+          },
+        },
+      },
+    ],
+  },
   head: [
-    // Data-URI first: bypasses favicon path / HTTP cache issues in Chromium
-    ["link", { rel: "icon", type: "image/png", href: FAVICON_DATA_URI }],
+    ["link", { rel: "icon", href: ICON_ICO, sizes: "any" }],
     [
       "link",
-      {
-        rel: "icon",
-        type: "image/png",
-        sizes: "16x16",
-        href: `${BASE}pn-favicon-16.png`,
-      },
-    ],
-    [
-      "link",
-      {
-        rel: "icon",
-        type: "image/png",
-        sizes: "32x32",
-        href: `${BASE}pn-favicon-32.png`,
-      },
-    ],
-    [
-      "link",
-      {
-        rel: "shortcut icon",
-        href: `${BASE}favicon.ico`,
-      },
+      { rel: "icon", type: "image/png", sizes: "32x32", href: ICON_PNG },
     ],
     [
       "link",
       {
         rel: "apple-touch-icon",
         sizes: "180x180",
-        href: `${BASE}img/pn-apple-touch.png`,
+        href: ICON_APPLE,
       },
     ],
     ["meta", { name: "theme-color", content: "#000000" }],
@@ -79,12 +75,6 @@ export default defineConfig({
       "script",
       {},
       `(function(){try{var k='vitepress-theme-appearance',v=localStorage.getItem(k);if(!v||v==='auto')localStorage.setItem(k,'dark')}catch(e){}})()`,
-    ],
-    // Re-assert icon after parse (helps stubborn Chromium favicon cache)
-    [
-      "script",
-      {},
-      `(function(){try{var l=document.createElement('link');l.rel='icon';l.type='image/png';l.href=${JSON.stringify(FAVICON_DATA_URI)};document.head.appendChild(l)}catch(e){}})()`,
     ],
   ],
   themeConfig: {
