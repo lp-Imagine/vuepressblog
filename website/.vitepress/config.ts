@@ -33,16 +33,18 @@ export default defineConfig({
   lastUpdated: true,
   appearance: "dark",
   ignoreDeadLinks: true,
-  // Inject icons immediately after <head> — before VitePress module scripts
+  // Inject icons at the very start of <head> (VitePress otherwise places module scripts first)
   vite: {
     plugins: [
       {
         name: "penn-early-favicon",
-        transformIndexHtml: {
-          order: "pre",
-          handler(html) {
-            return html.replace(/<head>/i, `<head>${faviconHeadSnippet}`);
-          },
+        transformIndexHtml(html) {
+          if (html.includes('data-penn-favicon="1"')) return html;
+          const snippet = faviconHeadSnippet.replace(
+            "<link ",
+            '<link data-penn-favicon="1" ',
+          );
+          return html.replace(/<head>/i, `<head>${snippet}`);
         },
       },
     ],
