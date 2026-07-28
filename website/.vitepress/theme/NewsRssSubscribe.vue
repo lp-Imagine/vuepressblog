@@ -5,7 +5,7 @@ defineProps({
   compact: { type: Boolean, default: false },
 });
 
-const FEED_URL = "https://lp-imagine.github.io/vuepressblog/news/feed.xml";
+const FEED_URL = "https://lp-imagine.github.io/penn-notes/news/feed.xml";
 const copied = ref(false);
 
 async function copyFeed() {

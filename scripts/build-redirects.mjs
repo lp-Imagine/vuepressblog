@@ -9,7 +9,7 @@ import { fileURLToPath } from "node:url";
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const mapPath = path.join(root, "scripts", "redirects.generated.json");
 const dist = path.join(root, "website", ".vitepress", "dist");
-const BASE = "/vuepressblog";
+const BASE = "/penn-notes";
 
 function main() {
   if (!fs.existsSync(mapPath)) {

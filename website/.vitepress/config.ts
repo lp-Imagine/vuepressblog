@@ -2,7 +2,7 @@ import { defineConfig } from "vitepress";
 import sidebar from "./sidebar.generated.mjs";
 import newsSidebar from "./sidebar.news.generated.mjs";
 
-const BASE = "/vuepressblog/";
+const BASE = "/penn-notes/";
 const GITHUB_PROFILE = "https://github.com/lp-Imagine";
 
 const mergedSidebar = {

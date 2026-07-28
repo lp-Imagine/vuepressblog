@@ -7,7 +7,7 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
-const SITE = "https://lp-imagine.github.io/vuepressblog";
+const SITE = "https://lp-imagine.github.io/penn-notes";
 
 function siteUrl(path = "") {
   const p = String(path).replace(/^\/+/, "");

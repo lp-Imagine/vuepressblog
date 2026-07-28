@@ -24,7 +24,7 @@ const fetch = globalThis.fetch.bind(globalThis);
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const newsRoot = path.join(root, "news");
 const publicNews = path.join(root, "website/public/news");
-const BASE = "/vuepressblog/";
+const BASE = "/penn-notes/";
 
 const UA =
   "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36";

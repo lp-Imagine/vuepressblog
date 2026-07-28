@@ -3,159 +3,159 @@
 <rss version="2.0">
   <channel>
     <title>Penn Notes · AI 动态</title>
-    <link>https://lp-imagine.github.io/vuepressblog/news/</link>
+    <link>https://lp-imagine.github.io/penn-notes/news/</link>
     <description>每日 AI 与前端精选动态 —— Penn Notes</description>
     <language>zh-CN</language>
-    <lastBuildDate>Tue, 28 Jul 2026 00:06:26 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 28 Jul 2026 01:58:58 GMT</lastBuildDate>
     <generator>Penn Notes news feed</generator>
     <item>
       <title>携程因滥用市场支配地位被罚没51.79亿元</title>
-      <link>https://lp-imagine.github.io/vuepressblog/news/2026-07/ai-news-2026-07-27</link>
-      <guid isPermaLink="true">https://lp-imagine.github.io/vuepressblog/news/2026-07/ai-news-2026-07-27</guid>
+      <link>https://lp-imagine.github.io/penn-notes/news/2026-07/ai-news-2026-07-27</link>
+      <guid isPermaLink="true">https://lp-imagine.github.io/penn-notes/news/2026-07/ai-news-2026-07-27</guid>
       <pubDate>Mon, 27 Jul 2026 16:00:00 GMT</pubDate>
       <description>[业界] · 来源：36氪 · 市场监管总局依法对携程滥用市场支配地位实施垄断行为作出行政处罚，罚没款合计51.79亿元。携程发布公告表示诚恳接受、坚决服从，并将逐项推进整改。该处罚是近年来平台经济领域最大罚单之一，释放了持续强化反垄断监管的信号。对读者：平台型企业需重新审视定价策略与商家合作条款，避免因市场支配地位滥用而面临巨额罚款与合规风险。</description>
       <category>业界</category>
     </item>
     <item>
       <title>AMD发布全球首款2nm GPU MI455X，OpenAI等多家客户站台</title>
-      <link>https://lp-imagine.github.io/vuepressblog/news/2026-07/ai-news-2026-07-27</link>
-      <guid isPermaLink="true">https://lp-imagine.github.io/vuepressblog/news/2026-07/ai-news-2026-07-27</guid>
+      <link>https://lp-imagine.github.io/penn-notes/news/2026-07/ai-news-2026-07-27</link>
+      <guid isPermaLink="true">https://lp-imagine.github.io/penn-notes/news/2026-07/ai-news-2026-07-27</guid>
       <pubDate>Mon, 27 Jul 2026 16:00:00 GMT</pubDate>
       <description>[业界] · 来源：InfoQ 中文 · AMD在Advancing AI 2026大会上发布基于台积电2nm工艺的MI455X GPU与Zen 6架构Venice CPU，共同构成Helios机架级AI系统，已进入量产，2026年Q3末起出货。MI455X采用Chiplet设计，计算芯粒使用N2工艺，总晶体管约3200亿。OpenAI、Meta、微软、甲骨文已签约，计划2026年底起规模部署。对读者：AMD在AI芯片领域取得重要突破，但2nm仅用于部分芯粒，实际性能与生态成熟度仍需观察，可关注其与英伟达的竞争格局变化。</description>
       <category>业界</category>
     </item>
     <item>
       <title>陶哲轩在菲尔兹颁奖现场警告：数学迎来百年新危机</title>
-      <link>https://lp-imagine.github.io/vuepressblog/news/2026-07/ai-news-2026-07-27</link>
-      <guid isPermaLink="true">https://lp-imagine.github.io/vuepressblog/news/2026-07/ai-news-2026-07-27</guid>
+      <link>https://lp-imagine.github.io/penn-notes/news/2026-07/ai-news-2026-07-27</link>
+      <guid isPermaLink="true">https://lp-imagine.github.io/penn-notes/news/2026-07/ai-news-2026-07-27</guid>
       <pubDate>Mon, 27 Jul 2026 16:00:00 GMT</pubDate>
       <description>[业界] · 来源：量子位 · 菲尔兹奖得主陶哲轩在ICM大会上发表演讲，警告数学正面临一场关于价值观与实践方式的基础危机。他引用First Proof评测数据：AI以可发表质量解出10道研究级数学题中的7道，单题成本10-1000美元。他提出“工作假设”：假设AI很快能以合理成本完成相当比例的研究级数学任务，进而追问数学研究的目标与人类数学家的独特价值。对读者：AI对知识工作的冲击已从工具层面延伸至学科根本，各领域从业者需思考自身不可替代的核心能力。</description>
       <category>业界</category>
     </item>
     <item>
       <title>蚂蚁百灵发布新一代原生混合推理模型Ling-3.0-Flash</title>
-      <link>https://lp-imagine.github.io/vuepressblog/news/2026-07/ai-news-2026-07-27</link>
-      <guid isPermaLink="true">https://lp-imagine.github.io/vuepressblog/news/2026-07/ai-news-2026-07-27</guid>
+      <link>https://lp-imagine.github.io/penn-notes/news/2026-07/ai-news-2026-07-27</link>
+      <guid isPermaLink="true">https://lp-imagine.github.io/penn-notes/news/2026-07/ai-news-2026-07-27</guid>
       <pubDate>Mon, 27 Jul 2026 16:00:00 GMT</pubDate>
       <description>[模型] · 来源：量子位 · 蚂蚁百灵发布Ling-3.0-Flash，总参数量124B，单次激活仅5.1B，采用5:1交替堆叠的KDA线性注意力与MLA混合架构，在长上下文效率与模型能力间取得平衡。该模型在基础推理、指令遵循等指标上对标参数规模2-3倍的竞品，并针对Agent场景扩展超10000个真实交互训练环境，优化自我纠错与长程规划。已上线OpenRouter，限时免费一周后将开源。对读者：小参数量高智效比模型值得关注，尤其适合资源受限但需Agent能力的团队，可趁免费期测试其长程任务闭环表现。</description>
       <category>模型</category>
     </item>
     <item>
       <title>亚马逊云科技发布Loom：开源AI代理管理参考平台</title>
-      <link>https://lp-imagine.github.io/vuepressblog/news/2026-07/ai-news-2026-07-27</link>
-      <guid isPermaLink="true">https://lp-imagine.github.io/vuepressblog/news/2026-07/ai-news-2026-07-27</guid>
+      <link>https://lp-imagine.github.io/penn-notes/news/2026-07/ai-news-2026-07-27</link>
+      <guid isPermaLink="true">https://lp-imagine.github.io/penn-notes/news/2026-07/ai-news-2026-07-27</guid>
       <pubDate>Mon, 27 Jul 2026 16:00:00 GMT</pubDate>
       <description>[开源] · 来源：InfoQ 中文 · 亚马逊云科技发布Loom，一个开源AI代理管理参考平台，展示如何在AWS上构建、部署和管理AI智能代理，内置安全控制。Loom使用Strands Agents SDK构建代理，在Amazon Bedrock AgentCore运行时上运行，集成统一管理UI、身份提供商集成、基于作用域的授权，以及代理、记忆资源、MCP服务器和A2A集成的生命周期管理。特别解决了身份传播难题，保留完整委托链。对读者：需要自建企业级Agent平台且使用AWS生态的团队，可参考Loom的架构设计，尤其是其身份传播与安全控制方案。</description>
       <category>开源</category>
     </item>
     <item>
       <title>mvanhorn/last30days-skill：跨平台话题研究AI Agent</title>
-      <link>https://lp-imagine.github.io/vuepressblog/news/2026-07/ai-news-2026-07-27</link>
-      <guid isPermaLink="true">https://lp-imagine.github.io/vuepressblog/news/2026-07/ai-news-2026-07-27</guid>
+      <link>https://lp-imagine.github.io/penn-notes/news/2026-07/ai-news-2026-07-27</link>
+      <guid isPermaLink="true">https://lp-imagine.github.io/penn-notes/news/2026-07/ai-news-2026-07-27</guid>
       <pubDate>Mon, 27 Jul 2026 16:00:00 GMT</pubDate>
       <description>[开源] · 来源：mvanhorn/last30days-skill · 开源项目last30days-skill是一个AI Agent技能，可跨Reddit、X、YouTube、Hacker News、Polymarket及网页研究任意话题，并综合生成有据可依的摘要。适合需要快速获取多源信息聚合的调研场景。对读者：可用于市场调研、竞品分析或热点追踪，减少手动跨平台搜集信息的时间成本。</description>
       <category>开源</category>
     </item>
     <item>
       <title>bradautomates/claude-video：让Claude具备视频观看能力</title>
-      <link>https://lp-imagine.github.io/vuepressblog/news/2026-07/ai-news-2026-07-27</link>
-      <guid isPermaLink="true">https://lp-imagine.github.io/vuepressblog/news/2026-07/ai-news-2026-07-27</guid>
+      <link>https://lp-imagine.github.io/penn-notes/news/2026-07/ai-news-2026-07-27</link>
+      <guid isPermaLink="true">https://lp-imagine.github.io/penn-notes/news/2026-07/ai-news-2026-07-27</guid>
       <pubDate>Mon, 27 Jul 2026 16:00:00 GMT</pubDate>
       <description>[开源] · 来源：bradautomates/claude-video · 开源项目claude-video通过/wath命令，让Claude能够下载视频、提取帧、转录音频，并将所有内容交给Claude进行分析。为Claude增加了多模态视频理解能力，扩展了其应用场景。对读者：适合需要让AI分析视频内容（如教程、会议记录、监控）的开发者，可集成到现有工作流中。</description>
       <category>开源</category>
     </item>
     <item>
       <title>Cursor用Agent集群重造SQLite：仅凭835页手册，无源码无测试</title>
-      <link>https://lp-imagine.github.io/vuepressblog/news/2026-07/ai-news-2026-07-27</link>
-      <guid isPermaLink="true">https://lp-imagine.github.io/vuepressblog/news/2026-07/ai-news-2026-07-27</guid>
+      <link>https://lp-imagine.github.io/penn-notes/news/2026-07/ai-news-2026-07-27</link>
+      <guid isPermaLink="true">https://lp-imagine.github.io/penn-notes/news/2026-07/ai-news-2026-07-27</guid>
       <pubDate>Mon, 27 Jul 2026 16:00:00 GMT</pubDate>
       <description>[开发者工具] · 来源：InfoQ 中文 · Cursor工程团队公布实验：一群AI Agent仅凭835页SQLite手册，用Rust从零实现数据库引擎，无源码、无测试、不联网，最终通过全部预留的SQL结果一致性测试。采用规划者+执行者分工的方案仅花费1339美元，而全部使用前沿模型则需10565美元，成本差近8倍。结论是Agent编排方式比模型选择更重要。对读者：该实验展示了Agent协作的潜力，开发者在构建AI编程系统时应优先关注任务分解与分工策略，而非盲目追求最强模型。</description>
       <category>开发者工具</category>
     </item>
     <item>
       <title>Snowflake CoCo中的Loop Engineering实践</title>
-      <link>https://lp-imagine.github.io/vuepressblog/news/2026-07/ai-news-2026-07-27</link>
-      <guid isPermaLink="true">https://lp-imagine.github.io/vuepressblog/news/2026-07/ai-news-2026-07-27</guid>
+      <link>https://lp-imagine.github.io/penn-notes/news/2026-07/ai-news-2026-07-27</link>
+      <guid isPermaLink="true">https://lp-imagine.github.io/penn-notes/news/2026-07/ai-news-2026-07-27</guid>
       <pubDate>Mon, 27 Jul 2026 16:00:00 GMT</pubDate>
       <description>[开发者工具] · 来源：InfoQ 中文 · Snowflake CoCo团队分享了从提示词工程到循环工程（Loop Engineering）的四阶段演进路径。循环工程的核心是设计目标驱动的闭环自治系统，系统自主完成“行动-观察-推理-重复”循环，直到客观验证通过。CoCo为循环工程提供原生支持，包括循环不会因模型自认为完成而停止、只有客观检查通过才停止等结构性要求。对读者：构建AI编程系统时，应关注循环工程的设计原则，确保系统具备自主验证与终止机制，而非依赖模型的主观判断。</description>
       <category>开发者工具</category>
     </item>
     <item>
       <title>Loops工程代码质量引争议：Hype跑在严谨性前面</title>
-      <link>https://lp-imagine.github.io/vuepressblog/news/2026-07/ai-news-2026-07-27</link>
-      <guid isPermaLink="true">https://lp-imagine.github.io/vuepressblog/news/2026-07/ai-news-2026-07-27</guid>
+      <link>https://lp-imagine.github.io/penn-notes/news/2026-07/ai-news-2026-07-27</link>
+      <guid isPermaLink="true">https://lp-imagine.github.io/penn-notes/news/2026-07/ai-news-2026-07-27</guid>
       <pubDate>Mon, 27 Jul 2026 16:00:00 GMT</pubDate>
       <description>[开发者工具] · 来源：InfoQ 中文 · 在AIE World&apos;s Fair大会上，一场关于Loops（循环工程）的辩论引发关注。正方认为Loops是工程核心单元，已两年半不手写代码；反方则指出实际代码质量仍是垃圾，Hype跑在了技术严谨性前面。核心分歧在于Loops能否真正替代工程师的判断，反方强调软件工厂无法自主判断是否构建了正确的东西，仍需工程师留在循环中。对读者：采用Loops时应保持审慎，确保有足够的测试覆盖和规格约束，避免盲目追求自动化而牺牲代码质量。</description>
       <category>开发者工具</category>
     </item>
     <item>
       <title>「眸深智能」完成近亿元 Pre-A 轮追加融资，估值半年涨 10 倍</title>
-      <link>https://lp-imagine.github.io/vuepressblog/news/2026-07/ai-news-2026-07-26</link>
-      <guid isPermaLink="true">https://lp-imagine.github.io/vuepressblog/news/2026-07/ai-news-2026-07-26</guid>
+      <link>https://lp-imagine.github.io/penn-notes/news/2026-07/ai-news-2026-07-26</link>
+      <guid isPermaLink="true">https://lp-imagine.github.io/penn-notes/news/2026-07/ai-news-2026-07-26</guid>
       <pubDate>Sun, 26 Jul 2026 16:00:00 GMT</pubDate>
       <description>[业界] · 来源：36氪 · 具身大脑公司「眸深智能」（Motion Brain）完成近亿元 Pre-A 轮追加融资，由瑾悦投资、创合汇资本及老股东徐汇资本参投。此前 5 月刚完成 3 亿元 Pre-A 轮，Pre-A+ 轮近 5 亿融资也在交割中。公司由复旦教授陈涛、前英特尔首席科学家张益民等创立，走“世界动作模型”路线，将动作映射为隐空间 Token，上半年营收已达数千万元。对读者：具身智能赛道融资热度不减，关注“动作模型”路线与 VLA 路线的分化，可跟踪其开源数据与模型进展。</description>
       <category>业界</category>
     </item>
     <item>
       <title>阿里巴巴开源代码审查工具 open-code-review：混合架构 + LLM Agent</title>
-      <link>https://lp-imagine.github.io/vuepressblog/news/2026-07/ai-news-2026-07-26</link>
-      <guid isPermaLink="true">https://lp-imagine.github.io/vuepressblog/news/2026-07/ai-news-2026-07-26</guid>
+      <link>https://lp-imagine.github.io/penn-notes/news/2026-07/ai-news-2026-07-26</link>
+      <guid isPermaLink="true">https://lp-imagine.github.io/penn-notes/news/2026-07/ai-news-2026-07-26</guid>
       <pubDate>Sun, 26 Jul 2026 16:00:00 GMT</pubDate>
       <description>[开源] · 来源：alibaba/open-code-review · 阿里巴巴开源并免费发布代码审查工具 open-code-review，采用确定性流水线 + LLM Agent 的混合架构，可在行级提供精确评论。内置针对 NPE、线程安全、XSS、SQL 注入等场景的微调规则集，兼容 OpenAI 与 Anthropic API。该工具已在阿里内部大规模验证。对读者：团队可零成本引入此工具，在 CI/CD 中集成自动化代码审查，尤其适合对安全与质量要求较高的项目。</description>
       <category>开源</category>
     </item>
     <item>
       <title>citrolabs/ego-lite：专为 AI Agent 打造的最快浏览器</title>
-      <link>https://lp-imagine.github.io/vuepressblog/news/2026-07/ai-news-2026-07-26</link>
-      <guid isPermaLink="true">https://lp-imagine.github.io/vuepressblog/news/2026-07/ai-news-2026-07-26</guid>
+      <link>https://lp-imagine.github.io/penn-notes/news/2026-07/ai-news-2026-07-26</link>
+      <guid isPermaLink="true">https://lp-imagine.github.io/penn-notes/news/2026-07/ai-news-2026-07-26</guid>
       <pubDate>Sun, 26 Jul 2026 16:00:00 GMT</pubDate>
       <description>[开源] · 来源：citrolabs/ego-lite · ego-lite 定位为“AI Agent 最快的浏览器”，支持将用户的登录态共享给 Codex 或 Claude Code 等 Agent 以执行浏览器自动化，且不干扰用户操作。项目宣称零成本、零配置，旨在解决 Agent 在浏览器环境中身份认证与状态共享的痛点。对读者：若你频繁使用 AI 编码代理进行网页自动化测试或数据采集，ego-lite 可显著降低环境配置成本。</description>
       <category>开源</category>
     </item>
     <item>
       <title>Monday.com 以 AI 为由裁员 20%，TechCrunch 统计已有 20 余家科技公司效仿</title>
-      <link>https://lp-imagine.github.io/vuepressblog/news/2026-07/ai-news-2026-07-26</link>
-      <guid isPermaLink="true">https://lp-imagine.github.io/vuepressblog/news/2026-07/ai-news-2026-07-26</guid>
+      <link>https://lp-imagine.github.io/penn-notes/news/2026-07/ai-news-2026-07-26</link>
+      <guid isPermaLink="true">https://lp-imagine.github.io/penn-notes/news/2026-07/ai-news-2026-07-26</guid>
       <pubDate>Sat, 25 Jul 2026 16:00:00 GMT</pubDate>
       <description>[业界] · 来源：TechCrunch AI · 项目管理软件公司 Monday.com 在 SEC 文件中宣布裁员约 20%，并将 AI 列为关键因素。TechCrunch 梳理了今年以 AI 为由进行裁员的 20 余家科技公司，包括多家知名企业。这一趋势反映出企业正通过 AI 自动化替代部分人力岗位，尤其在客服、内容生成与项目管理领域。对读者：AI 对就业结构的影响正在加速，开发者应主动向 AI 工具链开发、Agent 工程等高价值方向转型。</description>
       <category>业界</category>
     </item>
     <item>
       <title>Reid Hoffman 与 Mark Pincus 联合创立 AI 实验室 Prentis，拟融资 1 亿美元</title>
-      <link>https://lp-imagine.github.io/vuepressblog/news/2026-07/ai-news-2026-07-26</link>
-      <guid isPermaLink="true">https://lp-imagine.github.io/vuepressblog/news/2026-07/ai-news-2026-07-26</guid>
+      <link>https://lp-imagine.github.io/penn-notes/news/2026-07/ai-news-2026-07-26</link>
+      <guid isPermaLink="true">https://lp-imagine.github.io/penn-notes/news/2026-07/ai-news-2026-07-26</guid>
       <pubDate>Sat, 25 Jul 2026 16:00:00 GMT</pubDate>
       <description>[业界] · 来源：TechCrunch AI · 新 AI 研究实验室 Prentis 由连续创业者 Ritankar Das 与科技巨头 Reid Hoffman、Mark Pincus 联合创立，正洽谈以 10 亿美元估值融资 1 亿美元。该实验室专注于“计算机使用模型”，押注自动化日常计算机任务将超越编程成为 AI 最大应用场景。对读者：计算机使用（Computer Use）正成为 AI 新热点，关注该领域开源项目与工具链，可能重塑 RPA 与办公自动化市场。</description>
       <category>业界</category>
     </item>
     <item>
       <title>Cognition 收购 AI 助手 Poke：AI 人格正成为竞争壁垒</title>
-      <link>https://lp-imagine.github.io/vuepressblog/news/2026-07/ai-news-2026-07-26</link>
-      <guid isPermaLink="true">https://lp-imagine.github.io/vuepressblog/news/2026-07/ai-news-2026-07-26</guid>
+      <link>https://lp-imagine.github.io/penn-notes/news/2026-07/ai-news-2026-07-26</link>
+      <guid isPermaLink="true">https://lp-imagine.github.io/penn-notes/news/2026-07/ai-news-2026-07-26</guid>
       <pubDate>Sat, 25 Jul 2026 16:00:00 GMT</pubDate>
       <description>[业界] · 来源：TechCrunch AI · AI 编码初创公司 Cognition 收购了以“像朋友一样发短信”为特色的 AI 助手 Poke，交易估值在“低九位数”范围。此举旨在将 Poke 的对话风格与交互模型融入其编码代理 Devin，反映出行业共识：AI 助手的交互方式与人格化体验正与底层模型能力同等重要。对读者：AI 产品的“人格”设计正从加分项变为核心竞争力，开发 Agent 时应重视交互体验与用户粘性。</description>
       <category>业界</category>
     </item>
     <item>
       <title>Anthropic 发布 Opus 5，性能接近 Fable 5 但成本减半</title>
-      <link>https://lp-imagine.github.io/vuepressblog/news/2026-07/ai-news-2026-07-26</link>
-      <guid isPermaLink="true">https://lp-imagine.github.io/vuepressblog/news/2026-07/ai-news-2026-07-26</guid>
+      <link>https://lp-imagine.github.io/penn-notes/news/2026-07/ai-news-2026-07-26</link>
+      <guid isPermaLink="true">https://lp-imagine.github.io/penn-notes/news/2026-07/ai-news-2026-07-26</guid>
       <pubDate>Sat, 25 Jul 2026 16:00:00 GMT</pubDate>
       <description>[产品] · 来源：TechCrunch AI · Anthropic 于 7 月 24 日发布最新旗舰模型 Claude Opus 5。官方称其在编程、Agent 任务及复杂推理方面显著提升，多项基准测试追平甚至反超 Fable 5，但 API 价格维持 Opus 4.8 水平（输入 5 美元/百万 Token，输出 25 美元/百万 Token），仅为 Fable 5 的一半。该模型已向 Claude 平台及 API 用户开放，更适合企业办公与日常高频场景。对读者：若需高性价比的强推理模型，Opus 5 是当前最优选，可优先评估其在自身工作流中的表现。</description>
       <category>产品</category>
     </item>
     <item>
       <title>Opus 5 实测炸场：网友称“差点从椅子上摔下来”</title>
-      <link>https://lp-imagine.github.io/vuepressblog/news/2026-07/ai-news-2026-07-26</link>
-      <guid isPermaLink="true">https://lp-imagine.github.io/vuepressblog/news/2026-07/ai-news-2026-07-26</guid>
+      <link>https://lp-imagine.github.io/penn-notes/news/2026-07/ai-news-2026-07-26</link>
+      <guid isPermaLink="true">https://lp-imagine.github.io/penn-notes/news/2026-07/ai-news-2026-07-26</guid>
       <pubDate>Sat, 25 Jul 2026 16:00:00 GMT</pubDate>
       <description>[产品] · 来源：量子位 · Opus 5 上线后引发社区疯狂测试。博主仅用 5 倍 Max 订阅额度的 27% 便搭建出高质量的 Rocket League 克隆版；另一测试中，Opus 5 Max 直接打破原有基准。Minecraft 复刻、物理机关模拟等场景均表现惊艳，被评价为“像把提示词丢进图像生成器，出来一整张能走进去的地图”。Anthropic 甚至为适配 Opus 5 的推理能力，将 Claude Code 系统提示词删减八成。对读者：Opus 5 的代码生成与物理模拟能力已接近甚至超越 Fable 5，开发者可尝试将其接入 Cursor 等工具以提升效率。</description>
       <category>产品</category>
     </item>
     <item>
       <title>Meta AI 聊天机器人升级为个人助手：集成日历与深度研究</title>
-      <link>https://lp-imagine.github.io/vuepressblog/news/2026-07/ai-news-2026-07-26</link>
-      <guid isPermaLink="true">https://lp-imagine.github.io/vuepressblog/news/2026-07/ai-news-2026-07-26</guid>
+      <link>https://lp-imagine.github.io/penn-notes/news/2026-07/ai-news-2026-07-26</link>
+      <guid isPermaLink="true">https://lp-imagine.github.io/penn-notes/news/2026-07/ai-news-2026-07-26</guid>
       <pubDate>Sat, 25 Jul 2026 16:00:00 GMT</pubDate>
       <description>[产品] · 来源：The Verge AI · Meta 宣布对其 AI 聊天机器人进行重大更新，使其超越简单的问答与图像生成，转向生产力助手。新功能包括接入用户日历生成每日简报、协助规划活动，以及执行可引导的深度研究。Meta 称这是“迈向个人超级智能的下一步”，由最新模型驱动，旨在与 Gemini、ChatGPT 和 Claude 竞争。对读者：Meta AI 的日历集成与深度研究功能值得关注，若你深度使用 Meta 生态，可尝试将其作为日常信息聚合入口。</description>
       <category>产品</category>

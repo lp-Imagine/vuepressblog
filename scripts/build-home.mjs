@@ -8,7 +8,7 @@ import { fileURLToPath } from "node:url";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const siteRoot = path.join(root, "website");
-const BASE = "/vuepressblog/";
+const BASE = "/penn-notes/";
 
 const SECTIONS = [
   {

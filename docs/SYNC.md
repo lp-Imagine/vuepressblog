@@ -54,7 +54,7 @@ draft: false
 写入文件后调用 GitHub API：
 
 ```http
-POST /repos/lp-Imagine/vuepressblog/dispatches
+POST /repos/lp-Imagine/penn-notes/dispatches
 Accept: application/vnd.github+json
 Authorization: Bearer <GITHUB_TOKEN>
 

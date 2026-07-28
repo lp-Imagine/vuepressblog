@@ -4,7 +4,7 @@
 set -euo pipefail
 
 : "${GITHUB_TOKEN:?Set GITHUB_TOKEN (PAT with repo/workflow scope)}"
-REPO="${GITHUB_REPO:-lp-Imagine/vuepressblog}"
+REPO="${GITHUB_REPO:-lp-Imagine/penn-notes}"
 REF="${GITHUB_REF:-master}"
 
 curl -sS -X POST \

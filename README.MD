@@ -1,6 +1,6 @@
 # Penn Notes
 
-Penn 的前端笔记站（VitePress）。线上：https://lp-imagine.github.io/vuepressblog/
+Penn 的前端笔记站（VitePress）。线上：https://lp-imagine.github.io/penn-notes/
 
 ## 本地开发
 

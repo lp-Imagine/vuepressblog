@@ -33,7 +33,7 @@ Penn Notes 的「AI 动态」栏目：每天早上自动抓取公开 RSS，经�
 curl -sS -X POST \
   -H "Accept: application/vnd.github+json" \
   -H "Authorization: Bearer <你的PAT>" \
-  https://api.github.com/repos/lp-Imagine/vuepressblog/actions/workflows/daily-news.yml/dispatches \
+  https://api.github.com/repos/lp-Imagine/penn-notes/actions/workflows/daily-news.yml/dispatches \
   -d '{"ref":"master"}'
 ```
 
@@ -49,7 +49,7 @@ bash scripts/trigger-daily-news.sh
 curl -sS -X POST \
   -H "Accept: application/vnd.github+json" \
   -H "Authorization: Bearer <你的PAT>" \
-  https://api.github.com/repos/lp-Imagine/vuepressblog/dispatches \
+  https://api.github.com/repos/lp-Imagine/penn-notes/dispatches \
   -d '{"event_type":"daily-news"}'
 ```
 
@@ -91,7 +91,7 @@ npm run sync:news && npm run build:home && npm run dev
 
 AI 动态提供 RSS，地址：
 
-`https://lp-imagine.github.io/vuepressblog/news/feed.xml`
+`https://lp-imagine.github.io/penn-notes/news/feed.xml`
 
 本地构建后由 `npm run sync:news` 自动生成 `website/public/news/feed.xml`。可用 Feedly、Follow 等阅读器订阅。
 
