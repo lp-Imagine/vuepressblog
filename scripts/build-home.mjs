@@ -64,6 +64,13 @@ function link(p) {
   return BASE + String(p).replace(/^\/+/, "");
 }
 
+/** 静态资源 URL：VitePress 不会给原生 <img src="/..."> 自动拼 base，需要手动前缀 */
+function assetUrl(p) {
+  if (!p) return "";
+  if (/^https?:\/\//.test(p)) return p;
+  return BASE + String(p).replace(/^\/+/, "");
+}
+
 function walk(dir, acc = []) {
   if (!fs.existsSync(dir)) return acc;
   for (const name of fs.readdirSync(dir)) {
@@ -77,9 +84,9 @@ function walk(dir, acc = []) {
 }
 
 function parseFm(raw) {
-  if (!raw.startsWith("---")) return { title: "", date: "", draft: false, group: "" };
+  if (!raw.startsWith("---")) return { title: "", date: "", draft: false, group: "", cover: "" };
   const end = raw.indexOf("\n---", 3);
-  if (end < 0) return { title: "", date: "", draft: false, group: "" };
+  if (end < 0) return { title: "", date: "", draft: false, group: "", cover: "" };
   const yaml = raw.slice(4, end);
   const get = (key) => {
     const m = yaml.match(new RegExp(`^${key}:\\s*(.+)$`, "m"));
@@ -92,6 +99,7 @@ function parseFm(raw) {
     draft: get("draft") === "true",
     sourceId: get("sourceId"),
     group: get("group"),
+    cover: get("cover"),
   };
 }
 
@@ -112,6 +120,7 @@ function collectSection(sectionId) {
       link: urlPath,
       rel,
       group: fm.group || "",
+      cover: fm.cover || "",
     });
   }
   items.sort((a, b) => (a.date < b.date ? 1 : a.date > b.date ? -1 : 0));
@@ -265,13 +274,16 @@ function buildHome(allBySection) {
       ? `<p class="home-empty">暂无文章</p>`
       : `<div class="news-grid">
 ${recent
-  .map(
-    (r) => `  <a class="news-card" href="${link(r.link)}">
-    <time datetime="${r.date}">${r.date}</time>
+  .map((r) => {
+    const thumb = r.cover
+      ? `<img class="news-card-thumb" src="${assetUrl(r.cover)}" alt="" loading="lazy" />`
+      : "";
+    return `  <a class="news-card${r.cover ? " news-card--media" : ""}" href="${link(r.link)}">
+    ${thumb}<div class="news-card-body"><time datetime="${r.date}">${r.date}</time>
     <span class="news-card-title">${escapeHtml(r.title)}</span>
-    <span class="news-card-action">阅读全文</span>
-  </a>`,
-  )
+    <span class="news-card-action">阅读全文</span></div>
+  </a>`;
+  })
   .join("\n")}
 </div>`;
 

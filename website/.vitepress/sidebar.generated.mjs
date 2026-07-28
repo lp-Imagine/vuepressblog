@@ -438,6 +438,10 @@ export default {
       "collapsed": true,
       "items": [
         {
+          "text": "Claude Code 实战手册开源：编码秘籍",
+          "link": "/tech/docs/cms49bxh60007zz9zfexa2vs0"
+        },
+        {
           "text": "Git命令",
           "link": "/tech/docs/Git命令"
         },
@@ -505,6 +509,10 @@ export default {
       "text": "常用文档",
       "collapsed": true,
       "items": [
+        {
+          "text": "Claude Code 实战手册开源：编码秘籍",
+          "link": "/tech/docs/cms49bxh60007zz9zfexa2vs0"
+        },
         {
           "text": "Git命令",
           "link": "/tech/docs/Git命令"

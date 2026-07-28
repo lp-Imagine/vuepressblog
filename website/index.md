@@ -6,9 +6,9 @@ layout: home
   <section class="home-hero">
     <h1 class="home-headline">Penn Notes</h1>
     <p class="home-tagline">AI 动态 · JS &amp; 框架 · 样式 · 工具 · 浏览器</p>
-    <p class="home-sub">积跬步以至千里 · 前端学习与工程备忘 · 共 58 篇</p>
+    <p class="home-sub">积跬步以至千里 · 前端学习与工程备忘 · 共 59 篇</p>
     <div class="home-actions">
-      <a class="home-btn home-btn--primary" href="/penn-notes/computer/browser/Chrome-Extension（扩展程序）开发">阅读最新笔记</a>
+      <a class="home-btn home-btn--primary" href="/penn-notes/tech/docs/cms49bxh60007zz9zfexa2vs0">阅读最新笔记</a>
       <a class="home-btn home-btn--text" href="/penn-notes/news/">AI 动态</a>
     </div>
   </section>
@@ -27,7 +27,7 @@ layout: home
   <a class="home-pillar" href="/penn-notes/tech/">
     <p class="home-pillar-title">工具备忘</p>
     <p class="home-pillar-desc">Git、npm、常用命令与资源收藏</p>
-    <p class="home-pillar-meta">12 篇笔记</p>
+    <p class="home-pillar-meta">13 篇笔记</p>
   </a>
   <a class="home-pillar" href="/penn-notes/computer/">
     <p class="home-pillar-title">浏览器</p>
@@ -61,45 +61,45 @@ layout: home
       <a class="home-more" href="/penn-notes/web/">查看更多</a>
     </div>
 <div class="news-grid">
+  <a class="news-card news-card--media" href="/penn-notes/tech/docs/cms49bxh60007zz9zfexa2vs0">
+    <img class="news-card-thumb" src="/penn-notes/sync/cms49bxh60007zz9zfexa2vs0/cover.jpg" alt="" loading="lazy" /><div class="news-card-body"><time datetime="2026-07-28">2026-07-28</time>
+    <span class="news-card-title">Claude Code 实战手册开源：编码秘籍</span>
+    <span class="news-card-action">阅读全文</span></div>
+  </a>
   <a class="news-card" href="/penn-notes/computer/browser/Chrome-Extension（扩展程序）开发">
-    <time datetime="2022-09-06">2022-09-06</time>
+    <div class="news-card-body"><time datetime="2022-09-06">2022-09-06</time>
     <span class="news-card-title">Chrome Extension（扩展程序）开发</span>
-    <span class="news-card-action">阅读全文</span>
+    <span class="news-card-action">阅读全文</span></div>
   </a>
   <a class="news-card" href="/penn-notes/tech/github/github精选资源">
-    <time datetime="2022-09-06">2022-09-06</time>
+    <div class="news-card-body"><time datetime="2022-09-06">2022-09-06</time>
     <span class="news-card-title">GitHub精选资源</span>
-    <span class="news-card-action">阅读全文</span>
+    <span class="news-card-action">阅读全文</span></div>
   </a>
   <a class="news-card" href="/penn-notes/tech/docs/MySQL数据库常用操作">
-    <time datetime="2022-09-06">2022-09-06</time>
+    <div class="news-card-body"><time datetime="2022-09-06">2022-09-06</time>
     <span class="news-card-title">MySQL数据库常用操作</span>
-    <span class="news-card-action">阅读全文</span>
+    <span class="news-card-action">阅读全文</span></div>
   </a>
   <a class="news-card" href="/penn-notes/tech/docs/Git命令">
-    <time datetime="2022-09-06">2022-09-06</time>
+    <div class="news-card-body"><time datetime="2022-09-06">2022-09-06</time>
     <span class="news-card-title">Git命令</span>
-    <span class="news-card-action">阅读全文</span>
+    <span class="news-card-action">阅读全文</span></div>
   </a>
   <a class="news-card" href="/penn-notes/web/ui-lib/解决element表格数据量过大导致页面渲染缓慢、卡顿问题">
-    <time datetime="2022-09-06">2022-09-06</time>
+    <div class="news-card-body"><time datetime="2022-09-06">2022-09-06</time>
     <span class="news-card-title">解决element表格数据量过大导致页面渲染缓慢、卡顿问题</span>
-    <span class="news-card-action">阅读全文</span>
+    <span class="news-card-action">阅读全文</span></div>
   </a>
   <a class="news-card" href="/penn-notes/web/ui-lib/el-form表单封装">
-    <time datetime="2022-09-06">2022-09-06</time>
+    <div class="news-card-body"><time datetime="2022-09-06">2022-09-06</time>
     <span class="news-card-title">el-form表单封装</span>
-    <span class="news-card-action">阅读全文</span>
+    <span class="news-card-action">阅读全文</span></div>
   </a>
   <a class="news-card" href="/penn-notes/web/ui-lib/Element-UI问题清单">
-    <time datetime="2022-09-06">2022-09-06</time>
+    <div class="news-card-body"><time datetime="2022-09-06">2022-09-06</time>
     <span class="news-card-title">Element-UI问题清单</span>
-    <span class="news-card-action">阅读全文</span>
-  </a>
-  <a class="news-card" href="/penn-notes/web/javascript/Axios封装">
-    <time datetime="2022-09-06">2022-09-06</time>
-    <span class="news-card-title">Axios 封装</span>
-    <span class="news-card-action">阅读全文</span>
+    <span class="news-card-action">阅读全文</span></div>
   </a>
 </div>
   </section>
@@ -124,10 +124,10 @@ layout: home
     </a>
   </div>
   <div class="course-mod">
-    <p class="course-mod-label">工具备忘 · 12 篇</p>
+    <p class="course-mod-label">工具备忘 · 13 篇</p>
     <a class="course-card" href="/penn-notes/tech/">
       <span class="course-card-title">工具备忘</span>
-      <span class="course-card-desc">12 篇 · 常用文档、GitHub、Node.js</span>
+      <span class="course-card-desc">13 篇 · 常用文档、GitHub、Node.js</span>
     </a>
   </div>
   <div class="course-mod">

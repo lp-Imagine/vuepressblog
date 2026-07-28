@@ -10,13 +10,17 @@ aside: false
     <p class="section-kicker">栏目</p>
     <h1 class="section-title">工具备忘</h1>
     <p class="section-lead">Git、npm、常用命令与资源收藏</p>
-    <p class="section-count">共 12 篇笔记</p>
+    <p class="section-count">共 13 篇笔记</p>
   </header>
 
   <div class="section-index">
   <div class="section-group">
-    <p class="section-group-label">常用文档 · 8 篇</p>
+    <p class="section-group-label">常用文档 · 9 篇</p>
     <div class="section-card-grid">
+    <a class="section-card" href="/penn-notes/tech/docs/cms49bxh60007zz9zfexa2vs0">
+      <span class="section-card-title">Claude Code 实战手册开源：编码秘籍</span>
+      <span class="section-card-meta"><time datetime="2026-07-28">2026-07-28</time><span>阅读全文</span></span>
+    </a>
     <a class="section-card" href="/penn-notes/tech/docs/Git命令">
       <span class="section-card-title">Git命令</span>
       <span class="section-card-meta"><time datetime="2022-09-06">2022-09-06</time><span>阅读全文</span></span>

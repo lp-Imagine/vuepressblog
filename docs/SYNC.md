@@ -43,11 +43,15 @@ draft: false
 
 <p class="article-meta">...</p>
 
+<img class="article-cover" src="/sync/clxxxxxxxx/cover.jpg" alt="「文章标题」封面" />
+
 正文使用 **Markdown**（代码块用 fenced ```）。
 ```
 
 必填：`title`、`date`、`section`、`source`（必须为 `ai-article`）、`sourceId`。  
 推荐：`group`（决定子目录与侧栏分类）。
+
+> 封面图：除了在 frontmatter 写 `cover`（元数据），还会在正文 meta 之后插入 `<img class="article-cover">`，由 `custom.css` 渲染为全宽圆角封面。章节配图保留 `<figcaption>`，渲染为 `.inline-figure`。
 
 ## 触发重建
 
