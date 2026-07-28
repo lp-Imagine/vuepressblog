@@ -21,6 +21,10 @@ env:
 
 jobs:
   build:
+    # ai-article 同步会先 push 封面/正文，再发 repository_dispatch；跳过中间 push，只保留 dispatch 触发部署
+    if: |
+      github.event_name != 'push' ||
+      !startsWith(github.event.head_commit.message, 'blog-sync:')
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
