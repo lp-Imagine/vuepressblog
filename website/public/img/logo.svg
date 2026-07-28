@@ -3,7 +3,7 @@
   <rect width="64" height="64" rx="16" fill="#0a0a0c"/>
   <rect x="2.25" y="2.25" width="59.5" height="59.5" rx="14.5" fill="#141418" stroke="#5c73e7" stroke-width="1.75"/>
   <!-- inner highlight ring -->
-  <rect x="5.5" y="5.5" width="53" height="53" rx="12" stroke="rgba(168,177,255,0.18)" stroke-width="1"/>
+  <rect x="5.5" y="5.5" width="53" height="53" rx="12" stroke="#2a2f55" stroke-width="1"/>
 
   <!-- N (back, deeper blue) -->
   <path

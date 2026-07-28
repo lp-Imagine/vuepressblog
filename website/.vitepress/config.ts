@@ -21,20 +21,12 @@ export default defineConfig({
   appearance: "dark",
   ignoreDeadLinks: true,
   head: [
-    // Prefer homepage PN mark (SVG); PNG/ICO keep browsers/cache happy
+    // Prefer PNG/ICO for browser tabs (SVG favicon support is uneven)
     [
       "link",
       {
         rel: "icon",
-        href: `${BASE}img/logo.svg?v=2`,
-        type: "image/svg+xml",
-      },
-    ],
-    [
-      "link",
-      {
-        rel: "icon",
-        href: `${BASE}img/favicon-32x32.png?v=2`,
+        href: `${BASE}img/favicon-32x32.png?v=3`,
         type: "image/png",
         sizes: "32x32",
       },
@@ -42,15 +34,25 @@ export default defineConfig({
     [
       "link",
       {
-        rel: "shortcut icon",
-        href: `${BASE}img/favicon.ico?v=2`,
+        rel: "icon",
+        href: `${BASE}img/favicon.ico?v=3`,
+        sizes: "any",
+      },
+    ],
+    [
+      "link",
+      {
+        rel: "icon",
+        href: `${BASE}img/logo.svg?v=3`,
+        type: "image/svg+xml",
+        sizes: "any",
       },
     ],
     [
       "link",
       {
         rel: "apple-touch-icon",
-        href: `${BASE}img/apple-touch-icon.png?v=2`,
+        href: `${BASE}img/apple-touch-icon.png?v=3`,
       },
     ],
     ["meta", { name: "theme-color", content: "#000000" }],
