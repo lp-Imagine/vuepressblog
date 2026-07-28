@@ -1,9 +1,18 @@
+import { readFileSync } from "node:fs";
+import { dirname, join } from "node:path";
+import { fileURLToPath } from "node:url";
 import { defineConfig } from "vitepress";
 import sidebar from "./sidebar.generated.mjs";
 import newsSidebar from "./sidebar.news.generated.mjs";
 
 const BASE = "/penn-notes/";
 const GITHUB_PROFILE = "https://github.com/lp-Imagine";
+const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
+
+// Inline PNG so the tab icon does not depend on a separate network fetch / cache entry
+const FAVICON_DATA_URI = `data:image/png;base64,${readFileSync(
+  join(ROOT, "public/pn-favicon-32.png"),
+).toString("base64")}`;
 
 const mergedSidebar = {
   ...sidebar,
@@ -21,7 +30,17 @@ export default defineConfig({
   appearance: "dark",
   ignoreDeadLinks: true,
   head: [
-    // New filenames (not ?v=): Chrome often ignores query-string favicon cache busting
+    // Data-URI first: bypasses favicon path / HTTP cache issues in Chromium
+    ["link", { rel: "icon", type: "image/png", href: FAVICON_DATA_URI }],
+    [
+      "link",
+      {
+        rel: "icon",
+        type: "image/png",
+        sizes: "16x16",
+        href: `${BASE}pn-favicon-16.png`,
+      },
+    ],
     [
       "link",
       {
@@ -35,8 +54,7 @@ export default defineConfig({
       "link",
       {
         rel: "shortcut icon",
-        type: "image/x-icon",
-        href: `${BASE}pn-favicon.ico`,
+        href: `${BASE}favicon.ico`,
       },
     ],
     [
@@ -61,6 +79,12 @@ export default defineConfig({
       "script",
       {},
       `(function(){try{var k='vitepress-theme-appearance',v=localStorage.getItem(k);if(!v||v==='auto')localStorage.setItem(k,'dark')}catch(e){}})()`,
+    ],
+    // Re-assert icon after parse (helps stubborn Chromium favicon cache)
+    [
+      "script",
+      {},
+      `(function(){try{var l=document.createElement('link');l.rel='icon';l.type='image/png';l.href=${JSON.stringify(FAVICON_DATA_URI)};document.head.appendChild(l)}catch(e){}})()`,
     ],
   ],
   themeConfig: {
