@@ -14,6 +14,8 @@ Penn Notes 的「AI 动态」栏目：每天早上自动抓取公开 RSS，经�
 4. `scripts/resolve-news-images.mjs` — 从原文抓 `og:image`（HTTPS 外链优先；失败则落盘 `website/public/news/`）
 5. push 触发现有 CI 构建部署
 
+> 注意：Actions 用 `GITHUB_TOKEN` 推送 **不会** 再触发另一个 workflow。因此 `daily-news.yml` 在生成后会**自行 build 并部署到 gh-pages**，不依赖 CI。
+
 定时：GitHub Actions [`.github/workflows/daily-news.yml`](../.github/workflows/daily-news.yml)，每天 **北京时间 07:00**（UTC 23:00）汇总 **昨天**。
 
 > GitHub 内置 `schedule` 可能延迟几十分钟甚至更久。推荐用外部定时服务调 `workflow_dispatch`（见下）。
@@ -127,6 +129,7 @@ node scripts/generate-weekly-news.mjs --date=2026-07-27 --force
 
 ## 排查
 
+- **页面没更新**：多半是日报已 commit，但旧版 workflow 用 `GITHUB_TOKEN` 推送不会触发 CI。现在 daily-news 会自行部署；也可手动跑 CI → Run workflow
 - **RSS 失败**：日志里会列出失败源，详情见 `news/.state/feed-health.json`
 - **质量差 / 英文标题**：多半没配 `LLM_API_KEY`，或用了 `--allow-heuristic`
 - **LLM 限流**：workflow 失败不会空 commit，可用 Actions → Daily AI News → Run workflow 重跑

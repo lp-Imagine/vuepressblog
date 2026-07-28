@@ -66,6 +66,7 @@ jobs:
         run: npm run sync:news && npm run build:home
 
       - name: Commit and push
+        id: commit
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -76,7 +77,32 @@ jobs:
             website/index.md || true
           if git diff --cached --quiet; then
             echo "No news changes to commit"
+            echo "changed=false" >> "$GITHUB_OUTPUT"
             exit 0
           fi
           git commit -m "chore(news): daily digest $(TZ=Asia/Shanghai date +%F)"
           git push
+          echo "changed=true" >> "$GITHUB_OUTPUT"
+
+      # GITHUB_TOKEN 推送不会触发 CI，所以这里直接构建并部署到 gh-pages
+      - name: Build site
+        if: steps.commit.outputs.changed == 'true'
+        run: npm run build
+
+      - name: Deploy to gh-pages
+        if: steps.commit.outputs.changed == 'true'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          commit_info=$(git describe --all --always --long)
+          deploy_branch=gh-pages
+          repo_url="https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
+          cd website/.vitepress/dist
+          git config --global init.defaultBranch "$deploy_branch"
+          git init
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "auto deploy news, $commit_info"
+          git remote add origin "$repo_url"
+          git push origin "HEAD:$deploy_branch" --force
