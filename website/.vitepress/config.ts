@@ -1,3 +1,5 @@
+import { readdirSync, readFileSync, writeFileSync, statSync } from "node:fs";
+import { join } from "node:path";
 import { defineConfig } from "vitepress";
 import sidebar from "./sidebar.generated.mjs";
 import newsSidebar from "./sidebar.news.generated.mjs";
@@ -18,6 +20,25 @@ const faviconHeadSnippet = [
   `<link rel="apple-touch-icon" sizes="180x180" href="${ICON_APPLE}">`,
 ].join("");
 
+function injectFaviconEarly(dir: string) {
+  for (const name of readdirSync(dir)) {
+    const p = join(dir, name);
+    if (statSync(p).isDirectory()) {
+      injectFaviconEarly(p);
+      continue;
+    }
+    if (!name.endsWith(".html")) continue;
+    const html = readFileSync(p, "utf8");
+    if (html.includes('data-penn-favicon="1"')) continue;
+    if (!/<head>/i.test(html)) continue;
+    const snippet = faviconHeadSnippet.replace(
+      "<link ",
+      '<link data-penn-favicon="1" ',
+    );
+    writeFileSync(p, html.replace(/<head>/i, `<head>${snippet}`));
+  }
+}
+
 const mergedSidebar = {
   ...sidebar,
   ...newsSidebar,
@@ -33,21 +54,9 @@ export default defineConfig({
   lastUpdated: true,
   appearance: "dark",
   ignoreDeadLinks: true,
-  // Inject icons at the very start of <head> (VitePress otherwise places module scripts first)
-  vite: {
-    plugins: [
-      {
-        name: "penn-early-favicon",
-        transformIndexHtml(html) {
-          if (html.includes('data-penn-favicon="1"')) return html;
-          const snippet = faviconHeadSnippet.replace(
-            "<link ",
-            '<link data-penn-favicon="1" ',
-          );
-          return html.replace(/<head>/i, `<head>${snippet}`);
-        },
-      },
-    ],
+  // Post-process built HTML so icons sit at the very start of <head>
+  async buildEnd(siteConfig) {
+    injectFaviconEarly(siteConfig.outDir);
   },
   head: [
     ["link", { rel: "icon", href: ICON_ICO, sizes: "any" }],
