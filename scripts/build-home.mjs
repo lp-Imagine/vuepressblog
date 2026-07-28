@@ -202,10 +202,14 @@ function writeSectionIndex(section, items) {
           .map((g) => {
             const cards = g.items
               .map((item) => {
-                const date =
-                  items.find((x) => x.link === item.link)?.date || "";
-                return `    <a class="section-card" href="${link(item.link)}">
-      <span class="section-card-title">${escapeHtml(item.text)}</span>
+                const meta = items.find((x) => x.link === item.link);
+                const date = meta?.date || "";
+                const cover = meta?.cover || "";
+                const thumb = cover
+                  ? `<img class="section-card-thumb" src="${assetUrl(cover)}" alt="" loading="lazy" />`
+                  : "";
+                return `    <a class="section-card${cover ? " section-card--media" : ""}" href="${link(item.link)}">
+      ${thumb}<span class="section-card-title">${escapeHtml(item.text)}</span>
       <span class="section-card-meta"><time datetime="${date}">${date}</time><span>阅读全文</span></span>
     </a>`;
               })

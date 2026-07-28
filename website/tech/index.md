@@ -17,8 +17,8 @@ aside: false
   <div class="section-group">
     <p class="section-group-label">常用文档 · 9 篇</p>
     <div class="section-card-grid">
-    <a class="section-card" href="/penn-notes/tech/docs/cms49bxh60007zz9zfexa2vs0">
-      <span class="section-card-title">Claude Code 实战手册开源：编码秘籍</span>
+    <a class="section-card section-card--media" href="/penn-notes/tech/docs/cms49bxh60007zz9zfexa2vs0">
+      <img class="section-card-thumb" src="/penn-notes/sync/cms49bxh60007zz9zfexa2vs0/cover.jpg" alt="" loading="lazy" /><span class="section-card-title">Claude Code 实战手册开源：编码秘籍</span>
       <span class="section-card-meta"><time datetime="2026-07-28">2026-07-28</time><span>阅读全文</span></span>
     </a>
     <a class="section-card" href="/penn-notes/tech/docs/Git命令">
