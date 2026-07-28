@@ -21,38 +21,30 @@ export default defineConfig({
   appearance: "dark",
   ignoreDeadLinks: true,
   head: [
-    // Prefer PNG/ICO for browser tabs (SVG favicon support is uneven)
+    // New filenames (not ?v=): Chrome often ignores query-string favicon cache busting
     [
       "link",
       {
         rel: "icon",
-        href: `${BASE}img/favicon-32x32.png?v=3`,
         type: "image/png",
         sizes: "32x32",
+        href: `${BASE}pn-favicon-32.png`,
       },
     ],
     [
       "link",
       {
-        rel: "icon",
-        href: `${BASE}img/favicon.ico?v=3`,
-        sizes: "any",
-      },
-    ],
-    [
-      "link",
-      {
-        rel: "icon",
-        href: `${BASE}img/logo.svg?v=3`,
-        type: "image/svg+xml",
-        sizes: "any",
+        rel: "shortcut icon",
+        type: "image/x-icon",
+        href: `${BASE}pn-favicon.ico`,
       },
     ],
     [
       "link",
       {
         rel: "apple-touch-icon",
-        href: `${BASE}img/apple-touch-icon.png?v=3`,
+        sizes: "180x180",
+        href: `${BASE}img/pn-apple-touch.png`,
       },
     ],
     ["meta", { name: "theme-color", content: "#000000" }],
