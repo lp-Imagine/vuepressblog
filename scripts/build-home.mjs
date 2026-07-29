@@ -64,11 +64,19 @@ function link(p) {
   return BASE + String(p).replace(/^\/+/, "");
 }
 
-/** 静态资源 URL：VitePress 不会给原生 <img src="/..."> 自动拼 base，需要手动前缀 */
-function assetUrl(p) {
+/**
+ * 公共资源路径（website/public 下）。
+ * 必须写成 /sync/... 这种「不含 base」的根路径：Vite 构建时会按 base 改写；
+ * 若写成 /penn-notes/sync/...，Rollup 会当成模块解析并失败。
+ */
+function publicAssetSrc(p) {
   if (!p) return "";
   if (/^https?:\/\//.test(p)) return p;
-  return BASE + String(p).replace(/^\/+/, "");
+  let s = String(p).trim();
+  // 兼容误带 base 前缀的历史值
+  s = s.replace(/^\/penn-notes(?=\/)/, "");
+  if (!s.startsWith("/")) s = `/${s}`;
+  return s;
 }
 
 function walk(dir, acc = []) {
@@ -206,7 +214,7 @@ function writeSectionIndex(section, items) {
                 const date = meta?.date || "";
                 const cover = meta?.cover || "";
                 const thumb = cover
-                  ? `<img class="section-card-thumb" src="${assetUrl(cover)}" alt="" loading="lazy" />`
+                  ? `<img class="section-card-thumb" src="${escapeHtml(publicAssetSrc(cover))}" alt="" loading="lazy" />`
                   : "";
                 return `    <a class="section-card${cover ? " section-card--media" : ""}" href="${link(item.link)}">
       ${thumb}<span class="section-card-title">${escapeHtml(item.text)}</span>
@@ -280,7 +288,7 @@ function buildHome(allBySection) {
 ${recent
   .map((r) => {
     const thumb = r.cover
-      ? `<img class="news-card-thumb" src="${assetUrl(r.cover)}" alt="" loading="lazy" />`
+      ? `<img class="news-card-thumb" src="${escapeHtml(publicAssetSrc(r.cover))}" alt="" loading="lazy" />`
       : "";
     return `  <a class="news-card${r.cover ? " news-card--media" : ""}" href="${link(r.link)}">
     ${thumb}<div class="news-card-body"><time datetime="${r.date}">${r.date}</time>

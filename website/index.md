@@ -67,7 +67,7 @@ layout: home
     </div>
 <div class="news-grid">
   <a class="news-card news-card--media" href="/penn-notes/tech/docs/cms49bxh60007zz9zfexa2vs0">
-    <img class="news-card-thumb" src="/penn-notes/sync/cms49bxh60007zz9zfexa2vs0/cover.jpg" alt="" loading="lazy" /><div class="news-card-body"><time datetime="2026-07-28">2026-07-28</time>
+    <img class="news-card-thumb" src="/sync/cms49bxh60007zz9zfexa2vs0/cover.jpg" alt="" loading="lazy" /><div class="news-card-body"><time datetime="2026-07-28">2026-07-28</time>
     <span class="news-card-title">Claude Code 实战手册开源：编码秘籍</span>
     <span class="news-card-action">阅读全文</span></div>
   </a>
