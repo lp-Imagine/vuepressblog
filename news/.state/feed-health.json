@@ -1,9 +1,21 @@
 {
-  "at": "2026-07-28T00:05:59.705Z",
-  "targetDate": "2026-07-27",
-  "ok": 19,
-  "failed": 0,
+  "at": "2026-07-29T00:01:25.715Z",
+  "targetDate": "2026-07-28",
+  "ok": 17,
+  "failed": 2,
   "successes": [
+    {
+      "id": "theverge-ai",
+      "name": "The Verge AI",
+      "url": "https://www.theverge.com/rss/ai-artificial-intelligence/index.xml",
+      "items": 5
+    },
+    {
+      "id": "techcrunch-ai",
+      "name": "TechCrunch AI",
+      "url": "https://techcrunch.com/category/artificial-intelligence/feed/",
+      "items": 17
+    },
     {
       "id": "anthropic-news",
       "name": "Anthropic News",
@@ -11,21 +23,27 @@
       "items": 2
     },
     {
-      "id": "techcrunch-ai",
-      "name": "TechCrunch AI",
-      "url": "https://techcrunch.com/category/artificial-intelligence/feed/",
-      "items": 8
-    },
-    {
-      "id": "theverge-ai",
-      "name": "The Verge AI",
-      "url": "https://www.theverge.com/rss/ai-artificial-intelligence/index.xml",
-      "items": 1
+      "id": "deepmind",
+      "name": "Google DeepMind",
+      "url": "https://deepmind.google/blog/rss.xml",
+      "items": 0
     },
     {
       "id": "mit-tr",
       "name": "MIT Tech Review",
       "url": "https://www.technologyreview.com/topic/artificial-intelligence/feed",
+      "items": 5
+    },
+    {
+      "id": "github-blog",
+      "name": "GitHub Blog",
+      "url": "https://github.blog/feed/",
+      "items": 2
+    },
+    {
+      "id": "huggingface",
+      "name": "Hugging Face Blog",
+      "url": "https://huggingface.co/blog/feed.xml",
       "items": 3
     },
     {
@@ -35,28 +53,10 @@
       "items": 0
     },
     {
-      "id": "github-blog",
-      "name": "GitHub Blog",
-      "url": "https://github.blog/feed/",
-      "items": 0
-    },
-    {
-      "id": "huggingface",
-      "name": "Hugging Face Blog",
-      "url": "https://huggingface.co/blog/feed.xml",
-      "items": 1
-    },
-    {
-      "id": "deepmind",
-      "name": "Google DeepMind",
-      "url": "https://deepmind.google/blog/rss.xml",
-      "items": 0
-    },
-    {
       "id": "javascript-weekly",
       "name": "JavaScript Weekly",
       "url": "https://javascriptweekly.com/rss",
-      "items": 0
+      "items": 1
     },
     {
       "id": "ruanyifeng",
@@ -65,10 +65,10 @@
       "items": 0
     },
     {
-      "id": "venturebeat-ai",
-      "name": "VentureBeat AI",
-      "url": "https://venturebeat.com/category/ai/feed/",
-      "items": 0
+      "id": "google-ai",
+      "name": "Google AI Blog",
+      "url": "https://blog.google/technology/ai/rss/",
+      "items": 2
     },
     {
       "id": "openai-blog",
@@ -77,47 +77,46 @@
       "items": 1
     },
     {
-      "id": "css-tricks",
-      "name": "CSS-Tricks",
-      "url": "https://css-tricks.com/feed/",
+      "id": "venturebeat-ai",
+      "name": "VentureBeat AI",
+      "url": "https://venturebeat.com/category/ai/feed/",
       "items": 0
-    },
-    {
-      "id": "google-ai",
-      "name": "Google AI Blog",
-      "url": "https://blog.google/technology/ai/rss/",
-      "items": 0
-    },
-    {
-      "id": "juejin-frontend",
-      "name": "少数派",
-      "url": "https://sspai.com/feed",
-      "items": 4
     },
     {
       "id": "infoq-cn",
       "name": "InfoQ 中文",
       "url": "https://www.infoq.cn/feed",
-      "items": 10
-    },
-    {
-      "id": "hn-ai",
-      "name": "Hacker News AI",
-      "url": "https://hnrss.org/newest?q=AI+OR+LLM+OR+GPT+OR+Claude+OR+OpenAI+OR+Anthropic",
-      "items": 0
+      "items": 15
     },
     {
       "id": "jiqizhixin",
       "name": "36氪",
       "url": "https://36kr.com/feed",
-      "items": 9
+      "items": 8
+    },
+    {
+      "id": "juejin-frontend",
+      "name": "少数派",
+      "url": "https://sspai.com/feed",
+      "items": 6
     },
     {
       "id": "quantumbit",
       "name": "量子位",
       "url": "https://www.qbitai.com/feed",
-      "items": 9
+      "items": 8
     }
   ],
-  "failures": []
+  "failures": [
+    {
+      "id": "hn-ai",
+      "name": "Hacker News AI",
+      "error": "Status code 502"
+    },
+    {
+      "id": "css-tricks",
+      "name": "CSS-Tricks",
+      "error": "Status code 415"
+    }
+  ]
 }

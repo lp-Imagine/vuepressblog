@@ -42,6 +42,11 @@ layout: home
       <a class="home-more" href="/penn-notes/news/">全部动态</a>
     </div>
 <div class="news-grid">
+  <a class="news-card news-card--media" href="/penn-notes/news/2026-07/ai-news-2026-07-28">
+    <img class="news-card-thumb" src="https://rssfile.sspai.com/2026/07/27/3e6ef2d104e10467c6b25c66289197af.jpg?imageMogr2/auto-orient/format/webp/ignore-error/1" alt="" loading="lazy" /><div class="news-card-body"><time datetime="2026-07-28">2026-07-28</time>
+    <span class="news-card-title">AI 动态 · 2026-07-28</span>
+    <span class="news-card-action">阅读全文</span></div>
+  </a>
   <a class="news-card news-card--media" href="/penn-notes/news/2026-07/ai-news-2026-07-27">
     <img class="news-card-thumb" src="https://img.36krcdn.com/hsossms/20260727/v2_f38d051f379d4a3e9f3e30d8ce702dd0@1200352198_oswg82800oswg1053oswg495_img_jpg?x-oss-process=image/resize,m_mfit,w_600,h_400,limit_0/crop,w_600,h_400,g_center" alt="" loading="lazy" /><div class="news-card-body"><time datetime="2026-07-27">2026-07-27</time>
     <span class="news-card-title">AI 动态 · 2026-07-27</span>
