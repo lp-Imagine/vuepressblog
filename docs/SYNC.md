@@ -9,7 +9,7 @@
 | 正文 | `website/<section>/<group>/<slug>.md`（与手写笔记同目录，才能挂上对应侧栏） |
 | 图片 | `website/public/sync/<sourceId>/...` |
 
-`section` 枚举：`web` | `ui` | `tech` | `computer` | `misc`
+`section` 枚举：`web` | `ui` | `tech` | `computer` | `agent` | `misc`
 
 `group` 与侧栏分组对齐，例如：
 
@@ -17,6 +17,8 @@
 - `ui`：`html` / `css` / `misc`
 - `tech`：`docs` / `github` / `nodejs` / `bookmarks` / `misc`
 - `computer`：`browser` / `misc`
+- `agent`：`practice` / `workflow` / `prompts` / `tools` / `misc`（AI Agent 栏目）
+- `misc`：`essays` / `career` / `life` / `method` / `misc`（杂项栏目）
 
 建议 `slug` 使用 `sourceId`，保证同一篇文章 upsert 覆盖同一文件。
 

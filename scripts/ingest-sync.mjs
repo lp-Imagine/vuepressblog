@@ -8,7 +8,7 @@ import { fileURLToPath } from "node:url";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const syncRoot = path.join(root, "website", "sync");
-const SECTIONS = new Set(["web", "ui", "tech", "computer", "misc"]);
+const SECTIONS = new Set(["web", "ui", "tech", "computer", "agent", "misc"]);
 const REQUIRED = ["title", "date", "section", "source", "sourceId"];
 
 function walk(dir, acc = []) {

@@ -108,6 +108,8 @@ export default defineConfig({
       { text: "样式", link: "/ui/", activeMatch: "/ui/" },
       { text: "工具", link: "/tech/", activeMatch: "/tech/" },
       { text: "浏览器", link: "/computer/", activeMatch: "/computer/" },
+      { text: "AI Agent", link: "/agent/", activeMatch: "/agent/" },
+      { text: "杂项", link: "/misc/", activeMatch: "/misc/" },
       { text: "关于", link: "/about/", activeMatch: "/about/" },
     ],
     sidebar: mergedSidebar,

@@ -607,5 +607,9 @@ export default {
         }
       ]
     }
-  ]
+  ],
+  "/agent/": [],
+  "/sync/agent/": [],
+  "/misc/": [],
+  "/sync/misc/": []
 }

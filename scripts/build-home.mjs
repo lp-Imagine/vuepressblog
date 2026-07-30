@@ -39,6 +39,20 @@ const SECTIONS = [
     desc: "浏览器渲染与 Chrome 扩展",
     link: "/computer/",
   },
+  {
+    id: "agent",
+    title: "AI Agent",
+    nav: "AI Agent",
+    desc: "Agent 实战、工作流、提示词与工具链",
+    link: "/agent/",
+  },
+  {
+    id: "misc",
+    title: "杂项",
+    nav: "杂项",
+    desc: "职场、生活、方法论与其它不成体系的笔记",
+    link: "/misc/",
+  },
 ];
 
 /** Sidebar group display order + labels (folder name → 文案) */
@@ -55,7 +69,14 @@ const GROUP_META = {
   bookmarks: { label: "资源收藏", order: 40 },
   more: { label: "其它", order: 50 },
   browser: { label: "浏览器", order: 10 },
-  essays: { label: "随笔", order: 90 },
+  practice: { label: "实战", order: 10 },
+  workflow: { label: "工作流", order: 20 },
+  prompts: { label: "提示词", order: 30 },
+  tools: { label: "工具链", order: 40 },
+  essays: { label: "随笔", order: 10 },
+  career: { label: "职场", order: 20 },
+  life: { label: "生活", order: 30 },
+  method: { label: "方法论", order: 40 },
   framework: { label: "框架", order: 25 },
   misc: { label: "其它", order: 99 },
 };
@@ -154,7 +175,15 @@ const GROUP_LABELS = {
   ui: "页面",
   tech: "技术",
   computer: "计算机",
-  misc: "其它",
+  agent: "AI Agent",
+  practice: "实战",
+  workflow: "工作流",
+  prompts: "提示词",
+  tools: "工具链",
+  misc: "杂项",
+  career: "职场",
+  life: "生活",
+  method: "方法论",
 };
 
 function labelGroup(key) {
@@ -403,14 +432,6 @@ function main() {
     sidebar[`/${section.id}/`] = groups;
     // 旧 sync 路径文章也能挂上同栏目侧栏
     sidebar[`/sync/${section.id}/`] = groups;
-  }
-
-  // also include sync/misc into web stats
-  const misc = collectSection("misc");
-  if (misc.length) {
-    allBySection.web = [...(allBySection.web || []), ...misc].sort((a, b) =>
-      a.date < b.date ? 1 : -1,
-    );
   }
 
   // Draftly 稿：扫描 website/*/ 下带 source: ai-article 的已由 collectSection 覆盖；

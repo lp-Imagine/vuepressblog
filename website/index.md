@@ -34,6 +34,16 @@ layout: home
     <p class="home-pillar-desc">浏览器渲染与 Chrome 扩展</p>
     <p class="home-pillar-meta">2 篇笔记</p>
   </a>
+  <a class="home-pillar" href="/penn-notes/agent/">
+    <p class="home-pillar-title">AI Agent</p>
+    <p class="home-pillar-desc">Agent 实战、工作流、提示词与工具链</p>
+    <p class="home-pillar-meta">0 篇笔记</p>
+  </a>
+  <a class="home-pillar" href="/penn-notes/misc/">
+    <p class="home-pillar-title">杂项</p>
+    <p class="home-pillar-desc">职场、生活、方法论与其它不成体系的笔记</p>
+    <p class="home-pillar-meta">0 篇笔记</p>
+  </a>
   </section>
 
   <section class="home-block">
@@ -145,6 +155,20 @@ layout: home
     <a class="course-card" href="/penn-notes/computer/">
       <span class="course-card-title">浏览器</span>
       <span class="course-card-desc">2 篇 · 浏览器</span>
+    </a>
+  </div>
+  <div class="course-mod">
+    <p class="course-mod-label">AI Agent · 0 篇</p>
+    <a class="course-card" href="/penn-notes/agent/">
+      <span class="course-card-title">AI Agent</span>
+      <span class="course-card-desc">0 篇 · Agent 实战、工作流、提示词与工具链</span>
+    </a>
+  </div>
+  <div class="course-mod">
+    <p class="course-mod-label">杂项 · 0 篇</p>
+    <a class="course-card" href="/penn-notes/misc/">
+      <span class="course-card-title">杂项</span>
+      <span class="course-card-desc">0 篇 · 职场、生活、方法论与其它不成体系的笔记</span>
     </a>
   </div>
   </section>
