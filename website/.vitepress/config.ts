@@ -54,6 +54,24 @@ export default defineConfig({
   lastUpdated: true,
   appearance: "dark",
   ignoreDeadLinks: true,
+  // ai-article 同步过来的表格偶尔会多出一个尾随空白列（由 convertTable 的 padding 逻辑触发），
+  // 在这里把所有内容为空白/只有 &nbsp; 的最后列 cell 删掉，避免下游文章都各自修。
+  async transformPageHtml(html) {
+    // 末尾空白 cell：标签 + 可含 &nbsp; / 全角空格 / 空白 / 嵌套空标签（strong/em/span/br 等）
+    const EMPTY_CELL =
+      /<t[hd](?:\s[^>]*)?>(?:&nbsp;|&#160;|&#xa0;|\s|<(?:strong|em|b|i|code|span)\b[^>]*>(?:\s|&nbsp;|&#160;|&#xa0;)*<\/(?:strong|em|b|i|code|span)>|<br\s*\/?>)*<\/t[hd]>\s*$/i;
+    return html.replace(
+      /<table\b[^>]*>[\s\S]*?<\/table>/g,
+      (table) =>
+        table.replace(
+          /(<tr\b[^>]*>)([\s\S]*?)(<\/tr>)/g,
+          (_m, open, inner, close) =>
+            EMPTY_CELL.test(inner)
+              ? open + inner.replace(EMPTY_CELL, "") + close
+              : open + inner + close,
+        ),
+    );
+  },
   // Post-process built HTML so icons sit at the very start of <head>
   async buildEnd(siteConfig) {
     injectFaviconEarly(siteConfig.outDir);
