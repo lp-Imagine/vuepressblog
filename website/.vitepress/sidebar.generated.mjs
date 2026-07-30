@@ -438,6 +438,10 @@ export default {
       "collapsed": true,
       "items": [
         {
+          "text": "模型更快更贵，该怎么选",
+          "link": "/tech/docs/cms5uvo220003zzin09y3tvcm"
+        },
+        {
           "text": "Claude Code 实战手册开源：编码秘籍",
           "link": "/tech/docs/cms49bxh60007zz9zfexa2vs0"
         },
@@ -509,6 +513,10 @@ export default {
       "text": "常用文档",
       "collapsed": true,
       "items": [
+        {
+          "text": "模型更快更贵，该怎么选",
+          "link": "/tech/docs/cms5uvo220003zzin09y3tvcm"
+        },
         {
           "text": "Claude Code 实战手册开源：编码秘籍",
           "link": "/tech/docs/cms49bxh60007zz9zfexa2vs0"
@@ -610,6 +618,48 @@ export default {
   ],
   "/agent/": [],
   "/sync/agent/": [],
-  "/misc/": [],
-  "/sync/misc/": []
+  "/misc/": [
+    {
+      "text": "随笔",
+      "collapsed": true,
+      "items": [
+        {
+          "text": "模型更快更贵，该怎么选",
+          "link": "/misc/essays/cms5uvo220003zzin09y3tvcm"
+        }
+      ]
+    },
+    {
+      "text": "其它",
+      "collapsed": true,
+      "items": [
+        {
+          "text": "长文生成总超时？两报错定位五步提效",
+          "link": "/misc/misc/cms4d9t3s0001zzc66tg4t69r"
+        }
+      ]
+    }
+  ],
+  "/sync/misc/": [
+    {
+      "text": "随笔",
+      "collapsed": true,
+      "items": [
+        {
+          "text": "模型更快更贵，该怎么选",
+          "link": "/misc/essays/cms5uvo220003zzin09y3tvcm"
+        }
+      ]
+    },
+    {
+      "text": "其它",
+      "collapsed": true,
+      "items": [
+        {
+          "text": "长文生成总超时？两报错定位五步提效",
+          "link": "/misc/misc/cms4d9t3s0001zzc66tg4t69r"
+        }
+      ]
+    }
+  ]
 }

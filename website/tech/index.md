@@ -10,13 +10,17 @@ aside: false
     <p class="section-kicker">栏目</p>
     <h1 class="section-title">工具备忘</h1>
     <p class="section-lead">Git、npm、常用命令与资源收藏</p>
-    <p class="section-count">共 13 篇笔记</p>
+    <p class="section-count">共 14 篇笔记</p>
   </header>
 
   <div class="section-index">
   <div class="section-group">
-    <p class="section-group-label">常用文档 · 9 篇</p>
+    <p class="section-group-label">常用文档 · 10 篇</p>
     <div class="section-card-grid">
+    <a class="section-card section-card--media" href="/penn-notes/tech/docs/cms5uvo220003zzin09y3tvcm">
+      <img class="section-card-thumb" src="/sync/cms5uvo220003zzin09y3tvcm/cover.jpg" alt="" loading="lazy" /><span class="section-card-title">模型更快更贵，该怎么选</span>
+      <span class="section-card-meta"><time datetime="2026-07-29">2026-07-29</time><span>阅读全文</span></span>
+    </a>
     <a class="section-card section-card--media" href="/penn-notes/tech/docs/cms49bxh60007zz9zfexa2vs0">
       <img class="section-card-thumb" src="/sync/cms49bxh60007zz9zfexa2vs0/cover.jpg" alt="" loading="lazy" /><span class="section-card-title">Claude Code 实战手册开源：编码秘籍</span>
       <span class="section-card-meta"><time datetime="2026-07-28">2026-07-28</time><span>阅读全文</span></span>
