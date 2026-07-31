@@ -6,9 +6,9 @@ layout: home
   <section class="home-hero">
     <h1 class="home-headline">Penn Notes</h1>
     <p class="home-tagline">AI 动态 · JS &amp; 框架 · 样式 · 工具 · 浏览器</p>
-    <p class="home-sub">积跬步以至千里 · 前端学习与工程备忘 · 共 60 篇</p>
+    <p class="home-sub">积跬步以至千里 · 前端学习与工程备忘 · 共 61 篇</p>
     <div class="home-actions">
-      <a class="home-btn home-btn--primary" href="/penn-notes/misc/misc/cms4d9t3s0001zzc66tg4t69r">阅读最新笔记</a>
+      <a class="home-btn home-btn--primary" href="/penn-notes/misc/essays/cms5uvo220003zzin09y3tvcm">阅读最新笔记</a>
       <a class="home-btn home-btn--text" href="/penn-notes/news/">AI 动态</a>
     </div>
   </section>
@@ -42,7 +42,7 @@ layout: home
   <a class="home-pillar" href="/penn-notes/misc/">
     <p class="home-pillar-title">杂项</p>
     <p class="home-pillar-desc">职场、生活、方法论与其它不成体系的笔记</p>
-    <p class="home-pillar-meta">1 篇笔记</p>
+    <p class="home-pillar-meta">2 篇笔记</p>
   </a>
   </section>
 
@@ -52,6 +52,11 @@ layout: home
       <a class="home-more" href="/penn-notes/news/">全部动态</a>
     </div>
 <div class="news-grid">
+  <a class="news-card news-card--media" href="/penn-notes/news/2026-07/ai-news-2026-07-30">
+    <img class="news-card-thumb" src="https://opengraph.githubassets.com/1/ChromeDevTools/chrome-devtools-mcp" alt="" loading="lazy" /><div class="news-card-body"><time datetime="2026-07-30">2026-07-30</time>
+    <span class="news-card-title">AI 动态 · 2026-07-30</span>
+    <span class="news-card-action">阅读全文</span></div>
+  </a>
   <a class="news-card news-card--media" href="/penn-notes/news/2026-07/ai-news-2026-07-29">
     <img class="news-card-thumb" src="https://rssfile.sspai.com/28/07/2026/article/d1a902c3-dbfb-33d8-9dbb-ec5871235d00.jpeg?imageMogr2/auto-orient/format/webp/ignore-error/1" alt="" loading="lazy" /><div class="news-card-body"><time datetime="2026-07-29">2026-07-29</time>
     <span class="news-card-title">AI 动态 · 2026-07-29</span>
@@ -81,6 +86,11 @@ layout: home
       <a class="home-more" href="/penn-notes/web/">查看更多</a>
     </div>
 <div class="news-grid">
+  <a class="news-card news-card--media" href="/penn-notes/misc/essays/cms5uvo220003zzin09y3tvcm">
+    <img class="news-card-thumb" src="/sync/cms5uvo220003zzin09y3tvcm/cover.jpg" alt="" loading="lazy" /><div class="news-card-body"><time datetime="2026-07-29">2026-07-29</time>
+    <span class="news-card-title">模型更快更贵，该怎么选</span>
+    <span class="news-card-action">阅读全文</span></div>
+  </a>
   <a class="news-card news-card--media" href="/penn-notes/misc/misc/cms4d9t3s0001zzc66tg4t69r">
     <img class="news-card-thumb" src="/sync/cms4d9t3s0001zzc66tg4t69r/cover.jpg" alt="" loading="lazy" /><div class="news-card-body"><time datetime="2026-07-28">2026-07-28</time>
     <span class="news-card-title">长文生成总超时？两报错定位五步提效</span>
@@ -114,11 +124,6 @@ layout: home
   <a class="news-card" href="/penn-notes/web/ui-lib/解决element表格数据量过大导致页面渲染缓慢、卡顿问题">
     <div class="news-card-body"><time datetime="2022-09-06">2022-09-06</time>
     <span class="news-card-title">解决element表格数据量过大导致页面渲染缓慢、卡顿问题</span>
-    <span class="news-card-action">阅读全文</span></div>
-  </a>
-  <a class="news-card" href="/penn-notes/web/ui-lib/el-form表单封装">
-    <div class="news-card-body"><time datetime="2022-09-06">2022-09-06</time>
-    <span class="news-card-title">el-form表单封装</span>
     <span class="news-card-action">阅读全文</span></div>
   </a>
 </div>
@@ -165,10 +170,10 @@ layout: home
     </a>
   </div>
   <div class="course-mod">
-    <p class="course-mod-label">杂项 · 1 篇</p>
+    <p class="course-mod-label">杂项 · 2 篇</p>
     <a class="course-card" href="/penn-notes/misc/">
       <span class="course-card-title">杂项</span>
-      <span class="course-card-desc">1 篇 · 其它</span>
+      <span class="course-card-desc">2 篇 · 随笔、其它</span>
     </a>
   </div>
   </section>

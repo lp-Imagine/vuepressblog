@@ -1,15 +1,15 @@
 {
-  "at": "2026-07-30T00:03:59.774Z",
+  "at": "2026-07-31T00:06:26.357Z",
   "type": "daily",
-  "date": "2026-07-29",
+  "date": "2026-07-30",
   "candidates": 36,
   "editorial": 8,
   "sections": {
-    "业界": 4,
+    "业界": 3,
     "产品": 2,
-    "模型": 1,
+    "模型": 0,
     "开源": 1,
-    "开发者工具": 0,
+    "开发者工具": 2,
     "前端": 0
   },
   "rss": {
@@ -17,10 +17,10 @@
     "failed": 1,
     "failures": [
       {
-        "name": "CSS-Tricks",
-        "error": "Status code 415"
+        "name": "Hacker News AI",
+        "error": "Status code 502"
       }
     ]
   },
-  "output": "news/2026-07/ai-news-2026-07-29.md"
+  "output": "news/2026-07/ai-news-2026-07-30.md"
 }

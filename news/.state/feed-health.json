@@ -1,6 +1,6 @@
 {
-  "at": "2026-07-30T00:03:35.090Z",
-  "targetDate": "2026-07-29",
+  "at": "2026-07-31T00:06:01.510Z",
+  "targetDate": "2026-07-30",
   "ok": 18,
   "failed": 1,
   "successes": [
@@ -8,7 +8,13 @@
       "id": "anthropic-news",
       "name": "Anthropic News",
       "url": "https://raw.githubusercontent.com/Olshansk/rss-feeds/main/feeds/feed_anthropic_news.xml",
-      "items": 2
+      "items": 1
+    },
+    {
+      "id": "theverge-ai",
+      "name": "The Verge AI",
+      "url": "https://www.theverge.com/rss/ai-artificial-intelligence/index.xml",
+      "items": 5
     },
     {
       "id": "techcrunch-ai",
@@ -17,28 +23,16 @@
       "items": 13
     },
     {
-      "id": "theverge-ai",
-      "name": "The Verge AI",
-      "url": "https://www.theverge.com/rss/ai-artificial-intelligence/index.xml",
-      "items": 6
-    },
-    {
-      "id": "deepmind",
-      "name": "Google DeepMind",
-      "url": "https://deepmind.google/blog/rss.xml",
-      "items": 0
+      "id": "mit-tr",
+      "name": "MIT Tech Review",
+      "url": "https://www.technologyreview.com/topic/artificial-intelligence/feed",
+      "items": 4
     },
     {
       "id": "github-blog",
       "name": "GitHub Blog",
       "url": "https://github.blog/feed/",
-      "items": 3
-    },
-    {
-      "id": "mit-tr",
-      "name": "MIT Tech Review",
-      "url": "https://www.technologyreview.com/topic/artificial-intelligence/feed",
-      "items": 6
+      "items": 4
     },
     {
       "id": "devto-ai",
@@ -50,19 +44,13 @@
       "id": "huggingface",
       "name": "Hugging Face Blog",
       "url": "https://huggingface.co/blog/feed.xml",
-      "items": 4
+      "items": 3
     },
     {
-      "id": "javascript-weekly",
-      "name": "JavaScript Weekly",
-      "url": "https://javascriptweekly.com/rss",
-      "items": 1
-    },
-    {
-      "id": "hn-ai",
-      "name": "Hacker News AI",
-      "url": "https://hnrss.org/newest?q=AI+OR+LLM+OR+GPT+OR+Claude+OR+OpenAI+OR+Anthropic",
-      "items": 0
+      "id": "deepmind",
+      "name": "Google DeepMind",
+      "url": "https://deepmind.google/blog/rss.xml",
+      "items": 3
     },
     {
       "id": "ruanyifeng",
@@ -71,9 +59,27 @@
       "items": 0
     },
     {
+      "id": "openai-blog",
+      "name": "OpenAI Blog",
+      "url": "https://openai.com/blog/rss.xml",
+      "items": 5
+    },
+    {
+      "id": "javascript-weekly",
+      "name": "JavaScript Weekly",
+      "url": "https://javascriptweekly.com/rss",
+      "items": 1
+    },
+    {
       "id": "venturebeat-ai",
       "name": "VentureBeat AI",
       "url": "https://venturebeat.com/category/ai/feed/",
+      "items": 0
+    },
+    {
+      "id": "css-tricks",
+      "name": "CSS-Tricks",
+      "url": "https://css-tricks.com/feed/",
       "items": 0
     },
     {
@@ -83,28 +89,22 @@
       "items": 3
     },
     {
-      "id": "openai-blog",
-      "name": "OpenAI Blog",
-      "url": "https://openai.com/blog/rss.xml",
-      "items": 5
-    },
-    {
       "id": "infoq-cn",
       "name": "InfoQ 中文",
       "url": "https://www.infoq.cn/feed",
-      "items": 14
+      "items": 10
     },
     {
       "id": "juejin-frontend",
       "name": "少数派",
       "url": "https://sspai.com/feed",
-      "items": 5
+      "items": 4
     },
     {
       "id": "jiqizhixin",
       "name": "36氪",
       "url": "https://36kr.com/feed",
-      "items": 9
+      "items": 8
     },
     {
       "id": "quantumbit",
@@ -115,9 +115,9 @@
   ],
   "failures": [
     {
-      "id": "css-tricks",
-      "name": "CSS-Tricks",
-      "error": "Status code 415"
+      "id": "hn-ai",
+      "name": "Hacker News AI",
+      "error": "Status code 502"
     }
   ]
 }
