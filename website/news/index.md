@@ -25,8 +25,9 @@ next: false
 
   <div class="section-index news-digest-list">
     <div class="section-group">
-      <p class="section-group-label">2026-07 · 5 期日报</p>
+      <p class="section-group-label">2026-07 · 6 期日报</p>
       <div class="section-card-grid">
+        <a class="section-card section-card--media" href="/penn-notes/news/2026-07/ai-news-2026-07-31"><img class="section-card-thumb" src="https://static001.infoq.cn/resource/image/b1/a8/b1f461b5a4835a2ded46352815b65fa8.png" alt="" loading="lazy" /><span class="section-card-title">AI 动态 · 2026-07-31</span><span class="section-card-meta"><time datetime="2026-07-31">2026-07-31</time><span>阅读全文</span></span></a>
         <a class="section-card section-card--media" href="/penn-notes/news/2026-07/ai-news-2026-07-30"><img class="section-card-thumb" src="https://opengraph.githubassets.com/1/ChromeDevTools/chrome-devtools-mcp" alt="" loading="lazy" /><span class="section-card-title">AI 动态 · 2026-07-30</span><span class="section-card-meta"><time datetime="2026-07-30">2026-07-30</time><span>阅读全文</span></span></a>
         <a class="section-card section-card--media" href="/penn-notes/news/2026-07/ai-news-2026-07-29"><img class="section-card-thumb" src="https://rssfile.sspai.com/28/07/2026/article/d1a902c3-dbfb-33d8-9dbb-ec5871235d00.jpeg?imageMogr2/auto-orient/format/webp/ignore-error/1" alt="" loading="lazy" /><span class="section-card-title">AI 动态 · 2026-07-29</span><span class="section-card-meta"><time datetime="2026-07-29">2026-07-29</time><span>阅读全文</span></span></a>
         <a class="section-card section-card--media" href="/penn-notes/news/2026-07/ai-news-2026-07-28"><img class="section-card-thumb" src="https://rssfile.sspai.com/2026/07/27/3e6ef2d104e10467c6b25c66289197af.jpg?imageMogr2/auto-orient/format/webp/ignore-error/1" alt="" loading="lazy" /><span class="section-card-title">AI 动态 · 2026-07-28</span><span class="section-card-meta"><time datetime="2026-07-28">2026-07-28</time><span>阅读全文</span></span></a>

@@ -52,6 +52,11 @@ layout: home
       <a class="home-more" href="/penn-notes/news/">全部动态</a>
     </div>
 <div class="news-grid">
+  <a class="news-card news-card--media" href="/penn-notes/news/2026-07/ai-news-2026-07-31">
+    <img class="news-card-thumb" src="https://static001.infoq.cn/resource/image/b1/a8/b1f461b5a4835a2ded46352815b65fa8.png" alt="" loading="lazy" /><div class="news-card-body"><time datetime="2026-07-31">2026-07-31</time>
+    <span class="news-card-title">AI 动态 · 2026-07-31</span>
+    <span class="news-card-action">阅读全文</span></div>
+  </a>
   <a class="news-card news-card--media" href="/penn-notes/news/2026-07/ai-news-2026-07-30">
     <img class="news-card-thumb" src="https://opengraph.githubassets.com/1/ChromeDevTools/chrome-devtools-mcp" alt="" loading="lazy" /><div class="news-card-body"><time datetime="2026-07-30">2026-07-30</time>
     <span class="news-card-title">AI 动态 · 2026-07-30</span>
