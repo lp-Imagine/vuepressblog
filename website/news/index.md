@@ -25,6 +25,13 @@ next: false
 
   <div class="section-index news-digest-list">
     <div class="section-group">
+      <p class="section-group-label">2026-08 · 2 期日报</p>
+      <div class="section-card-grid">
+        <a class="section-card section-card--media" href="/penn-notes/news/2026-08/ai-news-week-2026-08-01"><img class="section-card-thumb" src="https://rssfile.sspai.com/28/07/2026/article/d1a902c3-dbfb-33d8-9dbb-ec5871235d00.jpeg?imageMogr2/auto-orient/format/webp/ignore-error/1" alt="" loading="lazy" /><span class="section-card-title">AI 动态周报 · 2026-07-26 ~ 2026-08-01</span><span class="section-card-meta"><time datetime="2026-08-01">2026-08-01</time><span>阅读全文</span></span></a>
+        <a class="section-card section-card--media" href="/penn-notes/news/2026-08/ai-news-2026-08-01"><img class="section-card-thumb" src="https://opengraph.githubassets.com/1/bytedance/deer-flow" alt="" loading="lazy" /><span class="section-card-title">AI 动态 · 2026-08-01</span><span class="section-card-meta"><time datetime="2026-08-01">2026-08-01</time><span>阅读全文</span></span></a>
+      </div>
+    </div>
+    <div class="section-group">
       <p class="section-group-label">2026-07 · 6 期日报</p>
       <div class="section-card-grid">
         <a class="section-card section-card--media" href="/penn-notes/news/2026-07/ai-news-2026-07-31"><img class="section-card-thumb" src="https://static001.infoq.cn/resource/image/b1/a8/b1f461b5a4835a2ded46352815b65fa8.png" alt="" loading="lazy" /><span class="section-card-title">AI 动态 · 2026-07-31</span><span class="section-card-meta"><time datetime="2026-07-31">2026-07-31</time><span>阅读全文</span></span></a>
