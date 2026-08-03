@@ -57,6 +57,11 @@ layout: home
     <span class="news-card-title">AI 动态 · 2026-08-01</span>
     <span class="news-card-action">阅读全文</span></div>
   </a>
+  <a class="news-card news-card--media" href="/penn-notes/news/2026-08/ai-news-2026-08-02">
+    <img class="news-card-thumb" src="https://static001.infoq.cn/resource/image/e9/29/e92af57dcf3920b2006c9610f6dde429.png" alt="" loading="lazy" /><div class="news-card-body"><time datetime="2026-08-02">2026-08-02</time>
+    <span class="news-card-title">AI 动态 · 2026-08-02</span>
+    <span class="news-card-action">阅读全文</span></div>
+  </a>
   <a class="news-card news-card--media" href="/penn-notes/news/2026-08/ai-news-2026-08-01">
     <img class="news-card-thumb" src="https://opengraph.githubassets.com/1/bytedance/deer-flow" alt="" loading="lazy" /><div class="news-card-body"><time datetime="2026-08-01">2026-08-01</time>
     <span class="news-card-title">AI 动态 · 2026-08-01</span>
@@ -85,11 +90,6 @@ layout: home
   <a class="news-card news-card--media" href="/penn-notes/news/2026-07/ai-news-2026-07-27">
     <img class="news-card-thumb" src="https://img.36krcdn.com/hsossms/20260727/v2_f38d051f379d4a3e9f3e30d8ce702dd0@1200352198_oswg82800oswg1053oswg495_img_jpg?x-oss-process=image/resize,m_mfit,w_600,h_400,limit_0/crop,w_600,h_400,g_center" alt="" loading="lazy" /><div class="news-card-body"><time datetime="2026-07-27">2026-07-27</time>
     <span class="news-card-title">AI 动态 · 2026-07-27</span>
-    <span class="news-card-action">阅读全文</span></div>
-  </a>
-  <a class="news-card news-card--media" href="/penn-notes/news/2026-07/ai-news-2026-07-26">
-    <img class="news-card-thumb" src="https://img.36krcdn.com/hsossms/20260725/v2_44f27216a65b4e0e963e25dd7e66d7db@000000_oswg50341oswg893oswg380_img_000?x-oss-process=image/resize,m_mfit,w_600,h_400,limit_0/crop,w_600,h_400,g_center" alt="" loading="lazy" /><div class="news-card-body"><time datetime="2026-07-26">2026-07-26</time>
-    <span class="news-card-title">AI 动态 · 2026-07-26</span>
     <span class="news-card-action">阅读全文</span></div>
   </a>
 </div>

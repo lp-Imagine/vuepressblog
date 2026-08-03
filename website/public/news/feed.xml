@@ -6,8 +6,80 @@
     <link>https://lp-imagine.github.io/penn-notes/news/</link>
     <description>每日 AI 与前端精选动态 —— Penn Notes</description>
     <language>zh-CN</language>
-    <lastBuildDate>Sun, 02 Aug 2026 00:01:14 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 03 Aug 2026 00:02:24 GMT</lastBuildDate>
     <generator>Penn Notes news feed</generator>
+    <item>
+      <title>WAIC 收官圆桌：数百家机器人刷屏背后，AI 究竟重写了什么？</title>
+      <link>https://lp-imagine.github.io/penn-notes/news/2026-08/ai-news-2026-08-02</link>
+      <guid isPermaLink="true">https://lp-imagine.github.io/penn-notes/news/2026-08/ai-news-2026-08-02</guid>
+      <pubDate>Sun, 02 Aug 2026 16:00:00 GMT</pubDate>
+      <description>[业界] · 来源：InfoQ 中文 · WAIC 2026 收官圆桌邀请四位一线观察者，从学术、产研、创业与资本视角，检验大模型、Agent、具身智能等热词在真实工作流与商业化中的实际进展。讨论指出，具身智能尚未实现稳定工业级作业，本地智能体与新模型范式正加速验证真实需求，Scaling Law 瓶颈下扩散语言模型等基础路线获创业关注。</description>
+      <category>业界</category>
+    </item>
+    <item>
+      <title>用了多年 React，Remix 终于“叛变”了：3.0 版本彻底重写</title>
+      <link>https://lp-imagine.github.io/penn-notes/news/2026-08/ai-news-2026-08-02</link>
+      <guid isPermaLink="true">https://lp-imagine.github.io/penn-notes/news/2026-08/ai-news-2026-08-02</guid>
+      <pubDate>Sun, 02 Aug 2026 16:00:00 GMT</pubDate>
+      <description>[业界] · 来源：InfoQ 中文 · Remix 3 beta 预览版发布，从底层重新构建，将项目从 React 迁移到 Web 平台原生基础能力之上。新版本定位为完整全栈体系，路由基于 Fetch API，移除 React 运行时，采用基于 Preact 的分支版本和命令式模型，并引入“unbundling”理念。社区评价明显分化，有观察者认为这标志着从函数式编程向命令式编程的钟摆正在摆回。</description>
+      <category>业界</category>
+    </item>
+    <item>
+      <title>NVIDIA Vera Rubin 正式登场：从芯片卷到电网，只为压低每一个 Token 的成本</title>
+      <link>https://lp-imagine.github.io/penn-notes/news/2026-08/ai-news-2026-08-02</link>
+      <guid isPermaLink="true">https://lp-imagine.github.io/penn-notes/news/2026-08/ai-news-2026-08-02</guid>
+      <pubDate>Sun, 02 Aug 2026 16:00:00 GMT</pubDate>
+      <description>[业界] · 来源：InfoQ 中文 · NVIDIA Vera Rubin NVL72 加速量产，CoreWeave、Google Cloud、Microsoft Azure 等合作伙伴机架已投入运行。平台从芯片到电网进行全栈协同设计，七款芯片和五种机架托盘深度协同，供应链覆盖 30 国 350+ 工厂。CoreWeave 针对 DeepSeek-R1 的基准测试显示，每兆瓦吞吐量比 Grace Blackwell NVL72 提升 10 倍。</description>
+      <category>业界</category>
+    </item>
+    <item>
+      <title>92% 工程师都在用 AI 后，Uber 开始给 AI “限额”了</title>
+      <link>https://lp-imagine.github.io/penn-notes/news/2026-08/ai-news-2026-08-02</link>
+      <guid isPermaLink="true">https://lp-imagine.github.io/penn-notes/news/2026-08/ai-news-2026-08-02</guid>
+      <pubDate>Sun, 02 Aug 2026 16:00:00 GMT</pubDate>
+      <description>[业界] · 来源：InfoQ 中文 · Uber 的“零增长技术栈”将容量增长与业务需求增长解耦，通过自动化运行时优化和严格的 AI 生命周期管理降低开销。92% 工程师每月使用 AI Agent，31% 新代码由 AI 编写，但 AI 相关成本自 2024 年以来增长六倍，单个开发者月度成本达 2000 美元。Uber 正从无限制采用转向限额管理。</description>
+      <category>业界</category>
+    </item>
+    <item>
+      <title>Google Earth 内置 AI 图像生成器引发误导信息担忧</title>
+      <link>https://lp-imagine.github.io/penn-notes/news/2026-08/ai-news-2026-08-02</link>
+      <guid isPermaLink="true">https://lp-imagine.github.io/penn-notes/news/2026-08/ai-news-2026-08-02</guid>
+      <pubDate>Sun, 02 Aug 2026 16:00:00 GMT</pubDate>
+      <description>[产品] · 来源：The Verge AI · Google Earth 推出的 AI 图像生成功能可基于卫星、航拍和 3D 影像生成现实扭曲图像，被迅速用于生成误导性内容，如墨西哥边境难民和加沙医院炸弹坑图像。尽管 Google 声称所有图像均含 SynthID 数字水印，但批评者仍担忧其传播虚假信息的风险。</description>
+      <category>产品</category>
+    </item>
+    <item>
+      <title>esengine/DeepSeek-Reasonix：终端里的 DeepSeek 原生 AI 编程代理</title>
+      <link>https://lp-imagine.github.io/penn-notes/news/2026-08/ai-news-2026-08-02</link>
+      <guid isPermaLink="true">https://lp-imagine.github.io/penn-notes/news/2026-08/ai-news-2026-08-02</guid>
+      <pubDate>Sun, 02 Aug 2026 16:00:00 GMT</pubDate>
+      <description>[开源] · 来源：esengine/DeepSeek-Reasonix · DeepSeek-Reasonix 是一个面向终端的 DeepSeek 原生 AI 编程代理，围绕前缀缓存稳定性设计，可长期保持运行。该项目针对 DeepSeek 模型特性优化，适合在终端环境中持续辅助编码任务。</description>
+      <category>开源</category>
+    </item>
+    <item>
+      <title>Panniantong/Agent-Reach：让 AI 代理读取全网，零 API 费用</title>
+      <link>https://lp-imagine.github.io/penn-notes/news/2026-08/ai-news-2026-08-02</link>
+      <guid isPermaLink="true">https://lp-imagine.github.io/penn-notes/news/2026-08/ai-news-2026-08-02</guid>
+      <pubDate>Sun, 02 Aug 2026 16:00:00 GMT</pubDate>
+      <description>[开源] · 来源：Panniantong/Agent-Reach · Agent-Reach 通过一个 CLI 让 AI 代理读取和搜索 Twitter、Reddit、YouTube、GitHub、Bilibili、小红书等平台内容，无需支付 API 费用。该项目为代理提供互联网视野，适合需要跨平台信息获取的 Agent 应用。</description>
+      <category>开源</category>
+    </item>
+    <item>
+      <title>lyogavin/airllm：单张 4GB GPU 运行 70B 模型推理</title>
+      <link>https://lp-imagine.github.io/penn-notes/news/2026-08/ai-news-2026-08-02</link>
+      <guid isPermaLink="true">https://lp-imagine.github.io/penn-notes/news/2026-08/ai-news-2026-08-02</guid>
+      <pubDate>Sun, 02 Aug 2026 16:00:00 GMT</pubDate>
+      <description>[开源] · 来源：lyogavin/airllm · AirLLM 项目实现了在单张 4GB GPU 上进行 70B 参数模型的推理，大幅降低了大型语言模型的硬件门槛。该项目通过优化推理策略，使资源受限环境也能运行大规模模型，对个人开发者和边缘计算场景具有实用价值。</description>
+      <category>开源</category>
+    </item>
+    <item>
+      <title>GitHub 代码搜索大小写折叠优化：单核速度超 45 GiB/s</title>
+      <link>https://lp-imagine.github.io/penn-notes/news/2026-08/ai-news-2026-08-02</link>
+      <guid isPermaLink="true">https://lp-imagine.github.io/penn-notes/news/2026-08/ai-news-2026-08-02</guid>
+      <pubDate>Sun, 02 Aug 2026 16:00:00 GMT</pubDate>
+      <description>[开发者工具] · 来源：GitHub Blog · GitHub 博客分享了代码搜索中大小写折叠（case-folding）的优化技术，通过无分支循环和字节空间算术，在单核上实现了超过 45 GiB/s 的处理速度。该技术显著提升了代码搜索性能，对大规模代码库的检索效率有重要影响。</description>
+      <category>开发者工具</category>
+    </item>
     <item>
       <title>韩国7月出口创历史第二高，半导体出口同比暴增近180%</title>
       <link>https://lp-imagine.github.io/penn-notes/news/2026-08/ai-news-2026-08-01</link>
@@ -255,78 +327,6 @@
       <pubDate>Wed, 29 Jul 2026 16:00:00 GMT</pubDate>
       <description>[业界] · 来源：量子位 · 华为联合团队推出JiuwenSwarm蜂群智能体鸿蒙PC版本，为首个面向鸿蒙PC的开源AI统一工作台。该平台支持多智能体协同办公与编程，20分钟内可生成200页PPT，并引入人机协同新范式HITS，支持多人多机协同。JiuwenSwarm还能与飞书、小艺等场景联动，实现跨设备任务推进。对读者：鸿蒙生态开发者可关注其开源架构，探索多Agent协同工程在桌面端的落地潜力。</description>
       <category>业界</category>
-    </item>
-    <item>
-      <title>萝卜快跑抢跑无人车右舵：香港率先全无人，伦敦直面Waymo</title>
-      <link>https://lp-imagine.github.io/penn-notes/news/2026-07/ai-news-2026-07-29</link>
-      <guid isPermaLink="true">https://lp-imagine.github.io/penn-notes/news/2026-07/ai-news-2026-07-29</guid>
-      <pubDate>Wed, 29 Jul 2026 16:00:00 GMT</pubDate>
-      <description>[业界] · 来源：量子位 · 百度萝卜快跑获香港运输署批准，在机场岛开展车内无安全员的全无人测试，为全球右舵市场首次。同时，萝卜快跑携手Uber和Freenow在伦敦启动公开道路测试，成为唯一明确进入伦敦Robotaxi测试体系的中国企业，将与Waymo在同一监管环境下竞速。对读者：关注自动驾驶出海的企业应留意右舵市场技术壁垒与海外监管合规要求。</description>
-      <category>业界</category>
-    </item>
-    <item>
-      <title>iA Writer 8.0大版本更新：不聊AI，聚焦搜索与写作流程重构</title>
-      <link>https://lp-imagine.github.io/penn-notes/news/2026-07/ai-news-2026-07-29</link>
-      <guid isPermaLink="true">https://lp-imagine.github.io/penn-notes/news/2026-07/ai-news-2026-07-29</guid>
-      <pubDate>Wed, 29 Jul 2026 16:00:00 GMT</pubDate>
-      <description>[产品] · 来源：少数派 · 老牌写作工具iA Writer发布8.0大版本更新，未跟风AI热潮，而是将全局搜索功能与单篇文章大纲功能整合，实现“大纲级搜索”。用户可在写作过程中直接搜索并定位至具体段落，无需中断当前任务。iA Writer此前在7.0版本中引入标注AI生成内容的功能，持续强调人类写作与AI写作的区分。对读者：追求专注写作体验的用户可升级体验其搜索整合功能，提升长文档回溯效率。</description>
-      <category>产品</category>
-    </item>
-    <item>
-      <title>Kimi K3正式开源，Anthropic微妙表态：从未主张禁止开放权重模型</title>
-      <link>https://lp-imagine.github.io/penn-notes/news/2026-07/ai-news-2026-07-29</link>
-      <guid isPermaLink="true">https://lp-imagine.github.io/penn-notes/news/2026-07/ai-news-2026-07-29</guid>
-      <pubDate>Wed, 29 Jul 2026 16:00:00 GMT</pubDate>
-      <description>[模型] · 来源：InfoQ 中文 · 月之暗面正式开源K3模型权重与技术报告，该模型为全球首个开源3万亿参数级大模型，采用KDA混合线性注意力机制，在Frontend Code Arena位列全球第一。Anthropic CEO Amodei同步回应称从未主张禁止开放权重模型，但强调对高能力模型的安全管控，担忧模型被滥用于网络攻击或生物攻击。对读者：开源模型能力持续突破，开发者可评估K3在编程与Agent场景的部署成本，同时关注地缘政治驱动的安全治理动态。</description>
-      <category>模型</category>
-    </item>
-    <item>
-      <title>MoonshotAI/FlashKDA：高性能Kimi Delta Attention内核开源</title>
-      <link>https://lp-imagine.github.io/penn-notes/news/2026-07/ai-news-2026-07-29</link>
-      <guid isPermaLink="true">https://lp-imagine.github.io/penn-notes/news/2026-07/ai-news-2026-07-29</guid>
-      <pubDate>Wed, 29 Jul 2026 16:00:00 GMT</pubDate>
-      <description>[开源] · 来源：MoonshotAI/FlashKDA · 月之暗面开源FlashKDA项目，提供高性能Kimi Delta Attention内核实现。该项目针对K3模型自研的KDA混合线性注意力机制进行优化，可显著提升长上下文场景下的推理效率。对读者：关注大模型推理优化的开发者可研究其内核实现，探索在自有模型或应用中集成Delta Attention以降低长序列计算成本。</description>
-      <category>开源</category>
-    </item>
-    <item>
-      <title>翁荔因健康原因离职Thinking Machines</title>
-      <link>https://lp-imagine.github.io/penn-notes/news/2026-07/ai-news-2026-07-28</link>
-      <guid isPermaLink="true">https://lp-imagine.github.io/penn-notes/news/2026-07/ai-news-2026-07-28</guid>
-      <pubDate>Tue, 28 Jul 2026 16:00:00 GMT</pubDate>
-      <description>[业界] · 来源：量子位 · 北大校友、前OpenAI安全研究副总裁翁荔宣布将于明天离开她联合创立的AI公司Thinking Machines，距其加入仅20个月。她在公开信中表示，过去7个月生病次数比人生中任何时候都多，因高强度工作导致身体无法支撑。Thinking Machines刚于12天前发布首个开源模型Inkling。对读者：AI创业的高强度节奏对顶尖人才也是巨大考验，团队健康管理应纳入长期战略考量。</description>
-      <category>业界</category>
-    </item>
-    <item>
-      <title>Ilya获黄仁勋50亿美元押注，SSI与英伟达结盟</title>
-      <link>https://lp-imagine.github.io/penn-notes/news/2026-07/ai-news-2026-07-28</link>
-      <guid isPermaLink="true">https://lp-imagine.github.io/penn-notes/news/2026-07/ai-news-2026-07-28</guid>
-      <pubDate>Tue, 28 Jul 2026 16:00:00 GMT</pubDate>
-      <description>[业界] · 来源：量子位 · Ilya Sutskever旗下安全超级智能公司SSI宣布与英伟达达成长期合作，英伟达将授予下一代Vera Rubin平台使用权，预计一年内将SSI算力提升10倍。多家媒体报道投资金额约50亿美元。Ilya在X上表示“是时候开始Scaling了”。SSI自2024年6月成立以来估值已从50亿美元飙升至320亿美元。对读者：顶级AI人才与算力巨头的深度绑定，预示着安全超级智能赛道的军备竞赛正式升级。</description>
-      <category>业界</category>
-    </item>
-    <item>
-      <title>全球首个Agentic扩散模型LLaDA2.2开源，蚂蚁旗下inclusionAI发布</title>
-      <link>https://lp-imagine.github.io/penn-notes/news/2026-07/ai-news-2026-07-28</link>
-      <guid isPermaLink="true">https://lp-imagine.github.io/penn-notes/news/2026-07/ai-news-2026-07-28</guid>
-      <pubDate>Tue, 28 Jul 2026 16:00:00 GMT</pubDate>
-      <description>[业界] · 来源：量子位 · 蚂蚁集团旗下inclusionAI团队开源LLaDA2.2，这是全球首个大规模Agentic扩散模型。该模型为千亿参数MoE架构，原生支持128K上下文，首次将Levenshtein编辑、面向环境反馈的强化学习与长上下文工程整合进扩散模型Agent系统，实现边行动边纠错。LLaDA系列半年内迭代三代，证明扩散模型在长程Agent任务中可追平自回归模型。对读者：扩散模型在Agent赛道打破自回归垄断，开发者可关注其在并行生成与动态修正场景的工程优势。</description>
-      <category>业界</category>
-    </item>
-    <item>
-      <title>Kimi K3与Unlimited OCR包揽Hugging Face全球前二，中国开源模型刷屏</title>
-      <link>https://lp-imagine.github.io/penn-notes/news/2026-07/ai-news-2026-07-28</link>
-      <guid isPermaLink="true">https://lp-imagine.github.io/penn-notes/news/2026-07/ai-news-2026-07-28</guid>
-      <pubDate>Tue, 28 Jul 2026 16:00:00 GMT</pubDate>
-      <description>[业界] · 来源：量子位 · 月之暗面开源Kimi K3完整模型权重后迅速登顶Hugging Face总趋势榜第一，百度Unlimited OCR紧随其后位列第二。Kimi K3为2.8万亿参数MoE模型，支持100万token上下文；Unlimited OCR凭借Reference Sliding Window Attention机制解决长文档解析KV Cache膨胀问题，5天GitHub Star破万，获图灵奖得主杨立昆转发。对读者：中国开源模型在长上下文与文档解析领域取得突破，开发者可优先评估这两款模型在各自场景的落地成本。</description>
-      <category>业界</category>
-    </item>
-    <item>
-      <title>豆包搜索开放给Agent，火山引擎推出搜索API与MCP能力</title>
-      <link>https://lp-imagine.github.io/penn-notes/news/2026-07/ai-news-2026-07-28</link>
-      <guid isPermaLink="true">https://lp-imagine.github.io/penn-notes/news/2026-07/ai-news-2026-07-28</guid>
-      <pubDate>Tue, 28 Jul 2026 16:00:00 GMT</pubDate>
-      <description>[产品] · 来源：量子位 · 火山引擎将豆包APP背后的搜索能力独立拆出，通过API、MCP、Skill等方式开放给企业和开发者。豆包搜索不仅返回网页链接，还附带信源名称、权威分级、发布时间、正文摘要及原文Markdown节选，便于Agent直接使用。每月赠送500次免费搜索额度，支持按量后付费和订阅月卡。对读者：Agent获取实时信息的门槛进一步降低，开发者可结合豆包搜索Skill快速为Agent注入可靠的外部知识检索能力。</description>
-      <category>产品</category>
     </item>
   </channel>
 </rss>

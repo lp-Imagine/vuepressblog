@@ -1,20 +1,26 @@
 {
-  "at": "2026-08-02T00:00:38.949Z",
-  "targetDate": "2026-08-01",
-  "ok": 17,
-  "failed": 2,
+  "at": "2026-08-03T00:02:06.172Z",
+  "targetDate": "2026-08-02",
+  "ok": 18,
+  "failed": 1,
   "successes": [
     {
       "id": "anthropic-news",
       "name": "Anthropic News",
       "url": "https://raw.githubusercontent.com/Olshansk/rss-feeds/main/feeds/feed_anthropic_news.xml",
-      "items": 1
+      "items": 0
     },
     {
       "id": "techcrunch-ai",
       "name": "TechCrunch AI",
       "url": "https://techcrunch.com/category/artificial-intelligence/feed/",
-      "items": 17
+      "items": 19
+    },
+    {
+      "id": "deepmind",
+      "name": "Google DeepMind",
+      "url": "https://deepmind.google/blog/rss.xml",
+      "items": 0
     },
     {
       "id": "theverge-ai",
@@ -23,22 +29,10 @@
       "items": 9
     },
     {
-      "id": "deepmind",
-      "name": "Google DeepMind",
-      "url": "https://deepmind.google/blog/rss.xml",
-      "items": 2
-    },
-    {
       "id": "mit-tr",
       "name": "MIT Tech Review",
       "url": "https://www.technologyreview.com/topic/artificial-intelligence/feed",
-      "items": 1
-    },
-    {
-      "id": "github-blog",
-      "name": "GitHub Blog",
-      "url": "https://github.blog/feed/",
-      "items": 3
+      "items": 0
     },
     {
       "id": "devto-ai",
@@ -50,13 +44,25 @@
       "id": "huggingface",
       "name": "Hugging Face Blog",
       "url": "https://huggingface.co/blog/feed.xml",
-      "items": 1
+      "items": 0
+    },
+    {
+      "id": "github-blog",
+      "name": "GitHub Blog",
+      "url": "https://github.blog/feed/",
+      "items": 2
     },
     {
       "id": "javascript-weekly",
       "name": "JavaScript Weekly",
       "url": "https://javascriptweekly.com/rss",
       "items": 0
+    },
+    {
+      "id": "css-tricks",
+      "name": "CSS-Tricks",
+      "url": "https://css-tricks.com/feed/",
+      "items": 2
     },
     {
       "id": "ruanyifeng",
@@ -68,7 +74,7 @@
       "id": "openai-blog",
       "name": "OpenAI Blog",
       "url": "https://openai.com/blog/rss.xml",
-      "items": 7
+      "items": 5
     },
     {
       "id": "google-ai",
@@ -83,40 +89,35 @@
       "items": 0
     },
     {
-      "id": "juejin-frontend",
-      "name": "少数派",
-      "url": "https://sspai.com/feed",
-      "items": 1
-    },
-    {
       "id": "infoq-cn",
       "name": "InfoQ 中文",
       "url": "https://www.infoq.cn/feed",
-      "items": 10
-    },
-    {
-      "id": "quantumbit",
-      "name": "量子位",
-      "url": "https://www.qbitai.com/feed",
-      "items": 8
+      "items": 12
     },
     {
       "id": "jiqizhixin",
       "name": "36氪",
       "url": "https://36kr.com/feed",
-      "items": 30
+      "items": 8
+    },
+    {
+      "id": "juejin-frontend",
+      "name": "少数派",
+      "url": "https://sspai.com/feed",
+      "items": 2
+    },
+    {
+      "id": "quantumbit",
+      "name": "量子位",
+      "url": "https://www.qbitai.com/feed",
+      "items": 0
     }
   ],
   "failures": [
     {
-      "id": "css-tricks",
-      "name": "CSS-Tricks",
-      "error": "Status code 415"
-    },
-    {
       "id": "hn-ai",
       "name": "Hacker News AI",
-      "error": "The operation was aborted due to timeout"
+      "error": "Status code 502"
     }
   ]
 }

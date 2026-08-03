@@ -1,30 +1,26 @@
 {
-  "at": "2026-08-02T00:01:14.283Z",
+  "at": "2026-08-03T00:02:24.740Z",
   "type": "daily",
-  "date": "2026-08-01",
+  "date": "2026-08-02",
   "candidates": 36,
   "editorial": 9,
   "sections": {
-    "业界": 3,
-    "产品": 0,
-    "模型": 2,
-    "开源": 4,
-    "开发者工具": 0,
+    "业界": 4,
+    "产品": 1,
+    "模型": 0,
+    "开源": 3,
+    "开发者工具": 1,
     "前端": 0
   },
   "rss": {
-    "ok": 17,
-    "failed": 2,
+    "ok": 18,
+    "failed": 1,
     "failures": [
       {
-        "name": "CSS-Tricks",
-        "error": "Status code 415"
-      },
-      {
         "name": "Hacker News AI",
-        "error": "The operation was aborted due to timeout"
+        "error": "Status code 502"
       }
     ]
   },
-  "output": "news/2026-08/ai-news-2026-08-01.md"
+  "output": "news/2026-08/ai-news-2026-08-02.md"
 }
