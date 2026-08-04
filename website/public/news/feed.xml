@@ -6,8 +6,96 @@
     <link>https://lp-imagine.github.io/penn-notes/news/</link>
     <description>每日 AI 与前端精选动态 —— Penn Notes</description>
     <language>zh-CN</language>
-    <lastBuildDate>Mon, 03 Aug 2026 00:02:24 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 04 Aug 2026 00:12:37 GMT</lastBuildDate>
     <generator>Penn Notes news feed</generator>
+    <item>
+      <title>华为诺亚开源MindMemOS：让AI Agent记忆可迁移、自演进</title>
+      <link>https://lp-imagine.github.io/penn-notes/news/2026-08/ai-news-2026-08-03</link>
+      <guid isPermaLink="true">https://lp-imagine.github.io/penn-notes/news/2026-08/ai-news-2026-08-03</guid>
+      <pubDate>Mon, 03 Aug 2026 16:00:00 GMT</pubDate>
+      <description>[业界] · 来源：量子位 · 华为诺亚方舟实验室开源面向AI Agent的可迁移、自演进记忆操作层MindMemOS。它用「实体-属性-时间」三维结构保存最新状态与完整演化轨迹，通过MindSchema预设提取规则、Feedback挖掘用户纠偏反馈、Dreaming离线巩固记忆，让记忆系统随使用持续进化。在LoCoMo上取得94.03分，在MemoryAgentBench的FactConsolidation测试中压缩19.4%-23.5%活跃记忆的同时将问答准确率最高提升10.3个百分点。</description>
+      <category>业界</category>
+    </item>
+    <item>
+      <title>AWS计费系统故障：用户收到数万亿美元账单预估，告警系统未能阻止问题扩大</title>
+      <link>https://lp-imagine.github.io/penn-notes/news/2026-08/ai-news-2026-08-03</link>
+      <guid isPermaLink="true">https://lp-imagine.github.io/penn-notes/news/2026-08/ai-news-2026-08-03</guid>
+      <pubDate>Mon, 03 Aug 2026 16:00:00 GMT</pubDate>
+      <description>[业界] · 来源：InfoQ 中文 · 7月16日AWS计费计算系统配置变更导致单价错误，用户预估账单飙升至数百万至数万亿美元，持续超24小时。AWS承认告警系统检测到成本异常但未能阻止生成流程，也未通知工程团队，直到4.5小时后收到客户反馈才意识到问题。该事件暴露了云成本管理中的告警响应机制缺陷，引发对云服务商内部运维流程的广泛讨论。</description>
+      <category>业界</category>
+    </item>
+    <item>
+      <title>年薪百万抢电工：Meta等AI巨头自办技校应对数据中心建设瓶颈</title>
+      <link>https://lp-imagine.github.io/penn-notes/news/2026-08/ai-news-2026-08-03</link>
+      <guid isPermaLink="true">https://lp-imagine.github.io/penn-notes/news/2026-08/ai-news-2026-08-03</guid>
+      <pubDate>Mon, 03 Aug 2026 16:00:00 GMT</pubDate>
+      <description>[业界] · 来源：量子位 · AI数据中心建设面临严重电工短缺，麦肯锡预计美国2023至2030年需额外培养13万名电工。AI公司支付高溢价，优秀电工年薪达24万-28万美元，但一个60兆瓦项目每月因招工短缺延迟交付损失1420万美元。微软总裁称电工短缺是扩建数据中心头号障碍。2026年Alphabet和Meta投入技工培训成本合计达2.65亿美元，Meta拨款1.15亿自办培训项目。</description>
+      <category>业界</category>
+    </item>
+    <item>
+      <title>阿里「千问办公」开启公测，整合三款产品瞄准企业级Agent市场</title>
+      <link>https://lp-imagine.github.io/penn-notes/news/2026-08/ai-news-2026-08-03</link>
+      <guid isPermaLink="true">https://lp-imagine.github.io/penn-notes/news/2026-08/ai-news-2026-08-03</guid>
+      <pubDate>Mon, 03 Aug 2026 16:00:00 GMT</pubDate>
+      <description>[产品] · 来源：量子位 · 阿里巴巴旗下企业级Agent产品「千问办公」（QwenWork）开启公测，个人和企业用户均可通过官网体验，网页版和独立PC客户端已开放，钉钉内置入口近期开放。该产品由QoderWork、MuleRun、悟空三款产品整合而来，是业内首款同时支持桌面端Agent、云端Agent、企业协同Agent的产品，已初步打通钉钉IM，未来将连接企业真实数据库和工作流。公测期间新用户注册可获得2000积分。</description>
+      <category>产品</category>
+    </item>
+    <item>
+      <title>OpenAI新模型「Astra」曝光：多智能体协同攻克数学难题，或成美国首批过审模型</title>
+      <link>https://lp-imagine.github.io/penn-notes/news/2026-08/ai-news-2026-08-03</link>
+      <guid isPermaLink="true">https://lp-imagine.github.io/penn-notes/news/2026-08/ai-news-2026-08-03</guid>
+      <pubDate>Mon, 03 Aug 2026 16:00:00 GMT</pubDate>
+      <description>[模型] · 来源：InfoQ 中文 · 据The Information报道，OpenAI正在测试代号「Astra」的全新模型家族，核心能力是让多个智能体在较长时间内协同工作、解决高难度问题。Altman已在华盛顿向政策制定者演示，并展示了系统解决此前未被攻克的数学难题的能力。Astra可能作为GPT-5系列后续版本或直接命名为GPT-6，与Sol、Terra和Luna并列成为OpenAI新模型类别。该模型还能让个人独立完成过去需外包的专业工作。</description>
+      <category>模型</category>
+    </item>
+    <item>
+      <title>DeepSeek V4 Flash正式版发布：基准测试优于Pro预览版，价格下调</title>
+      <link>https://lp-imagine.github.io/penn-notes/news/2026-08/ai-news-2026-08-03</link>
+      <guid isPermaLink="true">https://lp-imagine.github.io/penn-notes/news/2026-08/ai-news-2026-08-03</guid>
+      <pubDate>Mon, 03 Aug 2026 16:00:00 GMT</pubDate>
+      <description>[模型] · 来源：少数派 · DeepSeek发布V4 Flash正式版，在多个基准测试中得分优于V4 Pro预览版。模型结构与预览版一致，总参数量284B、激活13B，仅重新进行后训练。价格方面，每百万tokens缓存未命中输入从2元下调至1元，输出从3元下调至2元。DeepSeek称V4 Pro正式版将尽快发布。此前DeepSeek完成约500亿元首次对外融资，估值超3500亿元，并正努力将所有部门规模扩大至少一倍。</description>
+      <category>模型</category>
+    </item>
+    <item>
+      <title>jamiepine/voicebox：开源AI语音工作室，支持克隆、听写与创作</title>
+      <link>https://lp-imagine.github.io/penn-notes/news/2026-08/ai-news-2026-08-03</link>
+      <guid isPermaLink="true">https://lp-imagine.github.io/penn-notes/news/2026-08/ai-news-2026-08-03</guid>
+      <pubDate>Mon, 03 Aug 2026 16:00:00 GMT</pubDate>
+      <description>[开源] · 来源：jamiepine/voicebox · jamiepine/voicebox是一个开源的AI语音工作室项目，提供语音克隆、听写和创作能力。项目定位为完整的AI语音工具集，开发者可基于此构建语音相关的应用。作为开源项目，它允许社区自由使用、修改和分发，为语音AI领域的开发者提供了一个可扩展的基础设施选择。</description>
+      <category>开源</category>
+    </item>
+    <item>
+      <title>livekit/agents：构建实时语音AI Agent的开源框架</title>
+      <link>https://lp-imagine.github.io/penn-notes/news/2026-08/ai-news-2026-08-03</link>
+      <guid isPermaLink="true">https://lp-imagine.github.io/penn-notes/news/2026-08/ai-news-2026-08-03</guid>
+      <pubDate>Mon, 03 Aug 2026 16:00:00 GMT</pubDate>
+      <description>[开源] · 来源：livekit/agents · livekit/agents是一个用于构建实时语音AI Agent的开源框架，支持语音和视频交互场景。该框架为开发者提供了构建实时语音助手、视频智能体等应用的基础能力，与LiveKit的实时通信基础设施深度集成。对于需要快速搭建语音交互Agent的团队，这是一个值得关注的开源选择。</description>
+      <category>开源</category>
+    </item>
+    <item>
+      <title>firecrawl/pdf-inspector：Rust编写的PDF智能检测与文本提取库</title>
+      <link>https://lp-imagine.github.io/penn-notes/news/2026-08/ai-news-2026-08-03</link>
+      <guid isPermaLink="true">https://lp-imagine.github.io/penn-notes/news/2026-08/ai-news-2026-08-03</guid>
+      <pubDate>Mon, 03 Aug 2026 16:00:00 GMT</pubDate>
+      <description>[开源] · 来源：firecrawl/pdf-inspector · firecrawl/pdf-inspector是一个用Rust编写的高性能PDF检查、分类和文本提取库。它能智能检测扫描版PDF与文本版PDF，帮助开发者做出智能路由决策。该库定位为快速、可靠的PDF处理工具，适用于需要批量处理PDF文档并区分扫描件与电子文档的场景，可作为文档处理管线的底层组件。</description>
+      <category>开源</category>
+    </item>
+    <item>
+      <title>free-claude-code：在终端、IDE或手机免费使用Claude Code、Codex和Pi</title>
+      <link>https://lp-imagine.github.io/penn-notes/news/2026-08/ai-news-2026-08-03</link>
+      <guid isPermaLink="true">https://lp-imagine.github.io/penn-notes/news/2026-08/ai-news-2026-08-03</guid>
+      <pubDate>Mon, 03 Aug 2026 16:00:00 GMT</pubDate>
+      <description>[开发者工具] · 来源：Alishahryar1/free-claude-code · Alishahryar1/free-claude-code是一个开源项目，让用户从终端、应用、IDE或手机免费使用Claude Code、Codex和Pi等AI编程工具，并支持语音交互。该项目类似OpenClaw的体验，为开发者提供了免费访问多个主流AI编码助手的途径，降低了使用门槛。对于希望低成本体验不同AI编程工具的开发者，这是一个实用的开源方案。</description>
+      <category>开发者工具</category>
+    </item>
+    <item>
+      <title>Anthropic详解Claude安全隔离架构：沙箱使权限确认弹窗减少84%</title>
+      <link>https://lp-imagine.github.io/penn-notes/news/2026-08/ai-news-2026-08-03</link>
+      <guid isPermaLink="true">https://lp-imagine.github.io/penn-notes/news/2026-08/ai-news-2026-08-03</guid>
+      <pubDate>Mon, 03 Aug 2026 16:00:00 GMT</pubDate>
+      <description>[开发者工具] · 来源：InfoQ 中文 · Anthropic详细介绍了Claude在Web、开发者和桌面产品中的安全隔离架构，强调Agent安全不能仅依赖权限确认或模型自身机制，更需通过文件系统、网络和执行环境建立确定性安全边界。Claude Code引入操作系统级沙箱（macOS Seatbelt、Linux bubblewrap）后，权限确认弹窗数量减少84%。文章还披露了Claude Code在用户确认前解析项目配置文件的漏洞事件及修复方案。</description>
+      <category>开发者工具</category>
+    </item>
     <item>
       <title>WAIC 收官圆桌：数百家机器人刷屏背后，AI 究竟重写了什么？</title>
       <link>https://lp-imagine.github.io/penn-notes/news/2026-08/ai-news-2026-08-02</link>
@@ -239,94 +327,6 @@
       <pubDate>Thu, 30 Jul 2026 16:00:00 GMT</pubDate>
       <description>[产品] · 来源：量子位 · 腾讯WorkBuddy发布V5.3.5版本，联合腾讯文档推出面向Agent时代的「人机双写」协同编辑能力。用户可在Word、Excel、PPT等文档中直接与AI共同创作、修改并实时协同，AI从「外挂」变为文档内的协作方，实现人人、人机、机机多端同步协作。对读者：企业用户可借此将AI深度融入现有办公流程，提升文档协作效率。</description>
       <category>产品</category>
-    </item>
-    <item>
-      <title>Claude Code之父建议：每半年删除所有Harness代码，让模型自由发挥</title>
-      <link>https://lp-imagine.github.io/penn-notes/news/2026-08/ai-news-week-2026-08-01</link>
-      <guid isPermaLink="true">https://lp-imagine.github.io/penn-notes/news/2026-08/ai-news-week-2026-08-01</guid>
-      <pubDate>Thu, 30 Jul 2026 16:00:00 GMT</pubDate>
-      <description>[产品] · 来源：量子位 · Claude Code之父Boris Cherny在YC访谈中提出激进的产品迭代策略：每六个月删除Claude.md、skills和hooks等所有Harness代码，通过消融实验测试模型真实能力。他认为模型是有机生物，产品设计应少预判、多测试，随着模型能力增强，应逐步解缚，让模型独立完成更难的任务。对读者：AI产品开发者应定期做减法，避免过度约束模型，释放其潜力。</description>
-      <category>产品</category>
-    </item>
-    <item>
-      <title>GitLab 19.2 发布，用 AI 代理自动化处理安全待办事项</title>
-      <link>https://lp-imagine.github.io/penn-notes/news/2026-08/ai-news-week-2026-08-01</link>
-      <guid isPermaLink="true">https://lp-imagine.github.io/penn-notes/news/2026-08/ai-news-week-2026-08-01</guid>
-      <pubDate>Thu, 30 Jul 2026 16:00:00 GMT</pubDate>
-      <description>[开发者工具] · 来源：InfoQ 中文 · GitLab 发布 19.2 版本，新增多项 AI 代理功能以应对 AI 编码带来的安全审查积压问题。核心功能包括依赖项扫描自动修复（自动创建合并请求修复漏洞）、安全审查流程（检测逻辑缺陷）等，旨在将开发瓶颈从安全环节解放出来，同时保留人工审核环节。对读者：DevOps 团队可利用该版本自动化安全修复流程，减少手动打补丁的工作量。</description>
-      <category>开发者工具</category>
-    </item>
-    <item>
-      <title>实在Agent登顶OSWorld双冠，桌面操作成功率突破90%</title>
-      <link>https://lp-imagine.github.io/penn-notes/news/2026-08/ai-news-week-2026-08-01</link>
-      <guid isPermaLink="true">https://lp-imagine.github.io/penn-notes/news/2026-08/ai-news-week-2026-08-01</guid>
-      <pubDate>Thu, 30 Jul 2026 16:00:00 GMT</pubDate>
-      <description>[开发者工具] · 来源：InfoQ 中文 · 国内技术团队实在Agent在OSWorld权威榜单中以90.2%的总成功率、325.59分登顶总榜与Agentic Framework分榜双冠，成为首个突破90%成功率的桌面操作智能体。该评测基于真实Ubuntu系统，覆盖361项全场景任务，考核环境感知、长链路规划等硬核能力。对读者：该成果展示了桌面Agent的技术新高度，可关注其在自动化办公与测试中的应用潜力。</description>
-      <category>开发者工具</category>
-    </item>
-    <item>
-      <title>词元无限一年连融三轮数亿元，打造企业软件工程AI Agent基础设施</title>
-      <link>https://lp-imagine.github.io/penn-notes/news/2026-07/ai-news-2026-07-30</link>
-      <guid isPermaLink="true">https://lp-imagine.github.io/penn-notes/news/2026-07/ai-news-2026-07-30</guid>
-      <pubDate>Thu, 30 Jul 2026 16:00:00 GMT</pubDate>
-      <description>[业界] · 来源：量子位 · 由前字节跳动MarsCode和Trae负责人杨萍创立的词元无限，成立刚满一年即连续完成三轮融资，总金额数亿元。公司面向企业软件工程，提供AI Agent基础设施，旨在解决AI写代码效率高但企业整体交付提效不足的矛盾，将AI能力融入需求、评审、测试等全链路。对读者：关注企业级AI Coding基础设施的选型，其价值在于为结果而非工具付费。</description>
-      <category>业界</category>
-    </item>
-    <item>
-      <title>无问芯穹发布跨集群异构推理架构PDD，延迟砍半成本降近40%</title>
-      <link>https://lp-imagine.github.io/penn-notes/news/2026-07/ai-news-2026-07-30</link>
-      <guid isPermaLink="true">https://lp-imagine.github.io/penn-notes/news/2026-07/ai-news-2026-07-30</guid>
-      <pubDate>Thu, 30 Jul 2026 16:00:00 GMT</pubDate>
-      <description>[业界] · 来源：量子位 · 无问芯穹公布跨集群异构推理架构PDD的完整技术报告。该架构将传统PD分离链路创新解构为P-RLD-MD三级分离，利用广域网以太网串联多地同构数据中心，解决KV Cache传输延迟痛点。实测首Token延迟降低51.5%，单Token成本降低37.5%，盘活了分散的存量算力资源。对读者：该架构为降低大模型推理成本提供了新思路，尤其适合拥有多地数据中心的企业。</description>
-      <category>业界</category>
-    </item>
-    <item>
-      <title>高通押注「个人AI」，发布产业白皮书定义终端新范式</title>
-      <link>https://lp-imagine.github.io/penn-notes/news/2026-07/ai-news-2026-07-30</link>
-      <guid isPermaLink="true">https://lp-imagine.github.io/penn-notes/news/2026-07/ai-news-2026-07-30</guid>
-      <pubDate>Thu, 30 Jul 2026 16:00:00 GMT</pubDate>
-      <description>[业界] · 来源：量子位 · 高通委托IDC发布产业白皮书，提出「个人AI」范式：以智能体为核心、以用户为中心，让手机、PC、眼镜等终端共享对用户的理解。白皮书指出，终端市场硬件参数竞争失效，AI渗透率逆势上扬，但需解决云端推理成本、延迟和隐私三大瓶颈，推动AI能力向端侧迁移。对读者：终端AI化趋势明确，开发者和厂商应关注端侧模型部署与个人智能体生态。</description>
-      <category>业界</category>
-    </item>
-    <item>
-      <title>Chrome DevTools 推出官方 MCP 服务器，赋能编码 Agent</title>
-      <link>https://lp-imagine.github.io/penn-notes/news/2026-07/ai-news-2026-07-30</link>
-      <guid isPermaLink="true">https://lp-imagine.github.io/penn-notes/news/2026-07/ai-news-2026-07-30</guid>
-      <pubDate>Thu, 30 Jul 2026 16:00:00 GMT</pubDate>
-      <description>[开源] · 来源：ChromeDevTools/chrome-devtools-mcp · Chrome DevTools 团队发布官方 MCP 服务器项目 chrome-devtools-mcp，为编码 Agent 提供直接操作 Chrome DevTools 的能力。该项目开源在 GitHub 上，允许 AI 编程工具通过 MCP 协议与浏览器调试接口交互，实现页面分析、性能监控、DOM 操作等任务。对读者：前端开发者可借此将浏览器调试能力集成到 AI 工作流中，提升自动化测试与调试效率。</description>
-      <category>开源</category>
-    </item>
-    <item>
-      <title>美团发布全场景AI Agent平台CatPaw</title>
-      <link>https://lp-imagine.github.io/penn-notes/news/2026-08/ai-news-week-2026-08-01</link>
-      <guid isPermaLink="true">https://lp-imagine.github.io/penn-notes/news/2026-08/ai-news-week-2026-08-01</guid>
-      <pubDate>Wed, 29 Jul 2026 16:00:00 GMT</pubDate>
-      <description>[产品] · 来源：少数派 · 美团正式上线全场景AI Agent平台CatPaw，提供独立移动端App与PC客户端，双端任务实时同步。CatPaw支持7×24小时云端运行，即使本地设备关机也不受影响。平台融入美团本地生活领域行业认知，覆盖门店评价诊断、商品文案生成、营销活动策划等场景，支持多Agent并发处理与分级权限管控。对读者：本地生活从业者可关注其即装即用的专家技能，快速实现经营数据分析与营销自动化。</description>
-      <category>产品</category>
-    </item>
-    <item>
-      <title>九章云极Alaya Token完成Kimi K3适配，全球首个开源3T级模型入驻Token工厂</title>
-      <link>https://lp-imagine.github.io/penn-notes/news/2026-07/ai-news-2026-07-29</link>
-      <guid isPermaLink="true">https://lp-imagine.github.io/penn-notes/news/2026-07/ai-news-2026-07-29</guid>
-      <pubDate>Wed, 29 Jul 2026 16:00:00 GMT</pubDate>
-      <description>[业界] · 来源：量子位 · 九章云极DataCanvas旗下Token交付平台Alaya Token正式完成对Kimi K3的适配与上线。Kimi K3是全球首个开源3万亿参数级大模型，采用KDA混合线性注意力机制，在Frontend Code Arena以1679分位列全球第一。Alaya Token构建“聚合而不锁定”的模型服务生态，企业可一套密钥在多模型间自由切换。对读者：若企业需多模型灵活调用，Alaya Token的“按需付费”模式可降低算力采购锁定风险。</description>
-      <category>业界</category>
-    </item>
-    <item>
-      <title>周鸿祎发布纳米Work：新一代企业智能体工作平台</title>
-      <link>https://lp-imagine.github.io/penn-notes/news/2026-07/ai-news-2026-07-29</link>
-      <guid isPermaLink="true">https://lp-imagine.github.io/penn-notes/news/2026-07/ai-news-2026-07-29</guid>
-      <pubDate>Wed, 29 Jul 2026 16:00:00 GMT</pubDate>
-      <description>[业界] · 来源：量子位 · 360集团创始人周鸿祎发布企业智能体工作平台“纳米Work”，面向企业老板、创业者及员工打造超级组织。平台内置多智能体引擎、多模型底座、云端办公室等五大能力体系，并融入原生安全设计。周鸿祎宣布为首批用户提供每人1亿Token试用额度，计划帮助1000家小企业完成AI落地。对读者：中小企业可关注其低门槛智能体协作能力，但需评估长程任务Token消耗与安全边界。</description>
-      <category>业界</category>
-    </item>
-    <item>
-      <title>首个鸿蒙PC开源AI统一工作台JiuwenSwarm发布</title>
-      <link>https://lp-imagine.github.io/penn-notes/news/2026-07/ai-news-2026-07-29</link>
-      <guid isPermaLink="true">https://lp-imagine.github.io/penn-notes/news/2026-07/ai-news-2026-07-29</guid>
-      <pubDate>Wed, 29 Jul 2026 16:00:00 GMT</pubDate>
-      <description>[业界] · 来源：量子位 · 华为联合团队推出JiuwenSwarm蜂群智能体鸿蒙PC版本，为首个面向鸿蒙PC的开源AI统一工作台。该平台支持多智能体协同办公与编程，20分钟内可生成200页PPT，并引入人机协同新范式HITS，支持多人多机协同。JiuwenSwarm还能与飞书、小艺等场景联动，实现跨设备任务推进。对读者：鸿蒙生态开发者可关注其开源架构，探索多Agent协同工程在桌面端的落地潜力。</description>
-      <category>业界</category>
     </item>
   </channel>
 </rss>
