@@ -57,6 +57,11 @@ layout: home
     <span class="news-card-title">AI 动态 · 2026-08-01</span>
     <span class="news-card-action">阅读全文</span></div>
   </a>
+  <a class="news-card news-card--media" href="/penn-notes/news/2026-08/ai-news-2026-08-04">
+    <img class="news-card-thumb" src="https://img.36krcdn.com/hsossms/20260804/v2_1c0344c251734fb08e4c00b9182c7ac8@6252890@ai_oswg920317oswg1053oswg495_img_png~tplv-1marlgjv7f-ai-v3:600:400:600:400:q70.jpg" alt="" loading="lazy" /><div class="news-card-body"><time datetime="2026-08-04">2026-08-04</time>
+    <span class="news-card-title">AI 动态 · 2026-08-04</span>
+    <span class="news-card-action">阅读全文</span></div>
+  </a>
   <a class="news-card news-card--media" href="/penn-notes/news/2026-08/ai-news-2026-08-03">
     <img class="news-card-thumb" src="https://static001.infoq.cn/resource/image/46/cf/465ec3bed997yya8c61435211d96eacf.jpg" alt="" loading="lazy" /><div class="news-card-body"><time datetime="2026-08-03">2026-08-03</time>
     <span class="news-card-title">AI 动态 · 2026-08-03</span>
@@ -85,11 +90,6 @@ layout: home
   <a class="news-card news-card--media" href="/penn-notes/news/2026-07/ai-news-2026-07-29">
     <img class="news-card-thumb" src="https://rssfile.sspai.com/28/07/2026/article/d1a902c3-dbfb-33d8-9dbb-ec5871235d00.jpeg?imageMogr2/auto-orient/format/webp/ignore-error/1" alt="" loading="lazy" /><div class="news-card-body"><time datetime="2026-07-29">2026-07-29</time>
     <span class="news-card-title">AI 动态 · 2026-07-29</span>
-    <span class="news-card-action">阅读全文</span></div>
-  </a>
-  <a class="news-card news-card--media" href="/penn-notes/news/2026-07/ai-news-2026-07-28">
-    <img class="news-card-thumb" src="https://rssfile.sspai.com/2026/07/27/3e6ef2d104e10467c6b25c66289197af.jpg?imageMogr2/auto-orient/format/webp/ignore-error/1" alt="" loading="lazy" /><div class="news-card-body"><time datetime="2026-07-28">2026-07-28</time>
-    <span class="news-card-title">AI 动态 · 2026-07-28</span>
     <span class="news-card-action">阅读全文</span></div>
   </a>
 </div>

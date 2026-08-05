@@ -10,6 +10,10 @@ export default {
           "link": "/news/2026-08/ai-news-week-2026-08-01"
         },
         {
+          "text": "2026-08-04",
+          "link": "/news/2026-08/ai-news-2026-08-04"
+        },
+        {
           "text": "2026-08-03",
           "link": "/news/2026-08/ai-news-2026-08-03"
         },

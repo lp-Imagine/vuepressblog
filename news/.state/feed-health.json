@@ -1,6 +1,6 @@
 {
-  "at": "2026-08-04T00:12:02.414Z",
-  "targetDate": "2026-08-03",
+  "at": "2026-08-05T00:08:11.495Z",
+  "targetDate": "2026-08-04",
   "ok": 18,
   "failed": 1,
   "successes": [
@@ -8,31 +8,25 @@
       "id": "anthropic-news",
       "name": "Anthropic News",
       "url": "https://raw.githubusercontent.com/Olshansk/rss-feeds/main/feeds/feed_anthropic_news.xml",
-      "items": 0
+      "items": 1
     },
     {
       "id": "techcrunch-ai",
       "name": "TechCrunch AI",
       "url": "https://techcrunch.com/category/artificial-intelligence/feed/",
+      "items": 14
+    },
+    {
+      "id": "mit-tr",
+      "name": "MIT Tech Review",
+      "url": "https://www.technologyreview.com/topic/artificial-intelligence/feed",
       "items": 2
     },
     {
       "id": "theverge-ai",
       "name": "The Verge AI",
       "url": "https://www.theverge.com/rss/ai-artificial-intelligence/index.xml",
-      "items": 2
-    },
-    {
-      "id": "mit-tr",
-      "name": "MIT Tech Review",
-      "url": "https://www.technologyreview.com/topic/artificial-intelligence/feed",
-      "items": 1
-    },
-    {
-      "id": "devto-ai",
-      "name": "DEV AI",
-      "url": "https://dev.to/feed/tag/ai",
-      "items": 0
+      "items": 6
     },
     {
       "id": "github-blog",
@@ -44,6 +38,12 @@
       "id": "huggingface",
       "name": "Hugging Face Blog",
       "url": "https://huggingface.co/blog/feed.xml",
+      "items": 1
+    },
+    {
+      "id": "devto-ai",
+      "name": "DEV AI",
+      "url": "https://dev.to/feed/tag/ai",
       "items": 0
     },
     {
@@ -53,16 +53,22 @@
       "items": 0
     },
     {
+      "id": "javascript-weekly",
+      "name": "JavaScript Weekly",
+      "url": "https://javascriptweekly.com/rss",
+      "items": 1
+    },
+    {
       "id": "ruanyifeng",
       "name": "阮一峰的网络日志",
       "url": "https://www.ruanyifeng.com/blog/atom.xml",
       "items": 0
     },
     {
-      "id": "javascript-weekly",
-      "name": "JavaScript Weekly",
-      "url": "https://javascriptweekly.com/rss",
-      "items": 0
+      "id": "google-ai",
+      "name": "Google AI Blog",
+      "url": "https://blog.google/technology/ai/rss/",
+      "items": 2
     },
     {
       "id": "venturebeat-ai",
@@ -71,22 +77,16 @@
       "items": 0
     },
     {
-      "id": "openai-blog",
-      "name": "OpenAI Blog",
-      "url": "https://openai.com/blog/rss.xml",
-      "items": 1
-    },
-    {
       "id": "css-tricks",
       "name": "CSS-Tricks",
       "url": "https://css-tricks.com/feed/",
       "items": 1
     },
     {
-      "id": "google-ai",
-      "name": "Google AI Blog",
-      "url": "https://blog.google/technology/ai/rss/",
-      "items": 0
+      "id": "openai-blog",
+      "name": "OpenAI Blog",
+      "url": "https://openai.com/blog/rss.xml",
+      "items": 4
     },
     {
       "id": "juejin-frontend",
@@ -95,22 +95,22 @@
       "items": 5
     },
     {
-      "id": "infoq-cn",
-      "name": "InfoQ 中文",
-      "url": "https://www.infoq.cn/feed",
-      "items": 8
-    },
-    {
       "id": "jiqizhixin",
       "name": "36氪",
       "url": "https://36kr.com/feed",
       "items": 9
     },
     {
+      "id": "infoq-cn",
+      "name": "InfoQ 中文",
+      "url": "https://www.infoq.cn/feed",
+      "items": 13
+    },
+    {
       "id": "quantumbit",
       "name": "量子位",
       "url": "https://www.qbitai.com/feed",
-      "items": 10
+      "items": 9
     }
   ],
   "failures": [
