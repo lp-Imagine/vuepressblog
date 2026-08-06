@@ -1,26 +1,26 @@
 {
-  "at": "2026-08-05T00:08:39.367Z",
+  "at": "2026-08-06T00:03:26.397Z",
   "type": "daily",
-  "date": "2026-08-04",
+  "date": "2026-08-05",
   "candidates": 36,
-  "editorial": 13,
+  "editorial": 10,
   "sections": {
-    "业界": 3,
-    "产品": 0,
-    "模型": 2,
-    "开源": 3,
-    "开发者工具": 4,
-    "前端": 1
+    "业界": 1,
+    "产品": 2,
+    "模型": 3,
+    "开源": 2,
+    "开发者工具": 2,
+    "前端": 0
   },
   "rss": {
     "ok": 18,
     "failed": 1,
     "failures": [
       {
-        "name": "Hacker News AI",
-        "error": "Status code 502"
+        "name": "36氪",
+        "error": "Feed not recognized as RSS/Atom"
       }
     ]
   },
-  "output": "news/2026-08/ai-news-2026-08-04.md"
+  "output": "news/2026-08/ai-news-2026-08-05.md"
 }
