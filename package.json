@@ -8,7 +8,6 @@
     "ingest": "node scripts/ingest-sync.mjs",
     "sync:news": "node scripts/sync-news.mjs",
     "news:daily": "node scripts/generate-daily-news.mjs",
-    "news:weekly": "node scripts/generate-weekly-news.mjs",
     "news:images": "node scripts/resolve-news-images.mjs",
     "news:feed": "node scripts/build-news-feed.mjs",
     "build:home": "node scripts/build-home.mjs",

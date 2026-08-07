@@ -79,7 +79,7 @@ function saveSeen(seen) {
   fs.writeFileSync(statePath, JSON.stringify({ urls }, null, 2) + "\n");
 }
 
-function itemDate(item) {
+export function itemDate(item) {
   const raw = item.isoDate || item.pubDate || item.published || "";
   if (!raw) return "";
   const d = new Date(raw);
@@ -106,7 +106,7 @@ function stripHtml(html) {
     .trim();
 }
 
-async function fetchExcerpt(url) {
+export async function fetchExcerpt(url) {
   try {
     const res = await fetch(url, {
       headers: { "User-Agent": BROWSER_UA, Accept: "text/html" },
@@ -139,7 +139,7 @@ function decodeEntities(s) {
     .replace(/&#39;/g, "'");
 }
 
-async function fetchGithubTrending(targetDate) {
+async function fetchGithubTrending(targetDate, trendingOrder) {
   const items = [];
   try {
     const res = await fetch("https://github.com/trending?since=daily", {
@@ -177,11 +177,62 @@ async function fetchGithubTrending(targetDate) {
         date: targetDate,
         snippet: desc || `GitHub Trending: ${repo}`,
         excerpt: desc,
+        _order: trendingOrder,
+        _seq: n,
       });
       n++;
     }
   } catch (err) {
     console.warn("[trending]", err.message || err);
+  }
+  return items;
+}
+
+/**
+ * Hacker News via Algolia API.
+ *
+ * hnrss.org is rate-limited / 502-prone, and the official HN front-page RSS
+ * has no pubDate, so we pull the latest dated stories from the Algolia API
+ * and keep the AI-related ones.
+ */
+async function fetchHnAlgolia(src, window, seenSet, includeSeen) {
+  const items = [];
+  const res = await fetch(
+    "https://hn.algolia.com/api/v1/search_by_date?tags=story&hitsPerPage=100",
+    {
+      headers: { "User-Agent": BROWSER_UA, Accept: "application/json" },
+      signal: AbortSignal.timeout(20000),
+    },
+  );
+  if (!res.ok) throw new Error(`Status code ${res.status}`);
+  const data = await res.json();
+  for (const hit of data.hits || []) {
+    const title = String(hit.title || "").trim();
+    if (!title) continue;
+    const hay = `${title} ${hit.url || ""}`.toLowerCase();
+    if (
+      !/ai|llm|gpt|claude|openai|anthropic|agent|mcp|gemini|llama|deepseek|qwen|neural|machine learning|deep learning/.test(
+        hay,
+      )
+    )
+      continue;
+    const link = normalizeUrl(
+      hit.url || `https://news.ycombinator.com/item?id=${hit.objectID}`,
+    );
+    if (!link) continue;
+    const date = itemDate({ isoDate: hit.created_at });
+    if (!date || !window.has(date)) continue;
+    if (!includeSeen && seenSet.has(link)) continue;
+    items.push({
+      title,
+      url: link,
+      sourceName: "Hacker News",
+      sourceId: src.id,
+      section: src.section,
+      date,
+      snippet: `${hit.points ?? 0} points · ${hit.num_comments ?? 0} comments`,
+      excerpt: "",
+    });
   }
   return items;
 }
@@ -194,25 +245,52 @@ export async function fetchNewsItems(targetDate, opts = {}) {
   const cfg = JSON.parse(fs.readFileSync(sourcesPath, "utf8"));
   const sources = cfg.sources || [];
   const lookbackDays = opts.lookbackDays ?? cfg.lookbackDays ?? 3;
+  const maxCandidates = opts.maxCandidates ?? cfg.maxCandidates ?? 64;
+  const maxItemsPerSource = cfg.maxItemsPerSource ?? 6;
   const window = dateWindow(targetDate, lookbackDays);
   const seen = loadSeen();
   const seenSet = new Set(seen.urls);
   const failures = [];
   const successes = [];
   const collected = [];
+  const srcIndex = new Map(sources.map((s, i) => [s.id, i]));
+  const trendingOrder = sources.length;
 
   await Promise.all(
     sources.map(async (src) => {
       try {
+        if (src.type === "hn-algolia") {
+          const algoliaItems = await fetchHnAlgolia(
+            src,
+            window,
+            seenSet,
+            opts.includeSeen,
+          );
+          algoliaItems.forEach((it, idx) => {
+            collected.push({
+              ...it,
+              _order: srcIndex.get(src.id) ?? 999,
+              _seq: idx,
+            });
+          });
+          successes.push({
+            id: src.id,
+            name: src.name,
+            url: "https://hn.algolia.com/api/v1",
+            items: algoliaItems.length,
+          });
+          return;
+        }
         const { feed, url } = await parseSourceFeed(src);
         let count = 0;
+        let idx = 0;
         for (const item of feed.items || []) {
           const link = normalizeUrl(item.link || item.guid || "");
           if (!link) continue;
           const date = itemDate(item);
-          // Undated: keep if recent enough via feed order — skip undated
-          if (date && !window.has(date)) continue;
+          // Undated items can't be pinned to a report day — skip
           if (!date) continue;
+          if (!window.has(date)) continue;
           if (!opts.includeSeen && seenSet.has(link)) continue;
           count++;
           collected.push({
@@ -226,7 +304,10 @@ export async function fetchNewsItems(targetDate, opts = {}) {
               item.contentSnippet || item.summary || item.content || "",
             ).slice(0, 600),
             excerpt: "",
+            _order: srcIndex.get(src.id) ?? 999,
+            _seq: idx,
           });
+          idx++;
         }
         successes.push({ id: src.id, name: src.name, url, items: count });
       } catch (err) {
@@ -239,7 +320,7 @@ export async function fetchNewsItems(targetDate, opts = {}) {
     }),
   );
 
-  const trending = await fetchGithubTrending(targetDate);
+  const trending = await fetchGithubTrending(targetDate, trendingOrder);
   for (const it of trending) {
     if (!opts.includeSeen && seenSet.has(it.url)) continue;
     collected.push(it);
@@ -251,14 +332,33 @@ export async function fetchNewsItems(targetDate, opts = {}) {
   }
   let items = [...byUrl.values()];
 
-  // Prefer items on targetDate, then fill with lookback
+  // Deterministic order: targetDate first, then older; tie-break by source
+  // order (sources.json) and feed position so the final cut is reproducible.
   items.sort((a, b) => {
     const aScore = a.date === targetDate ? 0 : 1;
     const bScore = b.date === targetDate ? 0 : 1;
     if (aScore !== bScore) return aScore - bScore;
-    return a.date < b.date ? 1 : -1;
+    if (a.date !== b.date) return a.date < b.date ? 1 : -1;
+    if (a._order !== b._order) return a._order - b._order;
+    return a._seq - b._seq;
   });
-  items = items.slice(0, 36);
+
+  // Per-source quota so one high-volume feed (36kr, arXiv, GitHub Trending…)
+  // can't flood the candidate pool, then a global cap for the LLM prompt.
+  const perSource = new Map();
+  const quotted = [];
+  for (const it of items) {
+    const sid = it.sourceId;
+    const used = perSource.get(sid) ?? 0;
+    if (used >= maxItemsPerSource) continue;
+    perSource.set(sid, used + 1);
+    quotted.push(it);
+  }
+  items = quotted.slice(0, maxCandidates);
+  for (const it of items) {
+    delete it._order;
+    delete it._seq;
+  }
 
   if (opts.enrich !== false) {
     console.log(`Enriching ${items.length} article excerpt(s)...`);

@@ -53,15 +53,6 @@ jobs:
           fi
           node scripts/generate-daily-news.mjs "${ARGS[@]}"
 
-      - name: Generate weekly digest (Sunday)
-        run: |
-          DOW=$(TZ=Asia/Shanghai date +%u)
-          if [ "$DOW" = "7" ]; then
-            node scripts/generate-weekly-news.mjs --force || true
-          else
-            echo "Not Sunday, skip weekly"
-          fi
-
       - name: Sync to website
         run: npm run sync:news && npm run build:home
 

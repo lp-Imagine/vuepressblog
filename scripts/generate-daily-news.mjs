@@ -9,6 +9,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { fetchNewsItems } from "./fetch-rss.mjs";
+import { searchNewsItems } from "./search-news.mjs";
 import { summarizeNews } from "./summarize-news.mjs";
 import { resolveNewsImages } from "./resolve-news-images.mjs";
 import {
@@ -59,10 +60,24 @@ async function main() {
   }
 
   console.log(`Generating daily news for ${reportDate} ...`);
-  const { items, failures, successes, saveSeen } = await fetchNewsItems(reportDate, {
+  const rssResult = await fetchNewsItems(reportDate, {
     includeSeen: args.skipSeen || args.force,
     enrich: true,
   });
+  const { failures, successes, saveSeen } = rssResult;
+
+  let search = { items: [], queries: 0, totalQueries: 0, ok: false, failures: [] };
+  try {
+    search = await searchNewsItems(reportDate, {
+      seenUrls: rssResult.items.map((it) => it.url),
+    });
+    console.log(
+      `Search ok ${search.queries}/${search.totalQueries} queries, ${search.items.length} verified candidate(s)`,
+    );
+  } catch (err) {
+    console.warn(`[search-news] skipped: ${err.message || err}`);
+  }
+  const items = [...rssResult.items, ...search.items];
 
   if (failures.length) {
     console.warn("RSS failures:");
@@ -74,7 +89,9 @@ async function main() {
       console.log(`  + ${s.name}: ${s.items} item(s)`);
     }
   }
-  console.log(`Candidates: ${items.length}`);
+  console.log(
+    `Candidates: ${items.length} (RSS ${rssResult.items.length} + search ${search.items.length})`,
+  );
   if (!items.length) {
     throw new Error(
       `No candidates for ${reportDate} (RSS/trending empty). Check network / sources.`,
@@ -112,6 +129,13 @@ async function main() {
     type: "daily",
     date: reportDate,
     candidates: items.length,
+    search: {
+      ok: search.ok,
+      queries: search.queries,
+      totalQueries: search.totalQueries,
+      items: search.items.length,
+      failures: (search.failures || []).slice(0, 3),
+    },
     editorial: total,
     sections: sectionCounts,
     rss: {

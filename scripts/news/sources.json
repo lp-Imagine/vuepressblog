@@ -1,5 +1,21 @@
 {
   "lookbackDays": 3,
+  "maxCandidates": 64,
+  "maxItemsPerSource": 6,
+  "search": {
+    "enabled": true,
+    "maxItems": 16,
+    "hitsPerQuery": 15,
+    "whenDays": 2,
+    "queries": [
+      "artificial intelligence",
+      "OpenAI",
+      "Anthropic Claude",
+      "AI regulation",
+      "AI model release",
+      "AI startup funding"
+    ]
+  },
   "sources": [
     {
       "id": "openai-blog",
@@ -28,7 +44,7 @@
     {
       "id": "hn-ai",
       "name": "Hacker News AI",
-      "url": "https://hnrss.org/newest?q=AI+OR+LLM+OR+GPT+OR+Claude+OR+OpenAI+OR+Anthropic",
+      "type": "hn-algolia",
       "section": "业界"
     },
     {
@@ -44,9 +60,15 @@
       "section": "产品"
     },
     {
-      "id": "venturebeat-ai",
-      "name": "VentureBeat AI",
-      "url": "https://venturebeat.com/category/ai/feed/",
+      "id": "ars-technica-ai",
+      "name": "Ars Technica AI",
+      "url": "https://arstechnica.com/ai/feed/",
+      "section": "业界"
+    },
+    {
+      "id": "wired-ai",
+      "name": "Wired AI",
+      "url": "https://www.wired.com/feed/tag/ai/latest/rss",
       "section": "业界"
     },
     {
@@ -86,6 +108,18 @@
       "section": "前端"
     },
     {
+      "id": "arxiv-cs-ai",
+      "name": "arXiv cs.AI",
+      "url": "https://rss.arxiv.org/rss/cs.AI",
+      "section": "模型"
+    },
+    {
+      "id": "sspai",
+      "name": "少数派",
+      "url": "https://sspai.com/feed",
+      "section": "业界"
+    },
+    {
       "id": "jiqizhixin",
       "name": "36氪",
       "url": "https://36kr.com/feed",
@@ -96,12 +130,6 @@
       "name": "InfoQ 中文",
       "url": "https://www.infoq.cn/feed",
       "section": "业界"
-    },
-    {
-      "id": "juejin-frontend",
-      "name": "少数派",
-      "url": "https://sspai.com/feed",
-      "section": "产品"
     },
     {
       "id": "ruanyifeng",

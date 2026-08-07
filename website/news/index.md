@@ -25,9 +25,8 @@ next: false
 
   <div class="section-index news-digest-list">
     <div class="section-group">
-      <p class="section-group-label">2026-08 · 7 期日报</p>
+      <p class="section-group-label">2026-08 · 6 期日报</p>
       <div class="section-card-grid">
-        <a class="section-card section-card--media" href="/penn-notes/news/2026-08/ai-news-week-2026-08-01"><img class="section-card-thumb" src="https://rssfile.sspai.com/28/07/2026/article/d1a902c3-dbfb-33d8-9dbb-ec5871235d00.jpeg?imageMogr2/auto-orient/format/webp/ignore-error/1" alt="" loading="lazy" /><span class="section-card-title">AI 动态周报 · 2026-07-26 ~ 2026-08-01</span><span class="section-card-meta"><time datetime="2026-08-01">2026-08-01</time><span>阅读全文</span></span></a>
         <a class="section-card section-card--media" href="/penn-notes/news/2026-08/ai-news-2026-08-06"><img class="section-card-thumb" src="https://static001.infoq.cn/resource/image/13/c4/13a3a8ff695813f3785ca3f52f18d2c4.jpg" alt="" loading="lazy" /><span class="section-card-title">AI 动态 · 2026-08-06</span><span class="section-card-meta"><time datetime="2026-08-06">2026-08-06</time><span>阅读全文</span></span></a>
         <a class="section-card section-card--media" href="/penn-notes/news/2026-08/ai-news-2026-08-05"><img class="section-card-thumb" src="https://static001.infoq.cn/resource/image/06/2a/06e0307a9014e38ee207081189b2f22a.jpg" alt="" loading="lazy" /><span class="section-card-title">AI 动态 · 2026-08-05</span><span class="section-card-meta"><time datetime="2026-08-05">2026-08-05</time><span>阅读全文</span></span></a>
         <a class="section-card section-card--media" href="/penn-notes/news/2026-08/ai-news-2026-08-04"><img class="section-card-thumb" src="https://img.36krcdn.com/hsossms/20260804/v2_1c0344c251734fb08e4c00b9182c7ac8@6252890@ai_oswg920317oswg1053oswg495_img_png~tplv-1marlgjv7f-ai-v3:600:400:600:400:q70.jpg" alt="" loading="lazy" /><span class="section-card-title">AI 动态 · 2026-08-04</span><span class="section-card-meta"><time datetime="2026-08-04">2026-08-04</time><span>阅读全文</span></span></a>

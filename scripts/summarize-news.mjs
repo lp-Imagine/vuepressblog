@@ -31,7 +31,9 @@ export async function summarizeNews(items, reportDate, opts = {}) {
     return heuristicSummarize(items);
   }
 
-  const capped = items.slice(0, 32);
+  const capped = items.slice(0, 80);
+  // 候选多时自动压缩 excerpt，避免 prompt 超长；总量控制在 ~120K 字符内。
+  const excerptBudget = Math.max(300, Math.floor(120000 / capped.length) - 900);
   const payload = capped.map((it, i) => ({
     id: i,
     title: it.title,
@@ -39,7 +41,7 @@ export async function summarizeNews(items, reportDate, opts = {}) {
     sectionHint: normalizeSection(it.section) || it.section,
     date: it.date,
     snippet: it.snippet,
-    excerpt: (it.excerpt || "").slice(0, 1400),
+    excerpt: (it.excerpt || "").slice(0, excerptBudget),
   }));
 
   const system = `你是「Penn Notes」资讯编辑：个人前端站的每日精选，栏目参考主流科技/AI 资讯，同时保留本站特色。

@@ -1,6 +1,6 @@
 # AI 动态
 
-Penn Notes 的「AI 动态」栏目：每天早上自动抓取公开 RSS，经大模型摘要后生成静态日报，再部署到 GitHub Pages。
+Penn Notes 的「AI 动态」栏目：每天早上自动抓取公开 RSS + 联网检索，经大模型摘要后生成静态日报，再部署到 GitHub Pages。
 
 ## 读者侧
 
@@ -8,11 +8,12 @@ Penn Notes 的「AI 动态」栏目：每天早上自动抓取公开 RSS，经�
 
 ## 生成流水线
 
-1. `scripts/fetch-rss.mjs` — 拉 [`scripts/news/sources.json`](../scripts/news/sources.json) 中的 RSS，按北京时间过滤目标日
-2. `scripts/summarize-news.mjs` — DeepSeek（或其它 OpenAI 兼容 API）去重 / 分类 / 中文摘要
-3. 写入 `news/YYYY-MM/ai-news-YYYY-MM-DD.md`
-4. `scripts/resolve-news-images.mjs` — 从原文抓 `og:image`（HTTPS 外链优先；失败则落盘 `website/public/news/`）
-5. push 触发现有 CI 构建部署
+1. `scripts/fetch-rss.mjs` — 拉 [`scripts/news/sources.json`](../scripts/news/sources.json) 中的 RSS / GitHub Trending / Hacker News（Algolia API），按北京时间过滤目标日；排序后先做**每源配额**再全局截断，防止单源淹没
+2. `scripts/search-news.mjs` — Google News 对 AI 关键词**联网检索**，逐条回源核验（抓不到 / 非文章页丢弃），补充国外一手新闻
+3. `scripts/summarize-news.mjs` — DeepSeek（或其它 OpenAI 兼容 API）去重 / 分类 / 中文摘要
+4. 写入 `news/YYYY-MM/ai-news-YYYY-MM-DD.md`
+5. `scripts/resolve-news-images.mjs` — 从原文抓 `og:image`（HTTPS 外链优先；失败则落盘 `website/public/news/`）
+6. push 触发现有 CI 构建部署
 
 > 注意：Actions 用 `GITHUB_TOKEN` 推送 **不会** 再触发另一个 workflow。因此 `daily-news.yml` 在生成后会**自行 build 并部署到 gh-pages**，不依赖 CI。
 
@@ -80,9 +81,6 @@ node scripts/generate-daily-news.mjs --date=2026-07-26 --force
 # 仅补配图
 npm run news:images
 
-# 生成本周周报（汇总近 7 天日报，不调 LLM）
-npm run news:weekly
-
 # 同步到 website 并预览
 npm run sync:news && npm run build:home && npm run dev
 ```
@@ -94,15 +92,6 @@ AI 动态提供 RSS，地址：
 `https://lp-imagine.github.io/penn-notes/news/feed.xml`
 
 本地构建后由 `npm run sync:news` 自动生成 `website/public/news/feed.xml`。可用 Feedly、Follow 等阅读器订阅。
-
-## 周报
-
-每周日 workflow 会自动汇总近 7 天日报生成周报（`ai-news-week-YYYY-MM-DD.md`），每栏目最多 3 条，不额外调用 LLM。
-
-```bash
-npm run news:weekly
-node scripts/generate-weekly-news.mjs --date=2026-07-27 --force
-```
 
 ## 质量监控
 
@@ -125,7 +114,7 @@ node scripts/generate-weekly-news.mjs --date=2026-07-27 --force
 
 每条为中文标题 + 编辑向段落，结尾「对读者：」。需配置 `LLM_API_KEY`。
 
-改源：`scripts/news/sources.json`；另抓 GitHub Trending。
+改源：`scripts/news/sources.json`。候选控制：`maxCandidates`（全局上限，默认 64）、`maxItemsPerSource`（每源配额，默认 6）；`search` 块配置 Google News 检索的关键词、每查询条数与总量；`"type": "hn-algolia"` 的源走 Hacker News API（hnrss.org 不稳定）。另抓 GitHub Trending。
 
 ## 排查
 
@@ -135,3 +124,5 @@ node scripts/generate-weekly-news.mjs --date=2026-07-27 --force
 - **LLM 限流**：workflow 失败不会空 commit，可用 Actions → Daily AI News → Run workflow 重跑
 - **已有日期跳过**：默认不覆盖；加 `--force`
 - **配图缺失**：部分站点无 og 图或拦截抓取，属正常；可事后 `npm run news:images`
+- **国外源偏少**：候选池已按源配额 + 联网检索补充；仍偏少可调大 `search.maxItems` 或加查询词
+- **检索失败**：`search-news` 需要能访问 Google 的网络（GitHub Actions 正常；本地大陆网络会跳过，仅影响国外补充，不影响 RSS 日报）

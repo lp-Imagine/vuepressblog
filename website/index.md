@@ -52,11 +52,6 @@ layout: home
       <a class="home-more" href="/penn-notes/news/">全部动态</a>
     </div>
 <div class="news-grid">
-  <a class="news-card news-card--media" href="/penn-notes/news/2026-08/ai-news-week-2026-08-01">
-    <img class="news-card-thumb" src="https://rssfile.sspai.com/28/07/2026/article/d1a902c3-dbfb-33d8-9dbb-ec5871235d00.jpeg?imageMogr2/auto-orient/format/webp/ignore-error/1" alt="" loading="lazy" /><div class="news-card-body"><time datetime="2026-08-01">2026-08-01</time>
-    <span class="news-card-title">AI 动态 · 2026-08-01</span>
-    <span class="news-card-action">阅读全文</span></div>
-  </a>
   <a class="news-card news-card--media" href="/penn-notes/news/2026-08/ai-news-2026-08-06">
     <img class="news-card-thumb" src="https://static001.infoq.cn/resource/image/13/c4/13a3a8ff695813f3785ca3f52f18d2c4.jpg" alt="" loading="lazy" /><div class="news-card-body"><time datetime="2026-08-06">2026-08-06</time>
     <span class="news-card-title">AI 动态 · 2026-08-06</span>
@@ -90,6 +85,11 @@ layout: home
   <a class="news-card news-card--media" href="/penn-notes/news/2026-07/ai-news-2026-07-31">
     <img class="news-card-thumb" src="https://static001.infoq.cn/resource/image/b1/a8/b1f461b5a4835a2ded46352815b65fa8.png" alt="" loading="lazy" /><div class="news-card-body"><time datetime="2026-07-31">2026-07-31</time>
     <span class="news-card-title">AI 动态 · 2026-07-31</span>
+    <span class="news-card-action">阅读全文</span></div>
+  </a>
+  <a class="news-card news-card--media" href="/penn-notes/news/2026-07/ai-news-2026-07-30">
+    <img class="news-card-thumb" src="https://opengraph.githubassets.com/1/ChromeDevTools/chrome-devtools-mcp" alt="" loading="lazy" /><div class="news-card-body"><time datetime="2026-07-30">2026-07-30</time>
+    <span class="news-card-title">AI 动态 · 2026-07-30</span>
     <span class="news-card-action">阅读全文</span></div>
   </a>
 </div>

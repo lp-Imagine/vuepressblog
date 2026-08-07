@@ -70,23 +70,15 @@ function copyMonthNews(month) {
     const date =
       (file.match(/(\d{4}-\d{2}-\d{2})/) || [])[1] || file.replace(/\.md$/, "");
     const slug = file.replace(/\.md$/, "");
-    const isWeekly = file.includes("week");
     meta.push({
       file,
       date,
       slug,
-      isWeekly,
       image: extractFirstImage(content),
-      title: parseTitleFromContent(
-        content,
-        isWeekly ? `AI 动态周报 · ${date}` : `AI 动态 · ${date}`,
-      ),
+      title: parseTitleFromContent(content, `AI 动态 · ${date}`),
     });
   }
-  meta.sort((a, b) => {
-    if (a.isWeekly !== b.isWeekly) return a.isWeekly ? -1 : 1;
-    return a.date < b.date ? 1 : -1;
-  });
+  meta.sort((a, b) => (a.date < b.date ? 1 : -1));
   return meta;
 }
 
@@ -96,7 +88,7 @@ function buildSidebar(months, monthFiles) {
       text: month,
       collapsed: false,
       items: monthFiles[month].map((item) => ({
-        text: item.isWeekly ? `周报 ${item.date}` : item.date,
+        text: item.date,
         link: `/news/${month}/${item.slug}`,
       })),
     })),
