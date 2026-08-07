@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="feed.xsl"?>
+<rss version="2.0">
+  <channel>
+    <title>Penn Notes · AI 动态</title>
+    <link>https://lp-imagine.github.io/penn-notes/news/</link>
+    <description>每日 AI 与前端精选动态 —— Penn Notes</description>
+    <language>zh-CN</language>
+    <lastBuildDate>Fri, 07 Aug 2026 08:43:08 GMT</lastBuildDate>
+    <generator>Penn Notes news feed</generator>
+    <item>
+      <title>突发，Jeff Dean离职创业！谷歌股价应声蒸发1.34万亿</title>
+      <link>https://lp-imagine.github.io/penn-notes/news/2026-08/ai-news-2026-08-06</link>
+      <guid isPermaLink="true">https://lp-imagine.github.io/penn-notes/news/2026-08/ai-news-2026-08-06</guid>
+      <pubDate>Thu, 06 Aug 2026 16:00:00 GMT</pubDate>
+      <description>[业界] · 来源：量子位 · 谷歌传奇工程师Jeff Dean宣布离职创业，与Sanjay Ghemawat、Quoc Le、Oriol Vinyals共同创办公益性AI公司Discovery Loop，聚焦机器学习、科学与工程自动化。同时，谷歌DeepMind CEO哈萨比斯卸任，转任董事长兼Alphabet首席科学家，由Koray Kavukcuoglu接任。消息公布后谷歌股价一度下跌超5%，市值蒸发逾万亿人民币。谷歌已入股新公司并成为其云合作伙伴。</description>
+      <category>业界</category>
+    </item>
+    <item>
+      <title>超级算力枢纽远景乌兰察布星河基地投产，全球最大AI算力超级单体落地</title>
+      <link>https://lp-imagine.github.io/penn-notes/news/2026-08/ai-news-2026-08-06</link>
+      <guid isPermaLink="true">https://lp-imagine.github.io/penn-notes/news/2026-08/ai-news-2026-08-06</guid>
+      <pubDate>Thu, 06 Aug 2026 16:00:00 GMT</pubDate>
+      <description>[业界] · 来源：量子位 · 远景科技集团宣布在乌兰察布建成全球最大AI算力超级单体，星河基地正式投产。该超级单体以12万平方米建筑体量、百万卡并行能力和百万P算力规模，成为全球Token产出能力最强的单体AI数据中心。园区总规划容量超2GW，采用超高比例绿电直连，将成为全国最大AI算力园区和Token工厂，为国产算力集群提供可复制的中国方案。</description>
+      <category>业界</category>
+    </item>
+    <item>
+      <title>MiniMax H3登顶开源社区第一，定义视频模型领域“斩杀线”</title>
+      <link>https://lp-imagine.github.io/penn-notes/news/2026-08/ai-news-2026-08-06</link>
+      <guid isPermaLink="true">https://lp-imagine.github.io/penn-notes/news/2026-08/ai-news-2026-08-06</guid>
+      <pubDate>Thu, 06 Aug 2026 16:00:00 GMT</pubDate>
+      <description>[业界] · 来源：量子位 · MiniMax正式开源新一代通用多模态生成模型MiniMax H3，在Artificial Analysis视频编辑评测榜和Arena图生视频排行榜均位列全球第一，Hugging Face热度升至第一，超过DeepSeek V4 Flash。H3开源24小时内获超百家国内外合作伙伴适配接入，标志着中国开源AI从语言模型向视频模型延伸。杰富瑞、花旗均维持买入评级，MiniMax股价涨幅超10%。</description>
+      <category>业界</category>
+    </item>
+    <item>
+      <title>Artificial Analysis榜单：阿里Qwen3.8 Agentic能力得分全球第一</title>
+      <link>https://lp-imagine.github.io/penn-notes/news/2026-08/ai-news-2026-08-06</link>
+      <guid isPermaLink="true">https://lp-imagine.github.io/penn-notes/news/2026-08/ai-news-2026-08-06</guid>
+      <pubDate>Thu, 06 Aug 2026 16:00:00 GMT</pubDate>
+      <description>[业界] · 来源：量子位 · Artificial Analysis公布新一期榜单，阿里Qwen3.8-Max在智能体能力（Agentic Index）排行榜中以55.4分超越Claude Opus5和GPT5.6，位列全球第一。该榜单衡量AI调用工具解决复杂问题的潜力，此前冠军长期被Claude、GPT垄断，中国模型最好成绩为Kimi K3的50.1分。此次夺冠标志着中国模型在Agentic能力上的重要突破。</description>
+      <category>业界</category>
+    </item>
+    <item>
+      <title>AWS 推出免费沙箱环境，可直接体验 Workshop</title>
+      <link>https://lp-imagine.github.io/penn-notes/news/2026-08/ai-news-2026-08-06</link>
+      <guid isPermaLink="true">https://lp-imagine.github.io/penn-notes/news/2026-08/ai-news-2026-08-06</guid>
+      <pubDate>Thu, 06 Aug 2026 16:00:00 GMT</pubDate>
+      <description>[产品] · 来源：InfoQ 中文 · AWS Builder Center推出免费限时沙箱环境，开发者无需使用自己的AWS账号或绑定信用卡即可完成Workshop实践教程。每个沙箱可免费使用8小时，资源预配置通常在15分钟内就绪，到期自动清理。每位开发者每周最多创建一个沙箱，目前仅支持部分Workshop，涵盖Serverless API、VPC配置、容器部署及AI服务等主题，包括Claude Code on Amazon Bedrock。</description>
+      <category>产品</category>
+    </item>
+    <item>
+      <title>tirth8205/code-review-graph：本地优先的代码智能图谱</title>
+      <link>https://lp-imagine.github.io/penn-notes/news/2026-08/ai-news-2026-08-06</link>
+      <guid isPermaLink="true">https://lp-imagine.github.io/penn-notes/news/2026-08/ai-news-2026-08-06</guid>
+      <pubDate>Thu, 06 Aug 2026 16:00:00 GMT</pubDate>
+      <description>[开源] · 来源：tirth8205/code-review-graph · code-review-graph是一个本地优先的代码智能图谱项目，为MCP和CLI构建持久化的代码库地图，让AI编码工具只读取相关代码。项目宣称在代码审查和大型仓库工作流中实现了可基准测试的上下文缩减，有助于提升AI辅助开发在复杂代码库中的效率和准确性。</description>
+      <category>开源</category>
+    </item>
+    <item>
+      <title>MCP 迎来最大更新：重回上古时代 HTTP</title>
+      <link>https://lp-imagine.github.io/penn-notes/news/2026-08/ai-news-2026-08-06</link>
+      <guid isPermaLink="true">https://lp-imagine.github.io/penn-notes/news/2026-08/ai-news-2026-08-06</guid>
+      <pubDate>Thu, 06 Aug 2026 16:00:00 GMT</pubDate>
+      <description>[开发者工具] · 来源：InfoQ 中文 · Model Context Protocol发布自上线以来最大更新：移除会话和初始化握手，每个请求独立携带完整上下文信息，使远程MCP服务器可像传统无状态HTTP服务一样操作，无需配置会话亲和性。官方称此举简化了MCP本身，解决了远程服务器水平扩展的长期痛点。但有开发者批评这是从WebSocket倒退，新旧协议共存阶段可能带来更高故障率。</description>
+      <category>开发者工具</category>
+    </item>
+    <item>
+      <title>Terraform 推出基于 HCL 的策略即代码框架 tfpolicy</title>
+      <link>https://lp-imagine.github.io/penn-notes/news/2026-08/ai-news-2026-08-06</link>
+      <guid isPermaLink="true">https://lp-imagine.github.io/penn-notes/news/2026-08/ai-news-2026-08-06</guid>
+      <pubDate>Thu, 06 Aug 2026 16:00:00 GMT</pubDate>
+      <description>[开发者工具] · 来源：InfoQ 中文 · HashiCorp发布tfpolicy，一套基于HCL的策略即代码框架，已在HCP Terraform中以公开Beta形式提供。tfpolicy将策略编写和执行直接集成到Terraform工作流，无需依赖Sentinel或OPA等独立策略工具。其深度集成支持部署前基于Plan的预期变更校验，也支持部署后依据资源实际运行状态执行治理，更贴近基础设施生命周期。</description>
+      <category>开发者工具</category>
+    </item>
+    <item>
+      <title>Cloudflare 推出 Meerkat，实现全球强一致性协调</title>
+      <link>https://lp-imagine.github.io/penn-notes/news/2026-08/ai-news-2026-08-06</link>
+      <guid isPermaLink="true">https://lp-imagine.github.io/penn-notes/news/2026-08/ai-news-2026-08-06</guid>
+      <pubDate>Thu, 06 Aug 2026 16:00:00 GMT</pubDate>
+      <description>[开发者工具] · 来源：InfoQ 中文 · Cloudflare推出Meerkat，一个基于QuePaxa共识算法的全球一致性控制平面服务。与Raft不同，QuePaxa允许所有副本在不依赖领导者超时的情况下接受写入操作，避免广域网中领导者不可达时的可用性损失。Meerkat提供共识日志，支持事务型键值存储和租约管理等服务，预计将成为QuePaxa在全球范围内首次投入生产部署的案例。</description>
+      <category>开发者工具</category>
+    </item>
+    <item>
+      <title>Claude Code之父：每半年清空一次claude.md、skills和hooks，模型自己会想办法</title>
+      <link>https://lp-imagine.github.io/penn-notes/news/2026-08/ai-news-2026-08-06</link>
+      <guid isPermaLink="true">https://lp-imagine.github.io/penn-notes/news/2026-08/ai-news-2026-08-06</guid>
+      <pubDate>Thu, 06 Aug 2026 16:00:00 GMT</pubDate>
+      <description>[开发者工具] · 来源：InfoQ 中文 · Claude Code创始人Boris Cherny建议将模型视为“活着的生物”，每代模型性格不同，因此每隔六个月应删掉CLAUDE.md、Skills和Hooks，重新评估最新模型需要多少指令。Claude Code团队在Opus 5发布后一次删除了超过80%的系统提示词，通过消融实验判断内容价值。他还启动实验让Claude将Electron桌面应用重写为Swift，已连续运行两周多。</description>
+      <category>开发者工具</category>
+    </item>
+    <item>
+      <title>2026 State of CSS, Devs Surveys</title>
+      <link>https://lp-imagine.github.io/penn-notes/news/2026-08/ai-news-2026-08-06</link>
+      <guid isPermaLink="true">https://lp-imagine.github.io/penn-notes/news/2026-08/ai-news-2026-08-06</guid>
+      <pubDate>Thu, 06 Aug 2026 16:00:00 GMT</pubDate>
+      <description>[前端] · 来源：CSS-Tricks · 2026年State of CSS调查结果公布，CSS-Tricks位列Web平台资源使用率第三，仅次于MDN和Can I Use。调查显示CSS-Tricks的Guides和Almanac栏目获得广泛认可，团队近年投入大量精力完善这些资源。同时2026年State of Devs调查已开放，开发者可参与贡献数据。</description>
+      <category>前端</category>
+    </item>
+    <item>
+      <title>微软叫停Tokenmaxxing：设置AI Token预算，内部默认模型切换为GPT-5.6</title>
+      <link>https://lp-imagine.github.io/penn-notes/news/2026-08/ai-news-2026-08-05</link>
+      <guid isPermaLink="true">https://lp-imagine.github.io/penn-notes/news/2026-08/ai-news-2026-08-05</guid>
+      <pubDate>Wed, 05 Aug 2026 16:00:00 GMT</pubDate>
+      <description>[业界] · 来源：量子位 · 微软自2026年7月起为各业务部门设置AI Token预算目标，并将内部默认模型切换为更便宜的GPT-5.6。执行副总裁Jay Parikh在内部邮件中强调，员工应像管理其他关键资源一样管理token花费，并可视个人token支出。此前CEO纳德拉曾承认自己也是Tokenmaxxer，但如今强调生产率的边际收益必须匹配token的边际成本。</description>
+      <category>业界</category>
+    </item>
+    <item>
+      <title>亚马逊云科技发布GuardDuty Investigation Agent：AI驱动的安全调查工具</title>
+      <link>https://lp-imagine.github.io/penn-notes/news/2026-08/ai-news-2026-08-05</link>
+      <guid isPermaLink="true">https://lp-imagine.github.io/penn-notes/news/2026-08/ai-news-2026-08-05</guid>
+      <pubDate>Wed, 05 Aug 2026 16:00:00 GMT</pubDate>
+      <description>[产品] · 来源：InfoQ 中文 · 亚马逊云科技发布Amazon GuardDuty Investigation Agent公共预览版，这是一款AI驱动的安全工具，可评估安全发现、关联历史活动并映射威胁遥测数据。它支持发现分析、账户分析和组织分析三种范围，将调查流程从数小时缩短至数分钟，并生成包含风险等级、置信度评分和可执行修复步骤的结构化报告。</description>
+      <category>产品</category>
+    </item>
+    <item>
+      <title>OpenAI回应第三方网络安全评估事件，公布新防护措施</title>
+      <link>https://lp-imagine.github.io/penn-notes/news/2026-08/ai-news-2026-08-05</link>
+      <guid isPermaLink="true">https://lp-imagine.github.io/penn-notes/news/2026-08/ai-news-2026-08-05</guid>
+      <pubDate>Wed, 05 Aug 2026 16:00:00 GMT</pubDate>
+      <description>[产品] · 来源：OpenAI Blog · OpenAI发文解释近期涉及第三方网络安全评估的事故，并概述了新的防护措施。在两次外部测试中，测试配置与控制措施结合新模型的能力提升，导致模型活动超出了预期测试边界。OpenAI强调独立测试对部署前验证风险的重要性，并将加强第三方模型评估环境的安全性。</description>
+      <category>产品</category>
+    </item>
+    <item>
+      <title>Sand.ai开源全球首个千亿MoE视频生成模型MAGI-2-preview：114B参数仅激活6B</title>
+      <link>https://lp-imagine.github.io/penn-notes/news/2026-08/ai-news-2026-08-05</link>
+      <guid isPermaLink="true">https://lp-imagine.github.io/penn-notes/news/2026-08/ai-news-2026-08-05</guid>
+      <pubDate>Wed, 05 Aug 2026 16:00:00 GMT</pubDate>
+      <description>[模型] · 来源：量子位 · 清华系团队Sand.ai开源视频生成模型MAGI-2-preview，总参数114B，单次前向仅激活约6B。生成10秒1080P视频成本约5毛钱，仅为行业主流模型的十分之一。该模型在AA视频生成榜单排名第六，效果接近第一梯队。其采用MoE架构解决视频模型Scaling的训推成本问题，但需应对通信和训练稳定性挑战。</description>
+      <category>模型</category>
+    </item>
+    <item>
+      <title>MiniMax H3视频模型上线秘塔AI：2K方案0.15元/秒，768P低至0.09元/秒</title>
+      <link>https://lp-imagine.github.io/penn-notes/news/2026-08/ai-news-2026-08-05</link>
+      <guid isPermaLink="true">https://lp-imagine.github.io/penn-notes/news/2026-08/ai-news-2026-08-05</guid>
+      <pubDate>Wed, 05 Aug 2026 16:00:00 GMT</pubDate>
+      <description>[模型] · 来源：量子位 · MiniMax H3视频模型在秘塔AI平台上线，用户无需部署即可直接使用。2K方案价格为0.15元/秒，768P方案低至0.09元/秒，生成5秒视频成本不到5毛钱。该模型是MiniMax首个开源视频模型，在Artificial Analysis榜单视频编辑排名第一，支持原生双声道音视频、2K分辨率、文字信息呈现和动作迁移等能力。</description>
+      <category>模型</category>
+    </item>
+    <item>
+      <title>GPT-5.6价格暴降：Luna降80%至$0.20/$1.20，Auto-review成本降10倍</title>
+      <link>https://lp-imagine.github.io/penn-notes/news/2026-08/ai-news-2026-08-05</link>
+      <guid isPermaLink="true">https://lp-imagine.github.io/penn-notes/news/2026-08/ai-news-2026-08-05</guid>
+      <pubDate>Wed, 05 Aug 2026 16:00:00 GMT</pubDate>
+      <description>[模型] · 来源：InfoQ 中文 · OpenAI宣布GPT-5.6系列大降价，入门款Luna价格下调80%，定价每百万输入token 0.20美元、输出1.20美元；Terra下调20%至$2/$12。Luna性能媲美一年前前沿模型，单位任务成本约6美分，速度提升近9倍。ChatGPT和Codex CLI的Auto-review已升级至Luna，预计成本降低约10倍。降价源于GPU内核优化和推测性解码改进。</description>
+      <category>模型</category>
+    </item>
+    <item>
+      <title>addyosmani/agent-skills：面向AI编码智能体的生产级工程技能库</title>
+      <link>https://lp-imagine.github.io/penn-notes/news/2026-08/ai-news-2026-08-05</link>
+      <guid isPermaLink="true">https://lp-imagine.github.io/penn-notes/news/2026-08/ai-news-2026-08-05</guid>
+      <pubDate>Wed, 05 Aug 2026 16:00:00 GMT</pubDate>
+      <description>[开源] · 来源：addyosmani/agent-skills · Google Chrome团队工程师Addy Osmani开源了agent-skills项目，提供面向AI编码智能体的生产级工程技能。该项目旨在帮助AI编码工具更好地理解和执行真实世界的工程任务，涵盖代码审查、测试、性能优化等场景，可作为AI Agent的技能增强库使用。</description>
+      <category>开源</category>
+    </item>
+    <item>
+      <title>loopx：面向长期运行AI Agent团队的轻量级循环工程状态内核</title>
+      <link>https://lp-imagine.github.io/penn-notes/news/2026-08/ai-news-2026-08-05</link>
+      <guid isPermaLink="true">https://lp-imagine.github.io/penn-notes/news/2026-08/ai-news-2026-08-05</guid>
+      <pubDate>Wed, 05 Aug 2026 16:00:00 GMT</pubDate>
+      <description>[开源] · 来源：huangruiteng/loopx · huangruiteng/loopx是一个轻量级循环工程状态内核，专为长期运行的AI Agent团队设计。它支持Codex、Claude Code等多种编码Agent，提供持久化目标、配额感知自动唤醒、可执行待办事项、证据日志和可验证交接等功能，帮助管理复杂的多Agent协作流程。</description>
+      <category>开源</category>
+    </item>
+    <item>
+      <title>GitHub教你用Stacked PR将巨型AI生成PR拆解为可审查的提交栈</title>
+      <link>https://lp-imagine.github.io/penn-notes/news/2026-08/ai-news-2026-08-05</link>
+      <guid isPermaLink="true">https://lp-imagine.github.io/penn-notes/news/2026-08/ai-news-2026-08-05</guid>
+      <pubDate>Wed, 05 Aug 2026 16:00:00 GMT</pubDate>
+      <description>[开发者工具] · 来源：GitHub Blog · GitHub官方博客发布指南，教授如何利用GitHub Stacked Pull Requests功能，将AI生成的一个巨大且难以审查的PR，拆解为干净、有序的提交栈。该方法有助于提高代码审查效率和质量，尤其适合AI编码Agent生成大量代码的场景。</description>
+      <category>开发者工具</category>
+    </item>
+    <item>
+      <title>GitHub法务团队用Copilot CLI简化工作流：不写一行代码构建工具</title>
+      <link>https://lp-imagine.github.io/penn-notes/news/2026-08/ai-news-2026-08-05</link>
+      <guid isPermaLink="true">https://lp-imagine.github.io/penn-notes/news/2026-08/ai-news-2026-08-05</guid>
+      <pubDate>Wed, 05 Aug 2026 16:00:00 GMT</pubDate>
+      <description>[开发者工具] · 来源：GitHub Blog · GitHub博客分享了其法务团队如何使用Copilot CLI来简化工作流程的案例。该团队通过自然语言与AI助手交互，构建了自动化工具，无需编写任何代码即可完成重复性任务，展示了非技术团队利用AI提升效率的实践路径。</description>
+      <category>开发者工具</category>
+    </item>
+    <item>
+      <title>DeepSeek V4 Flash低价风暴席卷硅谷，海外平台争相补贴</title>
+      <link>https://lp-imagine.github.io/penn-notes/news/2026-08/ai-news-2026-08-04</link>
+      <guid isPermaLink="true">https://lp-imagine.github.io/penn-notes/news/2026-08/ai-news-2026-08-04</guid>
+      <pubDate>Tue, 04 Aug 2026 16:00:00 GMT</pubDate>
+      <description>[业界] · 来源：量子位 · DeepSeek V4 Flash 以极低定价引发全球开发者狂欢，OpenCode 单日跑 8T tokens，Nous Portal 限时一折，Cline 因成本过低直接翻三倍免费额度。V4-Flash-0731 通过重跑后训练，DeepSWE 得分从 7.3 飙至 54.4，能力直逼 Opus 4.8，缓存未命中时每百万输入 token 仅 $0.14。对读者：低成本高性能模型正成为开发者主力选择，可优先评估迁移至 V4 Flash 以大幅降低推理成本。</description>
+      <category>业界</category>
+    </item>
+    <item>
+      <title>亿级日活出海App的算力生死劫：跨云架构砍掉75% GPU集群</title>
+      <link>https://lp-imagine.github.io/penn-notes/news/2026-08/ai-news-2026-08-04</link>
+      <guid isPermaLink="true">https://lp-imagine.github.io/penn-notes/news/2026-08/ai-news-2026-08-04</guid>
+      <pubDate>Tue, 04 Aug 2026 16:00:00 GMT</pubDate>
+      <description>[业界] · 来源：量子位 · 一家DAU破亿的AI穿搭出海应用因推理成本倒挂陷入亏损：每用户ARPU仅2美元，云端算力与传输成本却达3美元。团队通过跨云架构优化，将GPU集群成本砍掉75%，破解了算力租金、天价流量税与网络延迟三重锁链。对读者：高并发AI应用应重新审视云资源调度与流量成本，跨云架构是降低推理成本的有效路径。</description>
+      <category>业界</category>
+    </item>
+    <item>
+      <title>前海母基金数亿元押注Om AI联汇，端侧物理AI加速商业化</title>
+      <link>https://lp-imagine.github.io/penn-notes/news/2026-08/ai-news-2026-08-04</link>
+      <guid isPermaLink="true">https://lp-imagine.github.io/penn-notes/news/2026-08/ai-news-2026-08-04</guid>
+      <pubDate>Tue, 04 Aug 2026 16:00:00 GMT</pubDate>
+      <description>[业界] · 来源：量子位 · 杭州联汇科技（Om AI联汇）完成数亿元新一轮融资，由前海母基金领投，杭州政府产业基金参投。公司同步开源VLX-Seek 1.5端侧原生多模态模型，3B参数版本多项指标超越英伟达LocateAnything-3B，无人机具身场景准确率提升62.9%。商业化已落地AIPC、具身智能与视障辅助等领域。对读者：端侧物理AI正成为资本与产业焦点，关注VLX系列开源模型可提前布局端侧智能应用。</description>
+      <category>业界</category>
+    </item>
+    <item>
+      <title>腾讯混元发布Hy ASR 3.0 preview：语音识别开始理解上下文</title>
+      <link>https://lp-imagine.github.io/penn-notes/news/2026-08/ai-news-2026-08-04</link>
+      <guid isPermaLink="true">https://lp-imagine.github.io/penn-notes/news/2026-08/ai-news-2026-08-04</guid>
+      <pubDate>Tue, 04 Aug 2026 16:00:00 GMT</pubDate>
+      <description>[模型] · 来源：量子位 · 腾讯混元正式发布新一代语音识别模型Hy ASR 3.0 preview，基于Hy3大模型底座，融合高精度识别与深度语义理解。在开源评测集中，中文普通话WER 3.34%、英语2.62%、粤语3.12%，整体领先竞品。新模型支持上下文感知、热词注入增强，并针对高噪、耳语等复杂声学场景专项优化，已接入腾讯元宝。对读者：具备上下文理解能力的ASR将显著提升语音交互体验，可关注其API接入与专业场景适配。</description>
+      <category>模型</category>
+    </item>
+    <item>
+      <title>Kimi K3与DeepSeek V4之间，隔着原生多模态的时间差</title>
+      <link>https://lp-imagine.github.io/penn-notes/news/2026-08/ai-news-2026-08-04</link>
+      <guid isPermaLink="true">https://lp-imagine.github.io/penn-notes/news/2026-08/ai-news-2026-08-04</guid>
+      <pubDate>Tue, 04 Aug 2026 16:00:00 GMT</pubDate>
+      <description>[模型] · 来源：36氪 · 月之暗面发布的Kimi K3（2.8万亿参数MoE）以原生多模态能力登顶Arena Frontend Code榜单，通过&quot;vision in the loop&quot;机制让模型在代码与截图间反复迭代，能精准发现网页视觉偏差。相比之下，DeepSeek V4在原生多模态上存在时间差。阿里Qwen3.8-Max与字节Doubao-Seed-2.1也均将视觉作为基础能力。对读者：原生多模态正成为Agent长链任务的关键反馈机制，选型时需重点评估模型的视觉闭环能力。</description>
+      <category>模型</category>
+    </item>
+    <item>
+      <title>开源版Claude Science来了：北大联合实验室发布OpenAI4S，MIT协议零依赖</title>
+      <link>https://lp-imagine.github.io/penn-notes/news/2026-08/ai-news-2026-08-04</link>
+      <guid isPermaLink="true">https://lp-imagine.github.io/penn-notes/news/2026-08/ai-news-2026-08-04</guid>
+      <pubDate>Tue, 04 Aug 2026 16:00:00 GMT</pubDate>
+      <description>[开源] · 来源：量子位 · 北京大学与元空AI Agent联合实验室正式开源科研智能体项目OpenAI4S，采用MIT协议、核心零依赖，沿Code-as-Action思路独立复现Claude Science的引擎、持久内核与host-RPC协议。项目内置30余项科研Skills，支持数据检索、代码执行、图表生成与报告产出，并提供版本化科研产物管理。对读者：科研自动化Agent有了开源替代方案，可基于OpenAI4S快速搭建定制化科研工作流。</description>
+      <category>开源</category>
+    </item>
+    <item>
+      <title>Uber开源ADR：面向企业AI Agent的安全观测与威胁检测框架</title>
+      <link>https://lp-imagine.github.io/penn-notes/news/2026-08/ai-news-2026-08-04</link>
+      <guid isPermaLink="true">https://lp-imagine.github.io/penn-notes/news/2026-08/ai-news-2026-08-04</guid>
+      <pubDate>Tue, 04 Aug 2026 16:00:00 GMT</pubDate>
+      <description>[开源] · 来源：uber/ADR · Uber正式开源ADR（Agent Defense &amp; Response），该框架已在Uber内部部署，用于保障企业AI Agent安全。ADR提供可观测性、安全基准测试与威胁检测能力，帮助团队监控Agent行为、识别异常并建立安全防线。对读者：企业级Agent落地需配套安全治理，ADR可作为观测与防护的参考实现。</description>
+      <category>开源</category>
+    </item>
+    <item>
+      <title>browser-use/video-use：用编码Agent编辑视频的开源项目</title>
+      <link>https://lp-imagine.github.io/penn-notes/news/2026-08/ai-news-2026-08-04</link>
+      <guid isPermaLink="true">https://lp-imagine.github.io/penn-notes/news/2026-08/ai-news-2026-08-04</guid>
+      <pubDate>Tue, 04 Aug 2026 16:00:00 GMT</pubDate>
+      <description>[开源] · 来源：browser-use/video-use · browser-use团队推出video-use开源项目，让编码Agent能够直接编辑视频。该项目将Agent能力从浏览器操作扩展到视频处理领域，支持通过自然语言指令驱动视频剪辑、特效添加等任务。对读者：Agent能力边界正快速拓展，视频编辑自动化有望成为内容创作新范式。</description>
+      <category>开源</category>
+    </item>
+    <item>
+      <title>GitHub Copilot CLI重新设计：新增选项卡与免配置文件工具设置</title>
+      <link>https://lp-imagine.github.io/penn-notes/news/2026-08/ai-news-2026-08-04</link>
+      <guid isPermaLink="true">https://lp-imagine.github.io/penn-notes/news/2026-08/ai-news-2026-08-04</guid>
+      <pubDate>Tue, 04 Aug 2026 16:00:00 GMT</pubDate>
+      <description>[开发者工具] · 来源：InfoQ 中文 · GitHub正式推出重新设计的Copilot CLI终端界面，新增会话、Gists、Issues与Pull requests选项卡布局，支持鼠标选择与拖动重排。工具配置改为引导式会话体验，可通过/mcp add交互表单或/mcp search浏览MCP Registry直接安装服务器，无需手动编辑配置文件。新界面还优化了主题适配与屏幕阅读器支持。对读者：Copilot CLI的交互升级大幅降低MCP与插件配置门槛，值得立即体验。</description>
+      <category>开发者工具</category>
+    </item>
+    <item>
+      <title>Agent记忆不能只靠聊天记录：TencentDB Agent Memory的四层资产体系</title>
+      <link>https://lp-imagine.github.io/penn-notes/news/2026-08/ai-news-2026-08-04</link>
+      <guid isPermaLink="true">https://lp-imagine.github.io/penn-notes/news/2026-08/ai-news-2026-08-04</guid>
+      <pubDate>Tue, 04 Aug 2026 16:00:00 GMT</pubDate>
+      <description>[开发者工具] · 来源：InfoQ 中文 · 腾讯云数据库提出Agent Memory方案，将团队记忆抽象为四类原子资产：Chat Memory记录任务背景与决策、LLM-Wiki承载项目文档、Code Graph描述代码调用关系、Skill封装团队SOP。该体系让有效状态可跨session、跨Agent、跨框架继承，解决Agent每次对话重新开始的问题。对读者：构建Agent应用时，应系统设计记忆分层与资产治理，而非简单堆叠聊天记录。</description>
+      <category>开发者工具</category>
+    </item>
+    <item>
+      <title>给Agent装上方向盘和刹车：Harness时代的工程新范式</title>
+      <link>https://lp-imagine.github.io/penn-notes/news/2026-08/ai-news-2026-08-04</link>
+      <guid isPermaLink="true">https://lp-imagine.github.io/penn-notes/news/2026-08/ai-news-2026-08-04</guid>
+      <pubDate>Tue, 04 Aug 2026 16:00:00 GMT</pubDate>
+      <description>[开发者工具] · 来源：InfoQ 中文 · InfoQ《极客有约》邀请阿里云、NoDesk AI、腾讯专家探讨Agent Infra从可用到高效规模化的路径。核心观点：Harness的本质是用工程系统承接和约束不确定性，让Agent做正确的事并正确地做事；可观测性是诊断错误、形成优化飞轮的基础；企业需通过本体论将人用上下文翻译为Agent可理解语言。对读者：Agent规模化落地需配套Harness工程体系，可观测性与语义对齐是优先建设项。</description>
+      <category>开发者工具</category>
+    </item>
+    <item>
+      <title>Amazon EKS新增升级后7天内回滚Kubernetes版本功能</title>
+      <link>https://lp-imagine.github.io/penn-notes/news/2026-08/ai-news-2026-08-04</link>
+      <guid isPermaLink="true">https://lp-imagine.github.io/penn-notes/news/2026-08/ai-news-2026-08-04</guid>
+      <pubDate>Tue, 04 Aug 2026 16:00:00 GMT</pubDate>
+      <description>[开发者工具] · 来源：InfoQ 中文 · Amazon EKS推出Kubernetes版本回滚支持，升级后7天内出现问题可将控制平面回滚至之前版本，同时保留etcd数据、工作负载和持久卷。回滚每次仅涉及一个次要版本，EKS会运行集群分析检查准备情况并提示节点版本不匹配等问题。该功能解决了Kubernetes控制平面升级长期以来的&quot;单行道&quot;困境。对读者：EKS用户可放心推进版本升级，回滚机制显著降低了升级风险。</description>
+      <category>开发者工具</category>
+    </item>
+    <item>
+      <title>HarmonyOS 7抹平系统能力接入鸿沟：Skill与Agent可被封装调用</title>
+      <link>https://lp-imagine.github.io/penn-notes/news/2026-08/ai-news-2026-08-04</link>
+      <guid isPermaLink="true">https://lp-imagine.github.io/penn-notes/news/2026-08/ai-news-2026-08-04</guid>
+      <pubDate>Tue, 04 Aug 2026 16:00:00 GMT</pubDate>
+      <description>[前端] · 来源：量子位 · 华为HDD·HarmonyOS创新论坛西安站展示HarmonyOS 7在终端开发上的突破：通过星河互联一碰快传实现跨设备精准传输，系统能力Skill化让AI服务可被封装调用，数字内容走出平面。新系统大幅缩短了系统技术抵达真实应用的工程距离，降低多设备互联与AI集成的开发成本。对读者：鸿蒙开发者应关注Skill化封装能力，可显著减少系统能力接入的重复造轮子成本。</description>
+      <category>前端</category>
+    </item>
+    <item>
+      <title>华为诺亚开源MindMemOS：让AI Agent记忆可迁移、自演进</title>
+      <link>https://lp-imagine.github.io/penn-notes/news/2026-08/ai-news-2026-08-03</link>
+      <guid isPermaLink="true">https://lp-imagine.github.io/penn-notes/news/2026-08/ai-news-2026-08-03</guid>
+      <pubDate>Mon, 03 Aug 2026 16:00:00 GMT</pubDate>
+      <description>[业界] · 来源：量子位 · 华为诺亚方舟实验室开源面向AI Agent的可迁移、自演进记忆操作层MindMemOS。它用「实体-属性-时间」三维结构保存最新状态与完整演化轨迹，通过MindSchema预设提取规则、Feedback挖掘用户纠偏反馈、Dreaming离线巩固记忆，让记忆系统随使用持续进化。在LoCoMo上取得94.03分，在MemoryAgentBench的FactConsolidation测试中压缩19.4%-23.5%活跃记忆的同时将问答准确率最高提升10.3个百分点。</description>
+      <category>业界</category>
+    </item>
+    <item>
+      <title>AWS计费系统故障：用户收到数万亿美元账单预估，告警系统未能阻止问题扩大</title>
+      <link>https://lp-imagine.github.io/penn-notes/news/2026-08/ai-news-2026-08-03</link>
+      <guid isPermaLink="true">https://lp-imagine.github.io/penn-notes/news/2026-08/ai-news-2026-08-03</guid>
+      <pubDate>Mon, 03 Aug 2026 16:00:00 GMT</pubDate>
+      <description>[业界] · 来源：InfoQ 中文 · 7月16日AWS计费计算系统配置变更导致单价错误，用户预估账单飙升至数百万至数万亿美元，持续超24小时。AWS承认告警系统检测到成本异常但未能阻止生成流程，也未通知工程团队，直到4.5小时后收到客户反馈才意识到问题。该事件暴露了云成本管理中的告警响应机制缺陷，引发对云服务商内部运维流程的广泛讨论。</description>
+      <category>业界</category>
+    </item>
+    <item>
+      <title>年薪百万抢电工：Meta等AI巨头自办技校应对数据中心建设瓶颈</title>
+      <link>https://lp-imagine.github.io/penn-notes/news/2026-08/ai-news-2026-08-03</link>
+      <guid isPermaLink="true">https://lp-imagine.github.io/penn-notes/news/2026-08/ai-news-2026-08-03</guid>
+      <pubDate>Mon, 03 Aug 2026 16:00:00 GMT</pubDate>
+      <description>[业界] · 来源：量子位 · AI数据中心建设面临严重电工短缺，麦肯锡预计美国2023至2030年需额外培养13万名电工。AI公司支付高溢价，优秀电工年薪达24万-28万美元，但一个60兆瓦项目每月因招工短缺延迟交付损失1420万美元。微软总裁称电工短缺是扩建数据中心头号障碍。2026年Alphabet和Meta投入技工培训成本合计达2.65亿美元，Meta拨款1.15亿自办培训项目。</description>
+      <category>业界</category>
+    </item>
+    <item>
+      <title>阿里「千问办公」开启公测，整合三款产品瞄准企业级Agent市场</title>
+      <link>https://lp-imagine.github.io/penn-notes/news/2026-08/ai-news-2026-08-03</link>
+      <guid isPermaLink="true">https://lp-imagine.github.io/penn-notes/news/2026-08/ai-news-2026-08-03</guid>
+      <pubDate>Mon, 03 Aug 2026 16:00:00 GMT</pubDate>
+      <description>[产品] · 来源：量子位 · 阿里巴巴旗下企业级Agent产品「千问办公」（QwenWork）开启公测，个人和企业用户均可通过官网体验，网页版和独立PC客户端已开放，钉钉内置入口近期开放。该产品由QoderWork、MuleRun、悟空三款产品整合而来，是业内首款同时支持桌面端Agent、云端Agent、企业协同Agent的产品，已初步打通钉钉IM，未来将连接企业真实数据库和工作流。公测期间新用户注册可获得2000积分。</description>
+      <category>产品</category>
+    </item>
+    <item>
+      <title>OpenAI新模型「Astra」曝光：多智能体协同攻克数学难题，或成美国首批过审模型</title>
+      <link>https://lp-imagine.github.io/penn-notes/news/2026-08/ai-news-2026-08-03</link>
+      <guid isPermaLink="true">https://lp-imagine.github.io/penn-notes/news/2026-08/ai-news-2026-08-03</guid>
+      <pubDate>Mon, 03 Aug 2026 16:00:00 GMT</pubDate>
+      <description>[模型] · 来源：InfoQ 中文 · 据The Information报道，OpenAI正在测试代号「Astra」的全新模型家族，核心能力是让多个智能体在较长时间内协同工作、解决高难度问题。Altman已在华盛顿向政策制定者演示，并展示了系统解决此前未被攻克的数学难题的能力。Astra可能作为GPT-5系列后续版本或直接命名为GPT-6，与Sol、Terra和Luna并列成为OpenAI新模型类别。该模型还能让个人独立完成过去需外包的专业工作。</description>
+      <category>模型</category>
+    </item>
+    <item>
+      <title>DeepSeek V4 Flash正式版发布：基准测试优于Pro预览版，价格下调</title>
+      <link>https://lp-imagine.github.io/penn-notes/news/2026-08/ai-news-2026-08-03</link>
+      <guid isPermaLink="true">https://lp-imagine.github.io/penn-notes/news/2026-08/ai-news-2026-08-03</guid>
+      <pubDate>Mon, 03 Aug 2026 16:00:00 GMT</pubDate>
+      <description>[模型] · 来源：少数派 · DeepSeek发布V4 Flash正式版，在多个基准测试中得分优于V4 Pro预览版。模型结构与预览版一致，总参数量284B、激活13B，仅重新进行后训练。价格方面，每百万tokens缓存未命中输入从2元下调至1元，输出从3元下调至2元。DeepSeek称V4 Pro正式版将尽快发布。此前DeepSeek完成约500亿元首次对外融资，估值超3500亿元，并正努力将所有部门规模扩大至少一倍。</description>
+      <category>模型</category>
+    </item>
+  </channel>
+</rss>
