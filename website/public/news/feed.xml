@@ -6,8 +6,104 @@
     <link>https://lp-imagine.github.io/penn-notes/news/</link>
     <description>每日 AI 与前端精选动态 —— Penn Notes</description>
     <language>zh-CN</language>
-    <lastBuildDate>Fri, 07 Aug 2026 08:09:56 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 07 Aug 2026 23:37:27 GMT</lastBuildDate>
     <generator>Penn Notes news feed</generator>
+    <item>
+      <title>新墨西哥州法院裁定 Meta 再付 5.67 亿美元儿童安全罚款</title>
+      <link>https://lp-imagine.github.io/penn-notes/news/2026-08/ai-news-2026-08-07</link>
+      <guid isPermaLink="true">https://lp-imagine.github.io/penn-notes/news/2026-08/ai-news-2026-08-07</guid>
+      <pubDate>Fri, 07 Aug 2026 16:00:00 GMT</pubDate>
+      <description>[业界] · 来源：TechCrunch AI · 新墨西哥州法院裁定 Meta 需额外支付 5.67 亿美元，以了结一起儿童安全案件。加上此前罚款，Meta 在该案中的总罚款金额已累计至 9.42 亿美元。该案件涉及 Meta 平台在保护未成年人方面的责任问题，此次判决进一步加重了 Meta 的法律和财务压力。</description>
+      <category>业界</category>
+    </item>
+    <item>
+      <title>Anthropic 将自研硬件以支持 Claude，降低对英伟达依赖</title>
+      <link>https://lp-imagine.github.io/penn-notes/news/2026-08/ai-news-2026-08-07</link>
+      <guid isPermaLink="true">https://lp-imagine.github.io/penn-notes/news/2026-08/ai-news-2026-08-07</guid>
+      <pubDate>Fri, 07 Aug 2026 16:00:00 GMT</pubDate>
+      <description>[业界] · 来源：Ars Technica AI · 据 Ars Technica 报道，Anthropic 正计划设计自己的硬件来驱动 Claude 模型，与 OpenAI 一样，旨在扩大规模的同时减少对英伟达的依赖。此举标志着 AI 公司向垂直整合方向迈进，通过自研芯片和基础设施来优化性能和控制成本，以应对日益激烈的 AI 算力竞赛。</description>
+      <category>业界</category>
+    </item>
+    <item>
+      <title>字节跳动训练 10 万亿参数模型，挑战 Anthropic 地位</title>
+      <link>https://lp-imagine.github.io/penn-notes/news/2026-08/ai-news-2026-08-07</link>
+      <guid isPermaLink="true">https://lp-imagine.github.io/penn-notes/news/2026-08/ai-news-2026-08-07</guid>
+      <pubDate>Fri, 07 Aug 2026 16:00:00 GMT</pubDate>
+      <description>[业界] · 来源：Ars Technica AI · 据 Ars Technica 报道，TikTok 母公司字节跳动正在训练一个拥有 10 万亿参数的大规模 AI 模型，目标直指 Anthropic。此举显示出中国科技巨头在 AI 领域的雄心，并可能加剧全球 AI 模型竞赛。该模型的规模和能力若得以实现，将对现有市场格局产生重大影响。</description>
+      <category>业界</category>
+    </item>
+    <item>
+      <title>ChatGPT 免费用户迎来无限文本聊天，新增 Think 按钮</title>
+      <link>https://lp-imagine.github.io/penn-notes/news/2026-08/ai-news-2026-08-07</link>
+      <guid isPermaLink="true">https://lp-imagine.github.io/penn-notes/news/2026-08/ai-news-2026-08-07</guid>
+      <pubDate>Fri, 07 Aug 2026 16:00:00 GMT</pubDate>
+      <description>[产品] · 来源：TechCrunch AI · OpenAI 宣布，从下周起 ChatGPT 免费版和 Go 套餐用户将获得无限文本聊天权限，不再受速率限制；包含文件上传和图片的消息仍有限制。同时，这两档用户将新增「Think」按钮，用于处理更复杂的推理问题。Plus 和 Pro 订阅用户则获得更新后的 GPT-5.6 Sol 模型，其在事实准确性和回答质量上有所提升。</description>
+      <category>产品</category>
+    </item>
+    <item>
+      <title>Jony Ive 设计的 OpenAI 首款设备曝光：冰球大小、无屏幕智能音箱</title>
+      <link>https://lp-imagine.github.io/penn-notes/news/2026-08/ai-news-2026-08-07</link>
+      <guid isPermaLink="true">https://lp-imagine.github.io/penn-notes/news/2026-08/ai-news-2026-08-07</guid>
+      <pubDate>Fri, 07 Aug 2026 16:00:00 GMT</pubDate>
+      <description>[产品] · 来源：The Verge AI · 据 Bloomberg 报道，OpenAI 与 Jony Ive 合作的首款 AI 设备是一款电池供电、甜甜圈造型、无屏幕的智能音箱，大小接近冰球。设备预计 2027 年发布，售价超 300 美元，配备可自主移动的部件、灯光、摄像头和传感器，用于展示交互状态。此前有消息称其售价可能在 300 至 400 美元之间。</description>
+      <category>产品</category>
+    </item>
+    <item>
+      <title>Anthropic 更新 Claude Fable 5 生物学安全机制，误报率大幅降低</title>
+      <link>https://lp-imagine.github.io/penn-notes/news/2026-08/ai-news-2026-08-07</link>
+      <guid isPermaLink="true">https://lp-imagine.github.io/penn-notes/news/2026-08/ai-news-2026-08-07</guid>
+      <pubDate>Fri, 07 Aug 2026 16:00:00 GMT</pubDate>
+      <description>[产品] · 来源：Anthropic News · Anthropic 宣布对 Claude Fable 5 的生物学安全机制进行更新，显著减少了系统在处理生物学相关查询时切换到能力较弱模型的「回退」情况。内部测试显示，此次更新使各产品端的生物学相关回退减少了约 85%，让 Fable 5 能够处理更广泛的生物学问题，同时保持安全防护。</description>
+      <category>产品</category>
+    </item>
+    <item>
+      <title>Suno 推出水印技术与下载限制，治理 AI 音乐滥用</title>
+      <link>https://lp-imagine.github.io/penn-notes/news/2026-08/ai-news-2026-08-07</link>
+      <guid isPermaLink="true">https://lp-imagine.github.io/penn-notes/news/2026-08/ai-news-2026-08-07</guid>
+      <pubDate>Fri, 07 Aug 2026 16:00:00 GMT</pubDate>
+      <description>[产品] · 来源：The Verge AI · AI 音乐生成公司 Suno 宣布将实施新的水印技术和下载政策，以限制垃圾 AI 音乐传播并提高透明度。CEO Mikey Shulman 在博客中阐述了公司原则和下一步计划，包括推出新的透明度工具、水印和指纹识别技术，并称此举符合「新兴行业标准」，旨在为 AI 音乐行业寻求合法性。</description>
+      <category>产品</category>
+    </item>
+    <item>
+      <title>Cloudflare 开源内部 vibe-coding 平台，面向非程序员</title>
+      <link>https://lp-imagine.github.io/penn-notes/news/2026-08/ai-news-2026-08-07</link>
+      <guid isPermaLink="true">https://lp-imagine.github.io/penn-notes/news/2026-08/ai-news-2026-08-07</guid>
+      <pubDate>Fri, 07 Aug 2026 16:00:00 GMT</pubDate>
+      <description>[开源] · 来源：Ars Technica AI · Cloudflare 将其内部为员工构建的 AI Agent 工作区开源，该平台旨在让非程序员也能通过自然语言进行「vibe-coding」。此举将 AI 辅助开发的能力扩展到更广泛的用户群体，并内置了安全护栏。开源版本允许开发者和企业在自己的环境中部署和定制。</description>
+      <category>开源</category>
+    </item>
+    <item>
+      <title>semantica-agi/semantica：面向上下文与可问责 AI 的图原生基础设施</title>
+      <link>https://lp-imagine.github.io/penn-notes/news/2026-08/ai-news-2026-08-07</link>
+      <guid isPermaLink="true">https://lp-imagine.github.io/penn-notes/news/2026-08/ai-news-2026-08-07</guid>
+      <pubDate>Fri, 07 Aug 2026 16:00:00 GMT</pubDate>
+      <description>[开源] · 来源：semantica-agi/semantica · 开源项目 semantica 发布，定位为「图原生基础设施」，旨在为 AI 系统提供上下文管理和可问责性支持。该项目通过图结构来组织和管理 AI 系统的上下文信息，可能为构建更透明、可追溯的 AI 应用提供新的底层架构选择。</description>
+      <category>开源</category>
+    </item>
+    <item>
+      <title>GitHub Copilot 应用斜杠命令指南：规划、协作与自动化</title>
+      <link>https://lp-imagine.github.io/penn-notes/news/2026-08/ai-news-2026-08-07</link>
+      <guid isPermaLink="true">https://lp-imagine.github.io/penn-notes/news/2026-08/ai-news-2026-08-07</guid>
+      <pubDate>Fri, 07 Aug 2026 16:00:00 GMT</pubDate>
+      <description>[开发者工具] · 来源：GitHub Blog · GitHub 官方博客发布指南，详细介绍 GitHub Copilot 应用中的斜杠命令用法。这些命令旨在帮助开发者超越简单的聊天交互，实现规划、协作、自动化和自定义开发工作流。指南提供了实用示例，帮助用户更高效地利用 Copilot 提升开发效率。</description>
+      <category>开发者工具</category>
+    </item>
+    <item>
+      <title>微软公布 AI 智能体 LLM 路由方案，最高可节省 85% 成本</title>
+      <link>https://lp-imagine.github.io/penn-notes/news/2026-08/ai-news-2026-08-07</link>
+      <guid isPermaLink="true">https://lp-imagine.github.io/penn-notes/news/2026-08/ai-news-2026-08-07</guid>
+      <pubDate>Fri, 07 Aug 2026 16:00:00 GMT</pubDate>
+      <description>[开发者工具] · 来源：InfoQ 中文 · 微软发布了一个用于在 Azure Kubernetes Service (AKS) 上路由 AI 智能体流量的参考架构，将问题分解为模型选择、调用管理和 GPU 副本处理三个关键决策。该方案结合了 Kubernetes Gateway API、agentgateway 代理和 RouteLLM 语义路由，旨在优化智能体工作负载的成本和效率，最高可节省 85% 的成本。</description>
+      <category>开发者工具</category>
+    </item>
+    <item>
+      <title>CSS-Tricks 详解原生 dialog 元素的使用与样式化</title>
+      <link>https://lp-imagine.github.io/penn-notes/news/2026-08/ai-news-2026-08-07</link>
+      <guid isPermaLink="true">https://lp-imagine.github.io/penn-notes/news/2026-08/ai-news-2026-08-07</guid>
+      <pubDate>Fri, 07 Aug 2026 16:00:00 GMT</pubDate>
+      <description>[前端] · 来源：CSS-Tricks · CSS-Tricks 发布文章，深入探讨了原生 HTML &lt;dialog&gt; 元素的使用细节和样式化技巧。文章指出，尽管该元素已存在近十年，但其中仍有许多容易被忽视的细微之处，并分享了作者在实践中总结的笔记，涵盖何时使用、如何样式化等关键问题，为前端开发者提供了实用参考。</description>
+      <category>前端</category>
+    </item>
     <item>
       <title>突发，Jeff Dean离职创业！谷歌股价应声蒸发1.34万亿</title>
       <link>https://lp-imagine.github.io/penn-notes/news/2026-08/ai-news-2026-08-06</link>
@@ -231,102 +327,6 @@
       <pubDate>Tue, 04 Aug 2026 16:00:00 GMT</pubDate>
       <description>[开源] · 来源：uber/ADR · Uber正式开源ADR（Agent Defense &amp; Response），该框架已在Uber内部部署，用于保障企业AI Agent安全。ADR提供可观测性、安全基准测试与威胁检测能力，帮助团队监控Agent行为、识别异常并建立安全防线。对读者：企业级Agent落地需配套安全治理，ADR可作为观测与防护的参考实现。</description>
       <category>开源</category>
-    </item>
-    <item>
-      <title>browser-use/video-use：用编码Agent编辑视频的开源项目</title>
-      <link>https://lp-imagine.github.io/penn-notes/news/2026-08/ai-news-2026-08-04</link>
-      <guid isPermaLink="true">https://lp-imagine.github.io/penn-notes/news/2026-08/ai-news-2026-08-04</guid>
-      <pubDate>Tue, 04 Aug 2026 16:00:00 GMT</pubDate>
-      <description>[开源] · 来源：browser-use/video-use · browser-use团队推出video-use开源项目，让编码Agent能够直接编辑视频。该项目将Agent能力从浏览器操作扩展到视频处理领域，支持通过自然语言指令驱动视频剪辑、特效添加等任务。对读者：Agent能力边界正快速拓展，视频编辑自动化有望成为内容创作新范式。</description>
-      <category>开源</category>
-    </item>
-    <item>
-      <title>GitHub Copilot CLI重新设计：新增选项卡与免配置文件工具设置</title>
-      <link>https://lp-imagine.github.io/penn-notes/news/2026-08/ai-news-2026-08-04</link>
-      <guid isPermaLink="true">https://lp-imagine.github.io/penn-notes/news/2026-08/ai-news-2026-08-04</guid>
-      <pubDate>Tue, 04 Aug 2026 16:00:00 GMT</pubDate>
-      <description>[开发者工具] · 来源：InfoQ 中文 · GitHub正式推出重新设计的Copilot CLI终端界面，新增会话、Gists、Issues与Pull requests选项卡布局，支持鼠标选择与拖动重排。工具配置改为引导式会话体验，可通过/mcp add交互表单或/mcp search浏览MCP Registry直接安装服务器，无需手动编辑配置文件。新界面还优化了主题适配与屏幕阅读器支持。对读者：Copilot CLI的交互升级大幅降低MCP与插件配置门槛，值得立即体验。</description>
-      <category>开发者工具</category>
-    </item>
-    <item>
-      <title>Agent记忆不能只靠聊天记录：TencentDB Agent Memory的四层资产体系</title>
-      <link>https://lp-imagine.github.io/penn-notes/news/2026-08/ai-news-2026-08-04</link>
-      <guid isPermaLink="true">https://lp-imagine.github.io/penn-notes/news/2026-08/ai-news-2026-08-04</guid>
-      <pubDate>Tue, 04 Aug 2026 16:00:00 GMT</pubDate>
-      <description>[开发者工具] · 来源：InfoQ 中文 · 腾讯云数据库提出Agent Memory方案，将团队记忆抽象为四类原子资产：Chat Memory记录任务背景与决策、LLM-Wiki承载项目文档、Code Graph描述代码调用关系、Skill封装团队SOP。该体系让有效状态可跨session、跨Agent、跨框架继承，解决Agent每次对话重新开始的问题。对读者：构建Agent应用时，应系统设计记忆分层与资产治理，而非简单堆叠聊天记录。</description>
-      <category>开发者工具</category>
-    </item>
-    <item>
-      <title>给Agent装上方向盘和刹车：Harness时代的工程新范式</title>
-      <link>https://lp-imagine.github.io/penn-notes/news/2026-08/ai-news-2026-08-04</link>
-      <guid isPermaLink="true">https://lp-imagine.github.io/penn-notes/news/2026-08/ai-news-2026-08-04</guid>
-      <pubDate>Tue, 04 Aug 2026 16:00:00 GMT</pubDate>
-      <description>[开发者工具] · 来源：InfoQ 中文 · InfoQ《极客有约》邀请阿里云、NoDesk AI、腾讯专家探讨Agent Infra从可用到高效规模化的路径。核心观点：Harness的本质是用工程系统承接和约束不确定性，让Agent做正确的事并正确地做事；可观测性是诊断错误、形成优化飞轮的基础；企业需通过本体论将人用上下文翻译为Agent可理解语言。对读者：Agent规模化落地需配套Harness工程体系，可观测性与语义对齐是优先建设项。</description>
-      <category>开发者工具</category>
-    </item>
-    <item>
-      <title>Amazon EKS新增升级后7天内回滚Kubernetes版本功能</title>
-      <link>https://lp-imagine.github.io/penn-notes/news/2026-08/ai-news-2026-08-04</link>
-      <guid isPermaLink="true">https://lp-imagine.github.io/penn-notes/news/2026-08/ai-news-2026-08-04</guid>
-      <pubDate>Tue, 04 Aug 2026 16:00:00 GMT</pubDate>
-      <description>[开发者工具] · 来源：InfoQ 中文 · Amazon EKS推出Kubernetes版本回滚支持，升级后7天内出现问题可将控制平面回滚至之前版本，同时保留etcd数据、工作负载和持久卷。回滚每次仅涉及一个次要版本，EKS会运行集群分析检查准备情况并提示节点版本不匹配等问题。该功能解决了Kubernetes控制平面升级长期以来的&quot;单行道&quot;困境。对读者：EKS用户可放心推进版本升级，回滚机制显著降低了升级风险。</description>
-      <category>开发者工具</category>
-    </item>
-    <item>
-      <title>HarmonyOS 7抹平系统能力接入鸿沟：Skill与Agent可被封装调用</title>
-      <link>https://lp-imagine.github.io/penn-notes/news/2026-08/ai-news-2026-08-04</link>
-      <guid isPermaLink="true">https://lp-imagine.github.io/penn-notes/news/2026-08/ai-news-2026-08-04</guid>
-      <pubDate>Tue, 04 Aug 2026 16:00:00 GMT</pubDate>
-      <description>[前端] · 来源：量子位 · 华为HDD·HarmonyOS创新论坛西安站展示HarmonyOS 7在终端开发上的突破：通过星河互联一碰快传实现跨设备精准传输，系统能力Skill化让AI服务可被封装调用，数字内容走出平面。新系统大幅缩短了系统技术抵达真实应用的工程距离，降低多设备互联与AI集成的开发成本。对读者：鸿蒙开发者应关注Skill化封装能力，可显著减少系统能力接入的重复造轮子成本。</description>
-      <category>前端</category>
-    </item>
-    <item>
-      <title>华为诺亚开源MindMemOS：让AI Agent记忆可迁移、自演进</title>
-      <link>https://lp-imagine.github.io/penn-notes/news/2026-08/ai-news-2026-08-03</link>
-      <guid isPermaLink="true">https://lp-imagine.github.io/penn-notes/news/2026-08/ai-news-2026-08-03</guid>
-      <pubDate>Mon, 03 Aug 2026 16:00:00 GMT</pubDate>
-      <description>[业界] · 来源：量子位 · 华为诺亚方舟实验室开源面向AI Agent的可迁移、自演进记忆操作层MindMemOS。它用「实体-属性-时间」三维结构保存最新状态与完整演化轨迹，通过MindSchema预设提取规则、Feedback挖掘用户纠偏反馈、Dreaming离线巩固记忆，让记忆系统随使用持续进化。在LoCoMo上取得94.03分，在MemoryAgentBench的FactConsolidation测试中压缩19.4%-23.5%活跃记忆的同时将问答准确率最高提升10.3个百分点。</description>
-      <category>业界</category>
-    </item>
-    <item>
-      <title>AWS计费系统故障：用户收到数万亿美元账单预估，告警系统未能阻止问题扩大</title>
-      <link>https://lp-imagine.github.io/penn-notes/news/2026-08/ai-news-2026-08-03</link>
-      <guid isPermaLink="true">https://lp-imagine.github.io/penn-notes/news/2026-08/ai-news-2026-08-03</guid>
-      <pubDate>Mon, 03 Aug 2026 16:00:00 GMT</pubDate>
-      <description>[业界] · 来源：InfoQ 中文 · 7月16日AWS计费计算系统配置变更导致单价错误，用户预估账单飙升至数百万至数万亿美元，持续超24小时。AWS承认告警系统检测到成本异常但未能阻止生成流程，也未通知工程团队，直到4.5小时后收到客户反馈才意识到问题。该事件暴露了云成本管理中的告警响应机制缺陷，引发对云服务商内部运维流程的广泛讨论。</description>
-      <category>业界</category>
-    </item>
-    <item>
-      <title>年薪百万抢电工：Meta等AI巨头自办技校应对数据中心建设瓶颈</title>
-      <link>https://lp-imagine.github.io/penn-notes/news/2026-08/ai-news-2026-08-03</link>
-      <guid isPermaLink="true">https://lp-imagine.github.io/penn-notes/news/2026-08/ai-news-2026-08-03</guid>
-      <pubDate>Mon, 03 Aug 2026 16:00:00 GMT</pubDate>
-      <description>[业界] · 来源：量子位 · AI数据中心建设面临严重电工短缺，麦肯锡预计美国2023至2030年需额外培养13万名电工。AI公司支付高溢价，优秀电工年薪达24万-28万美元，但一个60兆瓦项目每月因招工短缺延迟交付损失1420万美元。微软总裁称电工短缺是扩建数据中心头号障碍。2026年Alphabet和Meta投入技工培训成本合计达2.65亿美元，Meta拨款1.15亿自办培训项目。</description>
-      <category>业界</category>
-    </item>
-    <item>
-      <title>阿里「千问办公」开启公测，整合三款产品瞄准企业级Agent市场</title>
-      <link>https://lp-imagine.github.io/penn-notes/news/2026-08/ai-news-2026-08-03</link>
-      <guid isPermaLink="true">https://lp-imagine.github.io/penn-notes/news/2026-08/ai-news-2026-08-03</guid>
-      <pubDate>Mon, 03 Aug 2026 16:00:00 GMT</pubDate>
-      <description>[产品] · 来源：量子位 · 阿里巴巴旗下企业级Agent产品「千问办公」（QwenWork）开启公测，个人和企业用户均可通过官网体验，网页版和独立PC客户端已开放，钉钉内置入口近期开放。该产品由QoderWork、MuleRun、悟空三款产品整合而来，是业内首款同时支持桌面端Agent、云端Agent、企业协同Agent的产品，已初步打通钉钉IM，未来将连接企业真实数据库和工作流。公测期间新用户注册可获得2000积分。</description>
-      <category>产品</category>
-    </item>
-    <item>
-      <title>OpenAI新模型「Astra」曝光：多智能体协同攻克数学难题，或成美国首批过审模型</title>
-      <link>https://lp-imagine.github.io/penn-notes/news/2026-08/ai-news-2026-08-03</link>
-      <guid isPermaLink="true">https://lp-imagine.github.io/penn-notes/news/2026-08/ai-news-2026-08-03</guid>
-      <pubDate>Mon, 03 Aug 2026 16:00:00 GMT</pubDate>
-      <description>[模型] · 来源：InfoQ 中文 · 据The Information报道，OpenAI正在测试代号「Astra」的全新模型家族，核心能力是让多个智能体在较长时间内协同工作、解决高难度问题。Altman已在华盛顿向政策制定者演示，并展示了系统解决此前未被攻克的数学难题的能力。Astra可能作为GPT-5系列后续版本或直接命名为GPT-6，与Sol、Terra和Luna并列成为OpenAI新模型类别。该模型还能让个人独立完成过去需外包的专业工作。</description>
-      <category>模型</category>
-    </item>
-    <item>
-      <title>DeepSeek V4 Flash正式版发布：基准测试优于Pro预览版，价格下调</title>
-      <link>https://lp-imagine.github.io/penn-notes/news/2026-08/ai-news-2026-08-03</link>
-      <guid isPermaLink="true">https://lp-imagine.github.io/penn-notes/news/2026-08/ai-news-2026-08-03</guid>
-      <pubDate>Mon, 03 Aug 2026 16:00:00 GMT</pubDate>
-      <description>[模型] · 来源：少数派 · DeepSeek发布V4 Flash正式版，在多个基准测试中得分优于V4 Pro预览版。模型结构与预览版一致，总参数量284B、激活13B，仅重新进行后训练。价格方面，每百万tokens缓存未命中输入从2元下调至1元，输出从3元下调至2元。DeepSeek称V4 Pro正式版将尽快发布。此前DeepSeek完成约500亿元首次对外融资，估值超3500亿元，并正努力将所有部门规模扩大至少一倍。</description>
-      <category>模型</category>
     </item>
   </channel>
 </rss>
